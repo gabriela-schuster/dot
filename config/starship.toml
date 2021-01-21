@@ -1,0 +1,46 @@
+# Don't print a new line at the start of the prompt
+add_newline = false
+
+# Use custom format
+format = """
+[┌───────────────────❯](black) $character$directory$package$git_branch$ruby$python$status
+[└─❯](black) """
+
+[directory]
+style = "purple"
+truncation_lenght = 4
+truncation_symbol = "···/"
+
+#module is shown when the current directory is the repository for a package, supports npm, cargo, poetry, composer, gradle, julia, mix and helm
+[package]
+disabled = false
+style = "bold yellow"
+symbol = "📦 "
+format = "is [$symbol$version]($style) "
+
+[character]
+success_symbol = "[➜](gray)"
+error_symbol = "[➜](bold red)"
+vicmd_symbol = "[喝](bold green) "
+
+[git_branch]
+symbol = " "
+style = "bold blue"
+
+[ruby]
+symbol = "🔺 "
+[python]
+symbol = "🐍 "
+
+# display when there's an exit code
+[status]
+style = "bg:red"
+symbol = "✖"		#when there's an error
+not_executable_symbol = "🚫"
+not_found_symbol = "🔍"
+sigint_symbol = "🧱"									# symbol when C + c
+signal_symbol = "⚡"
+format = "[$symbol$status]($style)"
+map_symbol = true
+disabled = false
+
