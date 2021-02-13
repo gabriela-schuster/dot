@@ -1,16 +1,16 @@
 * {
-    background-color:            rgba(50, 50, 50, 0.3);
-    border-color:                #d5c4a1;
-    text-color:                  #d5c4a1;
+    background-color:            rgba(50, 50, 50, 0.95);
+    border-color:                #5f8787;
+    text-color:                  #dddddd;
     font:                        "Sf Mono 11";
     prompt-font:                 "Sf Mono 11";
-    prompt-background:           #2b2b2c;
-    prompt-foreground:           #d5c4a1;
+    prompt-background:           #202020;
+    prompt-foreground:           #dddddd;
     prompt-padding:              4px;
-    alternate-normal-background: #2c2c2b;
+    alternate-normal-background: #202020;
     alternate-normal-foreground: @text-color;
-    selected-normal-background:  #7daea3;
-    selected-normal-foreground:  #2c2c2b;
+    selected-normal-background:  #5f8787;
+    selected-normal-foreground:  #202020
     spacing:                     3;
     transparent:                 rgba(0,0,0,0);
 }
@@ -73,7 +73,7 @@
 }
 #prompt {
     padding:          @prompt-padding;
-    background-color: @prompt-background;
+    background-color: @transparent;
     text-color:       @prompt-foreground;
     font:             @prompt-font;
     border-radius:    2px;
