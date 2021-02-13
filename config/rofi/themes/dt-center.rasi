@@ -42,10 +42,7 @@
     background-color: @selected-normal-background;
     text-color:       @selected-normal-foreground;
 }
-#element.alternate.normal {
-    background-color: @alternate-normal-background;
-    text-color:       @alternate-normal-foreground;
-}
+
 #scrollbar {
     width:        0px ;
     border:       0;
