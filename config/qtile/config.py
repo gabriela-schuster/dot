@@ -252,6 +252,13 @@ screens = [
                     padding = 5,
                     scale = 0.7
                 ),
+                 widget.Prompt(
+                    padding = 10,
+                    foreground = colors[3],
+                    background = colors[1]
+                 ),
+
+                
                 #widget.Spacer(),
                 widget.WindowName(
                     foreground = colors[1],
