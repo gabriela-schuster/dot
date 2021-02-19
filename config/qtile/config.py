@@ -12,6 +12,7 @@ terminal = "kitty"
 browser = "firefox"
 launcher = "rofi -show drun -disable-history -show-icons -icon-theme 'Tela black'"
 thunar = "thunar"
+sshot = "flameshot gui"
 
 @hook.subscribe.startup
 def autostart():
@@ -72,6 +73,10 @@ keys = [
         lazy.spawn(thunar),
         desc="Launch thunar"
         ),
+    Key([mod], "s",
+        lazy.spawn(sshot),
+        desc="Launch flameshot"
+        ),
 
     #--------- windows
 
@@ -92,6 +97,11 @@ keys = [
         lazy.layout.shuffle_up(),
         desc="Move window up in current stack "
         ),
+
+
+    #--------- layoutS
+
+    #MonadTall
     Key([mod], "h",
         lazy.layout.grow(),
         lazy.layout.increase_nmaster(),
@@ -103,7 +113,6 @@ keys = [
         desc='Shrink window (MonadTall), decrease number in master pane(Tile)'
         ),
 
-    # layouts
     Key([mod], "f",
         lazy.window.toggle_floating(),
         desc='toggle floating'
@@ -169,6 +178,7 @@ colors = [
     ["#d4b398", "#d4be98"],  # white, 8
     ["#4c566a", "#4c566a"],  # grey, 9
     ["#d08770", "#d08770"],  # orange, 10
+    ["#202020", "#202020"],
 ]
 
 #--------- Layouts --------------------------------------------------
@@ -188,8 +198,22 @@ layouts = [
     #layout.RatioTile(**layout_theme),
     #layout.VerticalTile(**layout_theme),
     #layout.Matrix(**layout_theme),
-    layout.Zoomy(**layout_theme),
-    #layout.TreeTab(**layout_theme)
+    layout.Zoomy(**layout_theme,
+    columnwidth = 150),
+    # layout.TreeTab(**layout_theme,
+    # font = "Sf Mono",
+    # fontsize = 14,
+    # sections = ["... to move up/down"],
+    # section_fontsize = 11,
+    # bg_color = "202020",
+    # active_bg = colors[5],
+    # active_fg = colors[0],
+    # inactive_bg = colors[0],
+    # inactive_fg = colors[1],
+    # padding_y = 5,
+    # section_top = 10,
+    # panel_width = 220
+    # ),
     #layout.Stack(num_stacks=2, **layout_theme),
     layout.MonadTall(**layout_theme),
     layout.Max(),
@@ -197,9 +221,9 @@ layouts = [
 ]
 
 widget_defaults = dict(
-    font='Scientifica bold',
+    font='Scientifica Bold',
     fontsize= 18,
-    padding=3,
+    padding=5,
 )
 extension_defaults = widget_defaults.copy()
 
@@ -214,6 +238,8 @@ screens = [
                 #    mouse_callbacks = {'Button1': lambda qtile: qtile.cmd_spawn('dmenu_run')}
                 #),
                 widget.GroupBox(
+                    disable_drag = True,
+                    # hide_unused = True,
                     font = "Scientifica",
                     background = colors[0],
                     active = colors[1],
@@ -223,18 +249,20 @@ screens = [
                     padding_y = 5,
                     padding_x = 3,
                     borderwidht = 3,
+                    center_aligned = True,
                     this_current_screen_border = colors[5],
                     this_screen_border = colors[0],         # when no window is focused
+                    urgent_border = colors[2],
                     hide_unused = False,
                     highlight_color = colors[0],
                     highlight_method = 'line',
                 ),
-                widget.TextBox(
-                    text = '|',
+                widget.Sep(
                     background = colors[0],
                     foreground = colors[5],
-                    padding = 0,
-                    fontsize = 30
+                    linewidth = 3,
+                    size_percent = 100,
+                    padding = 10
                 ),
                 widget.CurrentLayout(
                     #custom_icon_paths = [os.path.expanduser("~/.config/qtile/icons")],
@@ -248,12 +276,12 @@ screens = [
                     foreground = colors[1],
                     background = colors[0]
                 ),
-                widget.TextBox(
-                    text = '|',
+                widget.Sep(
                     background = colors[0],
                     foreground = colors[5],
-                    padding = 0,
-                    fontsize = 30
+                    linewidth = 3,
+                    size_percent = 100,
+                    padding = 10
                 ),
                #widget.Spacer(),
                 widget.WindowName(
@@ -281,12 +309,12 @@ screens = [
                     background=colors[0],
                     limit_max_volume="True",
                 ),
-                widget.TextBox(
-                    text = '|',
+                widget.Sep(
                     background = colors[0],
                     foreground = colors[5],
-                    padding = 0,
-                    fontsize = 30
+                    linewidth = 3,
+                    size_percent = 100,
+                    padding = 10
                 ),
                 widget.Battery(
                     foreground = colors[1],
@@ -298,30 +326,30 @@ screens = [
                     low_foreground = colors[2],
                     format = '{char}{percent:2.0%}'
                 ),
-                widget.TextBox(
-                    text = '|',
+                widget.Sep(
                     background = colors[0],
                     foreground = colors[5],
-                    padding = 0,
-                    fontsize = 30
+                    linewidth = 3,
+                    size_percent = 100,
+                    padding = 10
                 ),
                 widget.CPU(
                     background = colors[0],
                     foreground = colors[1],
                     format = 'CPU:{load_percent}%',
-                    update_interval = 2.0
+                    update_interval = 2.0,
                 ),
                 widget.Memory(
                     background = colors[0],
                     foreground = colors[1],
                     format = ' M:{MemUsed}Mb'
                 ),
-                widget.TextBox(
-                    text = '|',
+                widget.Sep(
                     background = colors[0],
                     foreground = colors[5],
-                    padding = 0,
-                    fontsize = 30
+                    linewidth = 3,
+                    size_percent = 100,
+                    padding = 10
                 ),
                 # widget.Backlight(
                 #     backlight_name = 'eDP-1',
@@ -347,11 +375,10 @@ screens = [
                     padding=0,
                 ),
             ],
-            opacity = 0.9,
-            size = 20,
-            background = "#2b2b2c",
-            foreground = "#d5c4a1",
-        ),
+        size = 20,
+        # margin = 3,
+        opacity = 0.6,
+        radius = 10),
     ),
 ]
 
