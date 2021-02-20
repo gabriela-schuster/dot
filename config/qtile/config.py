@@ -43,17 +43,21 @@ keys = [
         desc="Toggle between split and unsplit sides of stack"
         ),
     #--------- volume / brightness TODO
-    Key(
-        [],
-        "XF86AudioRaiseVolume",
+    Key([], "XF86AudioRaiseVolume",
         lazy.spawn("./.config/qtile/eww_vol.sh up"),
         desc="Increase volume",
     ),
-    Key(
-        [],
-        "XF86AudioLowerVolume",
+    Key([], "XF86AudioLowerVolume",
         lazy.spawn("./.config/qtile/eww_vol.sh down"),
         desc="Decrease volume",
+    ),
+    Key([], "XF86MonBrightnessUp",
+        lazy.spawn("./.config/qtile/brightness.sh + eDP1"),
+        desc="Increase brightness",
+    ),
+    Key([], "XF86MonBrightnessDown",
+        lazy.spawn("./.config/qtile/brightness.sh - eDP1"),
+        desc="Increase brightness",
     ),
 
     #--------- cust Keybindings
