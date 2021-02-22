@@ -8,7 +8,7 @@ from libqtile.lazy import lazy
 mod = "mod4"
 home = os.path.expanduser('~')
 
-terminal = "kitty"
+terminal = "alacritty"
 browser = "firefox"
 launcher = "rofi -show drun -disable-history -show-icons -icon-theme 'Tela black'"
 thunar = "thunar"
@@ -42,7 +42,7 @@ keys = [
         lazy.layout.toggle_split(),
         desc="Toggle between split and unsplit sides of stack"
         ),
-    #--------- volume / brightness TODO
+    #--------- volume / brightness
     Key([], "XF86AudioRaiseVolume",
         lazy.spawn("./.config/qtile/eww_vol.sh up"),
         desc="Increase volume",
@@ -199,11 +199,12 @@ layouts = [
     #layout.Bsp(**layout_theme),
     #layout.Stack(stacks=2, **layout_theme),
     #layout.Columns(**layout_theme),
-    #layout.RatioTile(**layout_theme),
+    layout.RatioTile(**layout_theme),
     #layout.VerticalTile(**layout_theme),
     #layout.Matrix(**layout_theme),
-    layout.Zoomy(**layout_theme,
-    columnwidth = 150),
+    #layout.Stack(num_stacks=2, **layout_theme),
+    #layout.Zoomy(**layout_theme,
+    #columnwidth = 150),
     # layout.TreeTab(**layout_theme,
     # font = "Sf Mono",
     # fontsize = 14,
@@ -218,7 +219,6 @@ layouts = [
     # section_top = 10,
     # panel_width = 220
     # ),
-    #layout.Stack(num_stacks=2, **layout_theme),
     layout.MonadTall(**layout_theme),
     layout.Max(),
     #layout.Tile(**layout_theme),
@@ -287,20 +287,12 @@ screens = [
                     size_percent = 100,
                     padding = 10
                 ),
-               #widget.Spacer(),
+                #widget.Spacer(),
                 widget.WindowName(
                     foreground = colors[1],
                     background = colors[0],
                     padding = 5
                 ),
-                # arcobattery.BatteryIcon(
-                #     padding=0,
-                #     scale=0.7,
-                #     y_poss=2,
-                #     update_interval = 5,
-                #     background = colors[1]
-                # ),
-
                 widget.TextBox(
                     text="",
                     foreground=colors[0],
