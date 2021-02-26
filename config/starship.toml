@@ -7,15 +7,14 @@ format = """
 [└─❯](black) """
 
 [directory]
-style = "purple"
+style = "bold purple"
 truncation_lenght = 4
 truncation_symbol = "···/"
 read_only = "🔒"
 
 [cmd_duration]
-min_time = 5_000  # Show command duration over 5,000 milliseconds (=10 sec)
-style = "bold yellow"
-format = "[$duration]ms($style)"
+min_time = 500
+format = "[$duration](blue)"
 
 #module is shown when the current directory is the repository for a package, supports npm, cargo, poetry, composer, gradle, julia, mix and helm
 [package]
@@ -25,7 +24,7 @@ symbol = "📦 "
 format = "is [$symbol$version]($style) "
 
 [character]
-success_symbol = "[»](gray)"
+success_symbol = "[»](blue)"
 error_symbol = "[➜](bold red)"
 vicmd_symbol = "[喝](bold green) "
 
@@ -33,15 +32,19 @@ vicmd_symbol = "[喝](bold green) "
 symbol = " "
 style = "bold blue"
 
-[ruby]
-symbol = "🔺 "
 [python]
-symbol = "🐍 "
+symbol = " "
+[ruby]
+symbol = " "
+[nodejs]
+symbol = " "
+[elixir]
+symbol = "🔮 "
 
 # display when there's an exit code
 [status]
-style = "bg:red"
-symbol = "✖"		#when there's an error
+style = "red"
+symbol = " ✖"		#when there's an error
 not_executable_symbol = "🚫"
 not_found_symbol = "🔍"
 sigint_symbol = "🧱"									# symbol when C + c
@@ -49,4 +52,3 @@ signal_symbol = "⚡"
 format = "[$symbol$status]($style)"
 map_symbol = true
 disabled = false
-
