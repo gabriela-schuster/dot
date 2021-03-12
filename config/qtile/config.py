@@ -173,7 +173,12 @@ for i in groups:
         #     desc="move focused window to group {}".format(i.name)),
     ])
 
-#--------- Colors -----------------------------------------
+#--------- Functions -----------------------------------------------------------
+
+def shut():
+    qtile.command("sudo sutdown now")
+
+#--------- Colors --------------------------------------------------------------
 
 colors = [
     ["#2c2c2b", "#2c2c2b"],  # background, 0
@@ -188,8 +193,7 @@ colors = [
     ["#202020", "#202020"],
 ]
 
-#--------- Layouts ,
-    #layout.Stack(stacks=2, *--------------------------------------------------
+#--------- Layouts -------------------------------------------------------------
 
 layout_theme = {
     "border_width": 2,
@@ -255,9 +259,9 @@ screens = [
                     padding_x = 3,
                     borderwidht = 3,
                     center_aligned = True,
-					background = colors[1],
+					background = colors[0],
                     active = colors[7],
-                    inactive = colors[0],
+                    inactive = colors[1],
 					block_highlight_text_color = colors[0],	#selected foregroud
                     this_current_screen_border = colors[7],
                     this_screen_border = colors[0],         # when no window is focused
@@ -291,18 +295,63 @@ screens = [
                     size_percent = 100,
                     padding = 5
                 ),
-                #widget.Spacer(),
+				# widget.Spacer(
+				# 	background = colors[0]
+				# ),
+                widget.TextBox(
+                    text="",
+                    foreground = colors[1],
+                    background = colors[0],
+                    font = 'font awesome'
+                ),
                 widget.WindowName(
                     foreground = colors[1],
                     background = colors[0],
+                    padding = 5,
+		 		   	empty_group_string = 'Desktop',
+		   			max_chars = 100,
+                    # width=bar.CALCULATED, uncomment this and the two spacers to push all things to the left/right and make the window name centralized
+		   			format = '{state}{name}'
+                ),
+				# widget.Spacer(
+				# 	background = colors[0]
+				# ),
+				widget.TextBox(
+                    text="",
+                    foreground=colors[0],
+                    background=colors[7],
+					fontsize = 15,
+					font = 'font awesome'
+                ),
+				widget.Wlan(
+                    interface = 'wlan0',
+                    format = "{essid} {quality}/70",
+                    foreground = colors[0],
+                    background = colors[1],
+                    padding = 5,
+					disconnected_message = 'Offline',
+					update_interval = 1,
+                ),
+				widget.Net(
+                    format = '{down} ↓↑ {up}',
+                    foreground = colors[0],
+                    background = colors[7],
+                	padding = 5
+                ),
+
+				widget.Sep(
+                    background = colors[0],
+                    foreground = colors[0],
+                    linewidth = 3,
+                    size_percent = 100,
                     padding = 5
                 ),
-                widget.TextBox(
-                    text="",
+				widget.TextBox(
+                    text="",
                     foreground=colors[0],
-                    background=colors[0],
-                    fontsize=40,
-                    padding=0,
+                    background=colors[1],
+					fontsize = 15,
+					font = 'font awesome'
                 ),
                 widget.PulseVolume(
                     foreground=colors[0],
@@ -316,6 +365,13 @@ screens = [
                     size_percent = 100,
                     padding = 5
                 ),
+				 widget.TextBox(
+                    text="",
+                    foreground=colors[0],
+                    background=colors[7],
+					fontsize = 15,
+					font = 'font awesome'
+                ),
                 widget.Battery(
                     foreground = colors[0],
                     background = colors[7],
@@ -323,6 +379,7 @@ screens = [
                     charge_char = "»",
                     discharge_char = "«",
                     full_char = "º",
+					notify_below = 15,
                     low_foreground = colors[2],
                     format = '{char}{percent:2.0%}'
                 ),
@@ -333,16 +390,30 @@ screens = [
                     size_percent = 100,
                     padding = 5
                 ),
+				widget.TextBox(
+                    text='',
+                    foreground=colors[0],
+                    background=colors[1],
+					fontsize = 15,
+					font = 'font awesome'
+                ),
                 widget.CPU(
                     background = colors[1],
                     foreground = colors[0],
-                    format = 'CPU:{load_percent}%',
+                    format = '{load_percent}%',
                     update_interval = 2.0,
+                ),
+				widget.TextBox(
+                    text='',
+                    foreground=colors[0],
+                    background=colors[1],
+					fontsize = 15,
+					font = 'font awesome'
                 ),
                 widget.Memory(
                     background = colors[1],
                     foreground = colors[0],
-                    format = ' M:{MemUsed}Mb'
+                    format = '{MemUsed}Mb'
                 ),
                 widget.Sep(
                     background = colors[0],
@@ -351,26 +422,42 @@ screens = [
                     size_percent = 100,
                     padding = 5
                 ),
+                widget.TextBox(
+					text = '',
+					background=colors[7],
+                    foreground=colors[0],
+					font = 'font awesome',
+					fontsize = 15
+                ),
                 widget.Clock(
                     foreground = colors[0],
                     background = colors[7],
-                    format = "%a, %b %d [ %H:%M ]"
+                    format = "%a, %b %d [ %H:%M ]",
                 ),
-
+				widget.Sep(
+                    background = colors[0],
+                    foreground = colors[0],
+                    linewidth = 3,
+                    size_percent = 100,
+                    padding = 5
+                ),
                 widget.Systray(     #if discord is open in plane
                     background = colors[0],
                     padding = 5,
                 ),
-                widget.TextBox(
-                    text="",
-                    foreground=colors[0],
-                    background=colors[0],
-                    fontsize=10,
-                    padding=0,
+				widget.TextBox(
+                    text="⏻",
+                    background = colors[1],
+                    foreground = colors[0],
+                    fontsize = 15,
+                    padding = 5,
+                    mouse_callbacks={"Button1": shut},
+					font = 'font awesome'
                 ),
+				#"⏻" sudo shutdown now
             ],
         size = 20,
-        # margin = 3,
+        margin = 3,
         opacity = 0.8,
         radius = 10),
     ),
@@ -408,7 +495,7 @@ floating_layout = layout.Floating(float_rules=[
     {'wmclass': 'ssh-askpass'},  # ssh-askpass
 ])
 auto_fullscreen = True
-focus_on_window_activation = "smart"
+focus_on_window_activation = "mouse"
 
 # XXX: Gasp! We're lying here. In fact, nobody really uses or cares about this
 # string besides java UI toolkits; you can see several discussions on the
