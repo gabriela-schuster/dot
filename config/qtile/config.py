@@ -324,21 +324,20 @@ screens = [
 					font = 'font awesome'
                 ),
 				widget.Wlan(
-                    interface = 'wlan0',
-                    format = "{essid} {quality}/70",
+                    interface = 'wlp1s0',
+                    format = "{essid}",
                     foreground = colors[0],
-                    background = colors[1],
+                    background = colors[7],
                     padding = 5,
 					disconnected_message = 'Offline',
 					update_interval = 1,
                 ),
-				widget.Net(
-                    format = '{down} ↓↑ {up}',
-                    foreground = colors[0],
-                    background = colors[7],
-                	padding = 5
-                ),
-
+				# widget.Net(
+                #     format = '{down} ↓↑ {up}',
+                #     foreground = colors[0],
+                #     background = colors[7],
+                # 	padding = 5
+                # ),
 				widget.Sep(
                     background = colors[0],
                     foreground = colors[0],
@@ -451,15 +450,13 @@ screens = [
                     foreground = colors[0],
                     fontsize = 15,
                     padding = 5,
-                    mouse_callbacks={"Button1": shut},
+					mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn(terminal + ' sudo shutdown now')},
 					font = 'font awesome'
                 ),
-				#"⏻" sudo shutdown now
             ],
         size = 20,
         margin = 3,
-        opacity = 0.8,
-        radius = 10),
+        opacity = 0.8,),
     ),
 ]
 
@@ -469,30 +466,18 @@ mouse = [
          start=lazy.window.get_position()),
     Drag([mod], "Button3", lazy.window.set_size_floating(),
          start=lazy.window.get_size()),
+    Click([mod], "Button2", lazy.window.bring_to_front())
 ]
+
 
 dgroups_key_binder = None
 dgroups_app_rules = []  # type: List
-main = None  # WARNING: this is deprecated and will be removed soon
 follow_mouse_focus = True
 bring_front_click = False
 cursor_warp = False
 floating_layout = layout.Floating(float_rules=[
     # Run the utility of `xprop` to see the wm class and name of an X client.
-    {'wmclass': 'confirm'},
-    {'wmclass': 'dialog'},
-    {'wmclass': 'download'},
-    {'wmclass': 'error'},
-    {'wmclass': 'file_progress'},
-    {'wmclass': 'notification'},
-    {'wmclass': 'splash'},
-    {'wmclass': 'toolbar'},
-    {'wmclass': 'confirmreset'},  # gitk
-    {'wmclass': 'makebranch'},  # gitk
-    {'wmclass': 'maketag'},  # gitk
-    {'wname': 'branchdialog'},  # gitk
-    {'wname': 'pinentry'},  # GPG key password entry
-    {'wmclass': 'ssh-askpass'},  # ssh-askpass
+    *layout.Floating.default_float_rules,
 ])
 auto_fullscreen = True
 focus_on_window_activation = "mouse"
