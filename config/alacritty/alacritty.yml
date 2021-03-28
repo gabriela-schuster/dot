@@ -6,7 +6,7 @@ window:
   #  lines: 0
 
   padding:
-    x: 30
+    x: 50
     y: 6
 
   title: Alacritty
@@ -56,26 +56,26 @@ draw_bold_text_with_bright_colors: true
 
 colors:
   primary:
-    background: '0x141414'
-    foreground: '0xbcbcbc'
+    background: '0x2c2c2b'
+    foreground: '0xd5c4a1'
 
   selection:
-    text: '0x5f8787'
+    text: '0x2c2c2b'
 
   # Normal colors
   normal:
-    black:   '0x121212'
-    red:     '0xbcbcbc'
-    green:   '0xa6a6a6'
-    yellow:  '0x959595'
-    blue:    '0x858585'
-    magenta: '0x646464'
-    cyan:    '0x434343'
-    white:   '0x5f8787'
+    black:   '0x665c54'
+    red:     '0xea6962'
+    green:   '0xa9b665'
+    yellow:  '0xe78a4e'
+    blue:    '0x7daea3'
+    magenta: '0xd3869b'
+    cyan:    '0x89b482'
+    white:   '0xd4b398'
 
   # Bright colors
   bright:
-    black:   '0x434343'
+    black:   '0x928374'
     red:     '0xf68b85'
     green:   '0xc7d28d'
     yellow:  '0xf5aa79'
