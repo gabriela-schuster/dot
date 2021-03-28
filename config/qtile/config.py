@@ -81,7 +81,7 @@ keys = [
 		lazy.window.kill(),desc="Kill focused window"),
 	Key([mod, "shift"], "r",
 		lazy.restart(),desc="Restart qtile"),
-	Key([mod], "q",
+	Key([mod,"shift"], "q",
 		lazy.shutdown(),desc="Shutdown qtile"),
 	Key([mod], "r",
 		lazy.spawncmd(),desc="Spawn a command using a prompt widget"),
@@ -111,12 +111,12 @@ for i in groups:
 colors = [
 	["#2c2c2b", "#2c2c2b"],  # background, 0
 	["#d5c4a1", "#d5c4a1"],  # foreground, 1
-	["#ea6962", "#ea6962"],  # red, 2
-	["#e78a41", "#e78a41"],  # yellow, 4
 	["#7daea3", "#7daea3"],  # blue, 6
 	["#89b482", "#89b482"],  # cyan, 5
 	["#a9b665", "#a9b665"],  # green, 3
 	["#d3869b", "#d3869b"],  # magenta, 7
+	["#ea6962", "#ea6962"],  # red, 2
+	["#e78a41", "#e78a41"],  # yellow, 4
 	["#d4b398", "#d4be98"],  # white, 8
 	["#202020", "#202020"],
 ]
@@ -310,6 +310,12 @@ screens = [
 					format = '{load_percent}%',
 					update_interval = 2.0,
 				),
+				widget.ThermalSensor(
+					foreground = colors[0],
+					background = colors[1],
+					threshold = 90,
+					padding = 5
+                ),
 				widget.TextBox(
 					text='',
 					foreground=colors[0],
@@ -337,7 +343,7 @@ screens = [
 				),
 				widget.Sep(**dark_sep),
 				widget.Systray(
-					background = colors[0],
+					background = colors[1],
 					padding = 5,
 				),
 				widget.TextBox(
