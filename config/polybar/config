@@ -28,7 +28,8 @@ bold 		= ${xrdb:#728b99}
 ; |_.__/ \__,_|_|  |___/
 
 [bar/base]
-enable-ipc				= true
+override-redirect		= false
+border-bottom-size 		= 1
 height 					= 25
 width 					= 100%
 offset-y 				= 7
@@ -38,7 +39,7 @@ radius-top				= 10
 radius-bottom			= 10
 module-margin 			= 1
 bottom 					= false
-line-size 				= 1
+line-size 				= 0
 monitor					= HDMI1
 background 				= #202020
 foreground 				= #e4ceab
