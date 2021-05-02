@@ -1,4 +1,4 @@
-from typing import List  # noqa: F401
+from typing import List
 import os
 import subprocess
 from libqtile import bar, layout, widget, hook
@@ -14,6 +14,7 @@ launcher = "rofi -show drun -disable-history -show-icons -icon-theme 'Tela black
 filemanager = "pcmanfm"
 sshot = "flameshot gui"
 vscode = "code"
+atom = "atom"
 
 @hook.subscribe.startup
 def autostart():
@@ -39,6 +40,7 @@ keys = [
 	Key([mod], "u", lazy.spawn(filemanager),),
 	Key([mod], "s", lazy.spawn(sshot),),
 	Key([mod], "v", lazy.spawn(vscode),),
+	Key([mod], "a", lazy.spawn(atom),),
 
 	#--------- move / focus
 
@@ -89,45 +91,39 @@ keys = [
 
 #--------- Workspaces -----------------------------------------------
 
-groups = [Group(i) for i in "123456"]
+group_names = [("▁", {'layout': 'monadtall'}),
+               ("▂", {'layout': 'monadtall'}),
+               ("▃", {'layout': 'monadtall'}),
+               ("▄", {'layout': 'monadtall'})]
 
-for i in groups:
-	keys.extend([
-		# mod1 + letter of group = switch to group
-		Key([mod], i.name, lazy.group[i.name].toscreen(),
-			desc="Switch to group {}".format(i.name)),
+groups = [Group(name, **kwargs) for name, kwargs in group_names]
 
-		# mod1 + shift + letter of group = switch to & move focused window to group
-		Key([mod, "shift"], i.name, lazy.window.togroup(i.name, switch_group=True),
-			desc="Switch to & move focused window to group {}".format(i.name)),
-		# Or, use below if you prefer not to switch to that group.
-		# # mod1 + shift + letter of group = move focused window to group
-		# Key([mod, "shift"], i.name, lazy.window.togroup(i.name),
-		#     desc="move focused window to group {}".format(i.name)),
-	])
+for i, (name, kwargs) in enumerate(group_names, 1):
+    keys.append(Key([mod], str(i), lazy.group[name].toscreen()))        # Switch to another group
+    keys.append(Key([mod, "shift"], str(i), lazy.window.togroup(name))) # Send current window to another
+
 
 #--------- Colors --------------------------------------------------------------
 
 colors = [
-	["#2c2c2b", "#2c2c2b"],  # background, 0
-	["#d5c4a1", "#d5c4a1"],  # foreground, 1
-	["#7daea3", "#7daea3"],  # blue, 6
-	["#89b482", "#89b482"],  # cyan, 5
-	["#a9b665", "#a9b665"],  # green, 3
-	["#d3869b", "#d3869b"],  # magenta, 7
-	["#ea6962", "#ea6962"],  # red, 2
-	["#e78a41", "#e78a41"],  # yellow, 4
-	["#d4b398", "#d4be98"],  # white, 8
-	["#202020", "#202020"],
+	["#202020", "#202020"],  # background, 0
+	["#dddddd", "#dddddd"],  # foreground, 1
+	["#689d6a", "#689d6a"],  # cyan, 3
+	["#98971a", "#98971a"],  # green, 4
+	["#d79921", "#d79921"],  # yellow, 5
+	["#b16286", "#b16286"],  # magenta, 6
+	["#cc241d", "#cc241d"],  # red, 7
+	["#728b99", "#728b99"],  # blue, 2
+	["#dddddd", "#dddddd"],  # white, 8
 ]
 
 #--------- Layouts -------------------------------------------------------------
 
 layout_theme = {
-	"border_width": 2,
-	"margin": 6,
-	"border_focus": "#d5c4a1",
-	"border_normal": "#2c2c2b"
+	"border_width": 1,
+	"margin": 8,
+	"border_focus": "#FAC29A",
+	"border_normal": "#b5c1be"
 }
 
 layouts = [
@@ -135,10 +131,11 @@ layouts = [
 	#layout.Bsp(**layout_theme),
 	#layout.Columns(**layout_theme),
 	#layout.RatioTile(**layout_theme),
-	#layout.VerticalTile(**layout_theme),
+	#layout.VerticalTile(**layout_theme)
 	#layout.Matrix(**layout_theme),
 	#layout.Stack(num_stacks=2, **layout_theme),
 	#layout.Tile(**layout_theme),
+	#layout.Max(),
 	#layout.Zoomy(**layout_theme,
 	#columnwidth = 150),
 	# layout.TreeTab(**layout_theme,
@@ -156,7 +153,6 @@ layouts = [
 	# panel_width = 220
 	# ),
 	layout.MonadTall(**layout_theme),
-	layout.Max(),
 	layout.Floating(**layout_theme),
 ]
 
@@ -178,7 +174,7 @@ def shut():
 #--------- Bar ----------------------------------------------------------------
 
 dark_sep = {'linewidth': 3, 'size_percent': 100,
-            'background': '#2c2c2b', 'foreground': '#2c2c2b', 
+            'background': '#202020', 'foreground': '#202020',
 			'padding': 5}
 
 
@@ -189,7 +185,7 @@ screens = [
 				widget.GroupBox(
 					disable_drag = True,
 					hide_unused = False,
-					font = "Scientifica",
+					font = "scientifica",
 					margin_y = 4,
 					margin_x = 5,
 					padding_y = 5,
@@ -224,10 +220,11 @@ screens = [
 				# 	background = colors[0]
 				# ),
 				widget.TextBox(
-					text="",
+					text="",
 					foreground = colors[1],
 					background = colors[0],
-					font = 'font awesome'
+					fontsize = 20,
+					font = 'cozetteVector'
 				),
 				widget.WindowName(
 					foreground = colors[1],
@@ -242,11 +239,11 @@ screens = [
 				# 	background = colors[0]
 				# ),
 				widget.TextBox(
-					text="",
+					text="",
 					foreground=colors[0],
 					background=colors[7],
-					fontsize = 15,
-					font = 'font awesome'
+					fontsize = 20,
+					font = 'cozetteVector'
 				),
 				widget.Wlan(
 					interface = 'wlp1s0',
@@ -266,10 +263,10 @@ screens = [
 				# ),
 				widget.Sep(**dark_sep),
 				widget.TextBox(
-					text="",
+					text="墳",
 					foreground=colors[0],
 					background=colors[1],
-					fontsize = 15,
+					fontsize = 20,
 					font = 'font awesome'
 				),
 				widget.Volume(
@@ -279,11 +276,11 @@ screens = [
 				),
 				widget.Sep(**dark_sep),
 				 widget.TextBox(
-					text="",
+					text="",
 					foreground=colors[0],
 					background=colors[7],
-					fontsize = 15,
-					font = 'font awesome'
+					# fontsize = 25,
+					font = 'cozetteVector'
 				),
 				widget.Battery(
 					foreground = colors[0],
@@ -298,17 +295,24 @@ screens = [
 				),
 				widget.Sep(**dark_sep),
 				widget.TextBox(
-					text='',
+					text='✹',
 					foreground=colors[0],
 					background=colors[1],
-					fontsize = 15,
-					font = 'font awesome'
+					fontsize = 20,
+					font = 'cozetteVector'
 				),
 				widget.CPU(
 					background = colors[1],
 					foreground = colors[0],
 					format = '{load_percent}%',
 					update_interval = 2.0,
+				),
+				widget.TextBox(
+					text='',
+					foreground=colors[0],
+					background=colors[1],
+					fontsize = 18,
+					font = 'cozetteVector'
 				),
 				widget.ThermalSensor(
 					foreground = colors[0],
@@ -317,11 +321,11 @@ screens = [
 					padding = 5
                 ),
 				widget.TextBox(
-					text='',
+					text='☸',
 					foreground=colors[0],
 					background=colors[1],
-					fontsize = 15,
-					font = 'font awesome'
+					fontsize = 20,
+					font = 'cozetteVector'
 				),
 				widget.Memory(
 					background = colors[1],
@@ -330,11 +334,11 @@ screens = [
 				),
 				widget.Sep(**dark_sep),
 				widget.TextBox(
-					text = '',
+					text="",
 					background=colors[7],
 					foreground=colors[0],
-					font = 'font awesome',
-					fontsize = 15
+					fontsize = 20,
+					font = 'cozetteVector',
 				),
 				widget.Clock(
 					foreground = colors[0],
@@ -350,14 +354,14 @@ screens = [
 					text="⏻",
 					background = colors[1],
 					foreground = colors[0],
-					fontsize = 15,
+					fontsize = 20,
 					padding = 5,
 					mouse_callbacks = {'Button1': shut},
-					font = 'font awesome'
+					font = 'cozetteVector'
 				),
 			],
-		size = 20,
-		margin = 3,
+		size = 0,
+		margin = 15,
 		opacity = 0.9,),
 	),
 ]
