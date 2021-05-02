@@ -1,6 +1,5 @@
 ;==========================================================
 ;
-;
 ;   ██████╗  ██████╗ ██╗  ██╗   ██╗██████╗  █████╗ ██████╗
 ;   ██╔══██╗██╔═══██╗██║  ╚██╗ ██╔╝██╔══██╗██╔══██╗██╔══██╗
 ;   ██████╔╝██║   ██║██║   ╚████╔╝ ██████╔╝███████║██████╔╝
@@ -8,18 +7,12 @@
 ;   ██║     ╚██████╔╝███████╗██║   ██████╔╝██║  ██║██║  ██║
 ;   ╚═╝      ╚═════╝ ╚══════╝╚═╝   ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
 ;
-;
-;   To learn more about how to configure Polybar
-;   go to https://github.com/polybar/polybar
-;
-;   The README contains a lot of information
-;
 ;==========================================================
 
 [colors]
-bg 			= ${xrdb:#202020}
-fg 			= ${xrdb:#dddddd}
-bold 		= ${xrdb:#728b99}
+bg 						= ${xrdb:#202020}
+fg 						= ${xrdb:#dddddd}
+bold 					= ${xrdb:#728b99}
 
 ;  _
 ; | |__   __ _ _ __ ___
@@ -28,13 +21,14 @@ bold 		= ${xrdb:#728b99}
 ; |_.__/ \__,_|_|  |___/
 
 [bar/base]
-override-redirect		= false
-border-bottom-size 		= 1
+override-redirect		= true
+border-bottom-size 		= 0
+border-size 			= 0
+border-color 			= #728b99
 height 					= 25
 width 					= 100%
 offset-y 				= 7
 padding 				= 1
-border-size 			= 0
 radius-top				= 10
 radius-bottom			= 10
 module-margin 			= 1
@@ -49,19 +43,19 @@ font-1=cozetteVector:style=Normal:size=18;3
 
 [bar/windows]
 inherit 				= bar/base
-modules-left			= ewmh
-width 					= 10%
+modules-center			= ewmh
+width 					= 7%
 offset-x				= 10
 
 [bar/date]
 inherit 				= bar/base
 modules-center			= date
 width 					= 7%
-offset-x				= 50%:-73
+offset-x				= 50%:-89
 
 [bar/tray]
 inherit 				= bar/base
-modules-right			= wireless-network pulseaudio battery cpu memory
+modules-center			= wireless-network pulseaudio battery cpu memory
 width 					= 25%
 offset-x				= 75%:-10
 
@@ -80,24 +74,24 @@ type 									= internal/date
 interval 								= 10
 time									= "%H:%M"
 date 									= "%d %b"
-label 									= %date% [ %time% ]
+label 									= %{F#728b99}  %{F-}%date% [ %time% ]
 label-padding 							= 1
-format 									=  <label>
+format 									= <label>
 format-padding							= 0
 ;format-foreground 						= #202020
 ;format-background 						= #728b99
 
-;  _ __ ___   ___ _ __ ___   ___  _ __ _   _
-;  | '_ ` _ \ / _ \ '_ ` _ \ / _ \| '__| | | |
-;  | | | | | |  __/ | | | | | (_) | |  | |_| |
-;  |_| |_| |_|\___|_| |_| |_|\___/|_|   \__, |
-;  									  	__/ |
-;  									   |___/
+;   _ __ ___   ___ _ __ ___   ___  _ __ _   _
+;   | '_ ` _ \ / _ \ '_ ` _ \ / _ \| '__| | | |
+;   | | | | | |  __/ | | | | | (_) | |  | |_| |
+;   |_| |_| |_|\___|_| |_| |_|\___/|_|   \__, |
+;                                         __/ |
+;                                        |___/
 
 [module/memory]
 type 									= internal/memory
 interval 								= 3
-label 									= ✹ %gb_used%
+label 									= %{F#728b99}✹%{F-} %gb_used%
 label-padding 							= 1
 format 									= <label><ramp-used>
 ;format-margin							= 1
@@ -112,17 +106,17 @@ ramp-used-6 							= ▇
 ramp-used-7 							= █
 
 
-;   ___ _ __  _   _
-;  / __| '_ \| | | |
-; | (__| |_) | |_| |
-;  \___| .__/ \__,_|
-;   	 | |
-;   	 |_|
+;    ___ _ __  _   _
+;   / __| '_ \| | | |
+;  | (__| |_) | |_| |
+;   \___| .__/ \__,_|
+;    	 | |
+;    	 |_|
 
 [module/cpu]
 type 									= internal/cpu
 interval 								= 0.5
-label 									= ✹ %percentage%%
+label 									= %{F#728b99}%{F-} %percentage%%
 label-padding 							= 1
 format 									= <label><ramp-coreload>
 ;format-margin							= 1
@@ -148,12 +142,12 @@ ramp-coreload-7 						= █
 type                                    = internal/battery
 adapter                                 = ADP1
 battery                                 = BAT0
-label-discharging 						= «%percentage%%
-label-charging 							= »%percentage%%
+label-discharging 						= %percentage%%
+label-charging 							= %percentage%%
 label-discharging-padding 				= 0
 label-charging-padding	 				= 0
-format-charging 						= <ramp-capacity> <label-charging>
-format-discharging 						= <ramp-capacity> <label-discharging>
+format-charging 						= %{F#728b99}<animation-charging>%{F-} <label-charging>
+format-discharging 						= %{F#728b99}<ramp-capacity>%{F-} <label-discharging>
 ;format-margin							= 1
 format-charging-padding					= 1
 format-discharging-padding				= 1
@@ -163,6 +157,12 @@ ramp-capacity-1 						= ""
 ramp-capacity-2 						= ""
 ramp-capacity-3 						= ""
 ramp-capacity-4 						= ""
+animation-charging-0 					= 
+animation-charging-1 					= 
+animation-charging-2 					= 
+animation-charging-3 					= 
+animation-charging-4 					= 
+animation-charging-framerate 			= 2000
 ;format-discharging-foreground 			= #202020
 ;format-discharging-background 			= #728b99
 
@@ -177,14 +177,14 @@ type 									= internal/pulseaudio
 interval 								= 5
 click-right 							= pavucontrol
 use-ui-max 								= false
-format-volume 							= <ramp-volume> <label-volume>
+format-volume 							= %{F#728b99}<ramp-volume>%{F-} %{A1:pavucontrol:}<label-volume>%{A}
 ;format-margin							= 1
 format-padding							= 0
 format-volume-margin 					= 1
 label-muted 							= "婢"
 label-padding 							= 1
 ramp-volume-0 							= "奄"
-ramp-volume-1 							= "墳"
+ramp-volume-1 							= "奔"
 ramp-volume-2 							= "墳"
 ;format-volume-background 				= #ddd
 ;format-volume-foreground 				= #202020
@@ -198,11 +198,11 @@ ramp-volume-2 							= "墳"
 type 									= internal/network
 interval 								= 3.0
 interface								= wlp1s0
-label-disconnected 						= not connected
 label-padding 							= 1
 format-packetloss 						= <label-packetloss>
-format-connected 						= <ramp-signal> <label-connected>
-format-disconnected 					= <label-disconnected>
+format-connected 						= %{F#728b99}<ramp-signal>%{F-} %{A1:nm-connection-editor:}<label-connected>%{A}
+label-disconnected 						= 睊
+format-disconnected 					= %{A1:nm-connection-editor:}<label-disconnected>%{A}
 ;format-margin							= 1
 format-padding							= 0
 ramp-signal-0 							= 
@@ -211,8 +211,9 @@ ramp-signal-2 							= 
 ramp-signal-3 							= 
 ramp-signal-4 							= 
 ramp-signal-5 							= 
+click-left 								= pulseaudio
 ;format-connected-foreground           	= #202020
-;format-connected-background    			= #728b99
+;format-connected-background    		= #728b99
 
 ; _ __ ___ __
 ; \ V  V / '  \
@@ -221,15 +222,18 @@ ramp-signal-5 							= 
 [module/ewmh]
 type = internal/xworkspaces
 pin-workspaces 							= false
-icon-0 									= ○
-icon-1 									= ○
-icon-2 									= ○
-icon-3 									= ○
-icon-default 							= ○
+enable-click 							= false
+icon-0 									= ▁;○
+icon-1 									= ▂;○
+icon-2 									= ▃;○
+icon-3 									= ▄;○
+label-empty 							= ○
+label-occupied 							= ●
 label-active							= ●
 label-active-foreground 				= #728b99
 label-active-padding 					= 2
 label-empty-padding 					= 2
+label-urgent-padding 					= 2
 format 									= <label-state>
 monitor									= HDMI1
 
