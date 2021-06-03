@@ -1,0 +1,136 @@
+#  _ __  _ __ ___   __ _ _ __ __ _ _ __ ___  ___ 
+# | '_ \| '__/ _ \ / _` | '__/ _` | '_ ` _ \/ __|
+# | |_) | | | (_) | (_| | | | (_| | | | | | \__ \
+# | .__/|_|  \___/ \__, |_|  \__,_|_| |_| |_|___/
+# | |               __/ |                        
+# |_|              |___/   
+# 
+
+# terminal
+super + Return
+	kitty
+
+# firefox
+super + b
+  firefox-developer-edition
+
+# program launcher
+super + @space
+	rofi -show drun -disable-history -show-icons -icon-theme 'Tela black'
+
+# pcmanfm
+super + p
+  pcmanfm
+
+# vs code
+super + v
+  visual-studio-code-bin
+
+# make sxhkd reload its configuration files:
+super + Escape
+	pkill -USR1 -x sxhkd
+
+#  _                                 
+# | |                                
+# | |__  ___ _ ____      ___ __ ___  
+# | '_ \/ __| '_ \ \ /\ / / '_ ` _ \ 
+# | |_) \__ \ |_) \ V  V /| | | | | |
+# |_.__/|___/ .__/ \_/\_/ |_| |_| |_|
+#           | |                      
+#           |_|   
+
+# quit/restart bspwm
+super + shift + {q,r}
+	bspc {quit,wm -r}
+
+# close and kill
+super + {_,shift + }c
+	bspc node -{c,k}
+
+# alternate between the tiled and monocle layout
+super + m
+	bspc desktop -l next
+
+
+#           _           _                     _        _       
+#          (_)         | |                   | |      | |      
+# __      ___ _ __   __| | _____      __  ___| |_ __ _| |_ ___ 
+# \ \ /\ / / | '_ \ / _` |/ _ \ \ /\ / / / __| __/ _` | __/ _ \
+#  \ V  V /| | | | | (_| | (_) \ V  V /  \__ \ || (_| | ||  __/
+#   \_/\_/ |_|_| |_|\__,_|\___/ \_/\_/   |___/\__\__,_|\__\___|
+
+# set the window state
+super + {t,shift + t,f,s}
+	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+
+# set the node flags
+super + ctrl + {m,x,y,z}
+	bspc node -g {marked,locked,sticky,private}
+
+#   __                     
+#  / _|                    
+# | |_ ___   ___ _   _ ___ 
+# |  _/ _ \ / __| | | / __|
+# | || (_) | (__| |_| \__ \
+# |_| \___/ \___|\__,_|___/
+
+# focus/move the node in the given direction
+super + {_,shift + }{h,j,k,l}
+	bspc node -{f,s} {west,south,north,east}
+
+# focus the last desktop
+super + {grave,Tab}
+	bspc {node,desktop} -f last
+
+#  _ __ ___   _____   _____ 
+# | '_ ` _ \ / _ \ \ / / _ \
+# | | | | | | (_) \ V /  __/
+# |_| |_| |_|\___/ \_/ \___|
+                           
+# send to or focus the given desktop
+super + {_,shift + }{1-9,0}
+	bspc {desktop -f,node -d} '^{1-9,10}'
+
+# move a floating window
+super + {Left,Down,Up,Right}
+	bspc node -v {-20 0,0 20,0 -20,20 0}
+
+# move the current node to the biggest window
+super + g
+	bspc node -s biggest.window
+
+#                _         
+#               (_)        
+#  _ __ ___  ___ _ _______ 
+# | '__/ _ \/ __| |_  / _ \
+# | | |  __/\__ \ |/ /  __/
+# |_|  \___||___/_/___\___|
+
+# expand a window by moving one of its side outward
+super + alt + {h,j,k,l}
+	bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
+
+# contract a window by moving one of its side inward
+super + alt + shift + {h,j,k,l}
+	bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
+
+#                           _           _   
+#                          | |         | |  
+#  _ __  _ __ ___  ___  ___| | ___  ___| |_ 
+# | '_ \| '__/ _ \/ __|/ _ \ |/ _ \/ __| __|
+# | |_) | | |  __/\__ \  __/ |  __/ (__| |_ 
+# | .__/|_|  \___||___/\___|_|\___|\___|\__|
+# | |                                       
+# |_| 
+
+# preselect the direction
+super + ctrl + {h,j,k,l}
+	bspc node -p {west,south,north,east}
+
+# preselect the ratio
+super + ctrl + {1-9}
+	bspc node -o 0.{1-9}
+
+# cancel preselection
+super + ctrl + space
+	bspc node -p cancel
