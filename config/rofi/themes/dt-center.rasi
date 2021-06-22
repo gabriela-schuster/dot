@@ -1,78 +1,107 @@
+configuration {
+
+	font: "Cozette Vector 13";
+	width: 30;
+	line-margin: 10;
+	lines: 6;
+	columns: 2;
+
+    display-ssh:    "";
+    display-run:    "";
+    display-drun:   "";
+    display-window: "";
+    display-combi:  "";
+    show-icons:     false;
+}
+
 * {
-    background-color:            rgba(50, 50, 50, 0.95);
-    border-color:                #5f8787;
-    text-color:                  #dddddd;
-    font:                        "Sf Mono 11";
-    prompt-font:                 "Sf Mono 11";
-    prompt-background:           #202020;
-    prompt-foreground:           #dddddd;
-    prompt-padding:              4px;
-    alternate-normal-background: #202020;
-    alternate-normal-foreground: @text-color;
-    selected-normal-background:  #5f8787;
-    selected-normal-foreground:  #202020
-    spacing:                     3;
-    transparent:                 rgba(0,0,0,0);
+    foreground:  #1d1;
+    backlight:   #ccffeedd;
+    background-color:  #1d1d1c;
+    
+    highlight:     underline bold #eceff4;
+
+    transparent: rgba(46,52,64,0);
 }
-#window {
-    border:  1px;
-    padding: 5;
-    width: 500;
-    height: 550;
-}
-#mainbox {
-    border:  0;
-    padding: 5;
-}
-#message {
-    padding:      5px ;
-}
-#listview {
-    fixed-height: 0;
-    border:       1px dash 0px 0px ;
-    spacing:      10px ;
-    scrollbar:    false;
-    padding:      2px 0px 0px ;
-}
-#element {
+
+window {
+    location: center;
+    anchor:   center;
+    padding: 20px;
     border:  0px;
-    padding: 5px ;
-}
-#element.selected.normal {
-    background-color: @selected-normal-background;
-    text-color:       @selected-normal-foreground;
+    border-radius: 0px;
+
+    background-color: #1d1d1c;
+    spacing: 0;
+    children:  [mainbox];
+    orientation: horizontal;
 }
 
-#scrollbar {
-    width:        0px ;
-    border:       0;
-    handle-width: 0px ;
-    padding:      0;
-}
-#sidebar {
-    border: 2px dash 0px 0px ;
-}
-#button.selected {
-    background-color: @selected-normal-background;
-    text-color:       @selected-normal-foreground;
-}
-#inputbar {
-    spacing:    0;
-    padding:    1px ;
-}
-#case-indicator {
-    spacing:    0;
-}
-#entry {
-    padding: 4px 4px;
-    expand: true;
-    width: 10em;
-}
-#prompt {
-    padding:          @prompt-padding;
-    background-color: @transparent;
-    text-color:       @prompt-foreground;
-    font:             @prompt-font;
-    border-radius:    2px;
+mainbox {
+    spacing: 0;
+    children: [ inputbar, message, listview ];
 }
 
+message {
+    color: #1d1d1c;
+    padding: 5;
+    border-color: #86baba;
+    border:  0px 2px 2px 2px;
+    background-color: #86baba;
+}
+
+inputbar {    /* type bar */
+    color: #d8cfbd;
+    padding: 11px;
+    background-color: #1c1c1b;
+
+    border: 1px;
+    border-radius:  6px 6px 0px 0px;
+    border-color: #86baba;
+}
+
+entry, prompt, case-indicator {
+    text-font: inherit;
+    text-color:inherit;
+}
+
+prompt {
+    margin: 0px 0.3em 0em 0em ;
+}
+
+listview {    /* program box */
+    padding: 20px;
+    border-radius: 0px 0px 6px 6px;
+    border-color: #86baba;
+    border: 0px 1px 1px 1px;
+    background-color: #1c1c1b;
+    dynamic: false;
+}
+
+element {
+    padding: 7px;
+    vertical-align: 0.5;
+    border-radius: 4px;
+    background-color: transparent;
+    color: #f00;
+    text-color: #d8cfbd;
+}
+element selected.normal {   /* selected program */
+	background-color: #86baba;
+	text-color: #1c1c1b;
+}
+
+button {
+    padding: 6px;
+    color: #1d1;
+    horizontal-align: 0.5;
+
+    border: 2px 0px 2px 2px;
+    border-radius: 4px 0px 0px 4px;
+    border-color: #f00;
+}
+
+button selected normal {
+    border: 2px 0px 2px 2px;
+    border-color: #1d1;
+}
