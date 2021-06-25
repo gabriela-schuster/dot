@@ -1,6 +1,5 @@
 # for the autosuggestio/syntax/autocomplete: thery github repos, just download and move to /usr/share ; put a '.' in the beggining of this file name when using
 PROMPT="%f%F{black}┌[%f%F{green}%m%f%F{black}]-[%f%F{yellow}%d%f%F{black}]%f"$'\n'"%F{black}└%f%F{green}$USER%f%F{bold black}$%f "
-export PATH="$PATH:$HOME/.rvm/bin"
 
 #alias
 alias ls='ls --color=auto'
