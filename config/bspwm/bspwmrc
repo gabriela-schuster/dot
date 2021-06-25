@@ -9,8 +9,7 @@
                                              
 picom -b & 
 nitrogen --restore & 
-/home/indigo/.config/polybar/launch.sh &
-/home/indigo/Public/screen.sh &
+~/.config/polybar/launch.sh &
 setxkbmap -model abnt2 -layout br &
 pgrep -x sxhkd > /dev/null || sxhkd &
 
