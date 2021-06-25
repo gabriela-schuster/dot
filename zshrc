@@ -8,17 +8,17 @@ alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
 
 # Auto complete
-source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh 
-source /usr/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh 
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh 
+source ~/.zsh/zsh-autocomplete/zsh-autocomplete.plugin.zsh 
 zstyle ':autocomplete:tab:' insert-anambiguos yes
 zstyle ':autocomplete:tab:' widget-style menu-select
 zstyle ':autocomplete:*' min-input 2
 
 # Fish-like syntax
-source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Save history for easier life
-HISTFIlE=~/.zsh_history
+HISTFIlE=~/.zsh/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
 setopt appendhistory
