@@ -61,19 +61,19 @@ modules-right   = pulseaudio suspend power
 inherit 				= bar/base
 modules-center	= bspwm
 width 					= 8%
-offset-x				= 10
+offset-x				= 150
 
 [bar/date]
 inherit 				= bar/base
 modules-center	= date
-width 					= 7%
-offset-x				= 50%:-89
+width 					= 8%
+offset-x				= 50%:-95
 
 [bar/tray]
 inherit 				= bar/base
-modules-center	= bspwm pulseaudio power
-width 					= 14%
-offset-x				= 86%:-10
+modules-center	= pulseaudio power suspend
+width 					= 8%
+offset-x				= 90%:-150
 
 ;                              █████             ████                  
 ;                             ░░███            ░░███                  
@@ -108,7 +108,7 @@ content-padding         = 1
 ;                 |_|     
 [module/suspend]
 type                    = custom/text
-content                 = ⏻
+content                 = ⏼
 content-background      = #1c1c1b
 content-foreground      = #86baba
 content-padding         = 1
@@ -119,13 +119,13 @@ click-left              = echo 'croc' | sudo -u indigo --stdin systemctl suspend
 ;   / _` / _` |  _/ -_)
 ;   \__,_\__,_|\__\___|
 [module/date]
-type 										= internal/date
-interval 									= 10
-time										= "%H:%M"
-date 										= "%d %b"
-label 										= %{F#86baba}  %{F-}%date% [ %time% ]
+type 									    	= internal/date
+interval 							  		= 10
+time									    	= "%H:%M"
+date 									    	= "%d %b"
+label 									  	=  %{B#86baba}%{F#1c1c1b}  %{F-}%{B-} %date% [ %time% ]
 label-padding 							= 1
-format 										= <label>
+format 									  	= <label>
 format-padding							= 0
 ;format-foreground 					= #202020
 ;format-background 					= #86baba
@@ -226,7 +226,7 @@ type 									  	= internal/pulseaudio
 interval 									= 5
 click-right 							= pavucontrol
 use-ui-max 								= false
-format-volume 						= %{F#86baba}<ramp-volume>%{F-} %{A1:pavucontrol:}<label-volume>%{A}
+format-volume 						= %{B#86baba}%{F#1c1c1b} <ramp-volume> %{F-}%{B-} %{A1:pavucontrol:}<label-volume>%{A}
 ;format-margin						= 1
 format-padding						= 0
 format-volume-margin 			= 1
