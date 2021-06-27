@@ -11,10 +11,11 @@
 * rofi
 * picom
 * nvim
+* cozette-ttf
 
 ### Arch:
 ```
-sudo pacman -S bspwm sxhdk alacritty starsip polybar conky rofi picom
+yay -S bspwm sxhdk alacritty starsip polybar conky rofi picom cozette-ttf
 ```
 ***
 ## install: 
