@@ -8,11 +8,11 @@
 
 # terminal
 super + Return
-	kitty
+	alacritty
 
 # firefox
 super + b
-  firefox-developer-edition
+  firefox
 
 # program launcher
 super + @space
