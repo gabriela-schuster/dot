@@ -14,9 +14,9 @@ window:
   # Window class (Linux/BSD only):
   class:
     # Application instance name
-    instance: Alacritty
+    instance: alacritty
     # General application class
-    general: Alacritty
+    general: alacritty
 
   #gtk_theme_variant: None
 
@@ -30,19 +30,19 @@ scrolling:
 
 font:
   normal:
-    family: Sf Mono
+    family: Jet Brains Mono
     style: Bold
 
   bold:
-    family: Sf Mono
+    family: Jet Brains Mono
     style: Bold
 
   italic:
-    family: Sf Mono
+    family: Jet Brains Mono
     style: Italic
 
   bold_italic:
-    family: Sf Mono
+    family: Jet Brains Mono
     style: Bold Italic
 
   # Point size
@@ -56,33 +56,33 @@ draw_bold_text_with_bright_colors: true
 
 colors:
   primary:
-    background: '0x2c2c2b'
+    background: '0x1c1c1b'
     foreground: '0xd5c4a1'
 
   selection:
-    text: '0x2c2c2b'
+    text: '0x1c1c1b'
 
   # Normal colors
   normal:
     black:   '0x665c54'
-    red:     '0xea6962'
-    green:   '0xa9b665'
-    yellow:  '0xe78a4e'
-    blue:    '0x7daea3'
-    magenta: '0xd3869b'
-    cyan:    '0x89b482'
-    white:   '0xd4b398'
+    red:     '0xb59f8b'
+    green:   '0x86baba'
+    yellow:  '0xd8cfbd'
+    blue:    '0x86baba'
+    magenta: '0x7f7f84'
+    cyan:    '0x86baba'
+    white:   '0xdddddd'
 
   # Bright colors
   bright:
     black:   '0x928374'
-    red:     '0xf68b85'
-    green:   '0xc7d28d'
-    yellow:  '0xf5aa79'
-    blue:    '0x9ecbc1'
-    magenta: '0xe2b0bd'
-    cyan:    '0xa3d7a8'
-    white:   '0xe0deb6'
+    red:     '0xb59f8b'
+    green:   '0x86baba'
+    yellow:  '0xd8cfbd'
+    blue:    '0x86baba'
+    magenta: '0x7f7f84'
+    cyan:    '0x86baba'
+    white:   '0xdddddd'
 
   # Dim colors
   #
