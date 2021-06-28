@@ -23,14 +23,15 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting ~/.zsh/zsh-syntax
 # CONKY
 chmod +c config/conkyx-start.sh
 # NVIM
-curl -fLo ~/.config/nvim/plugged/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-echo -e "vi-plug is managing nvim plugins, run :PlugInstall on vim/nvim to install them"
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+echo -e "${GREEN}vi-plug is managing nvim plugins, run :PlugInstall on vim/nvim to install them${reset}"
 
 echo -e "${CYAN}DONE${reset}"
 
-echo "moving files to ~/.config"
+echo "${GREEN}moving files to ~/.config${reset}"
 # MOVE TO ~/.CONFIG
 mv config/* ~/.config
 
 echo -e "${CYAN}DONE${reset}"
-echo "Everything ready, you may now delete this folder and log in bspwm" 
+echo "${GREEN}Everything ready, you may now delete this folder and log in bspwm${reset}" 
