@@ -121,8 +121,8 @@ label 									  	=    %date% [ %time% ]
 label-padding 							= 1
 format 									  	= <label>
 format-padding							= 0
-format-foreground 					= #b59f8b
-format-background 					= #050505
+format-foreground 					= #050505
+format-background 					= #dddddd
 
 ;    _ __ ___   ___ _ __ ___   ___  _ __ _   _
 ;   | '_ ` _ \ / _ \ '_ ` _ \ / _ \| '__| | | |
