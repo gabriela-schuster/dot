@@ -1,0 +1,105 @@
+configuration {
+
+	font: "Cozette Vector 13";
+	width: 30;
+	line-margin: 10;
+	lines: 6;
+	columns: 2;
+
+    display-ssh:    "";
+    display-run:    "";
+    display-drun:   "";
+    display-window: "";
+    display-combi:  "";
+    show-icons:     false;
+}
+
+* {
+    foreground:  #1d1;
+    backlight:   #ccffeedd;
+    background-color:  #050505;
+    highlight:     underline bold #eceff4;
+    transparent: rgba(46,52,64,0);
+}
+
+window {
+    location: center;
+    anchor:   center;
+    padding: 20px;
+    border:  0px;
+    border-radius: 0px;
+
+    background-color: #050505;
+    spacing: 0;
+    children:  [mainbox];
+    orientation: horizontal;
+}
+
+mainbox {
+    spacing: 0;
+    children: [ inputbar, message, listview ];
+}
+
+message {
+    color: #1d1d1c;
+    padding: 5;
+    border-color: #86baba;
+    border:  0px 2px 2px 2px;
+    background-color: #86baba;
+}
+
+inputbar {    /* type bar */
+    color: #b59f8b;
+    padding: 11px;
+    background-color: #050505;
+
+    border: 1px;
+    border-radius: 0px;
+    border-color: #86baba;
+}
+
+entry, prompt, case-indicator {
+    text-font: inherit;
+    text-color:inherit;
+}
+
+prompt {
+    margin: 0px 0.3em 0em 0em ;
+}
+
+listview {    /* program box */
+    padding: 20px;
+    border-radius: 0px;
+    border-color: #86baba;
+    border: 0px 1px 1px 1px;
+    background-color: #050505;
+    dynamic: false;
+}
+
+element {
+    padding: 7px;
+    vertical-align: 0.5;
+    border-radius: 0px;
+    background-color: transparent;
+    color: #f00;
+    text-color: #b59f8b;
+}
+element selected.normal {   /* selected program */
+	background-color: #86baba;
+	text-color: #050505;
+}
+
+button {
+    padding: 6px;
+    color: #1d1;
+    horizontal-align: 0.5;
+
+    border: 2px 0px 2px 2px;
+    border-radius: 4px 0px 0px 4px;
+    border-color: #f00;
+}
+
+button selected normal {
+    border: 2px 0px 2px 2px;
+    border-color: #1d1;
+}
