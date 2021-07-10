@@ -15,11 +15,6 @@
 ;
 ;==========================================================
 
-[colors]
-bg 						= ${xrdb:#202020}
-fg 						= ${xrdb:#dddddd}
-bold 					= ${xrdb:#86baba}
-
 ;  _
 ; | |__   __ _ _ __ ___
 ; | '_ \ / _` | '__/ __|
@@ -39,23 +34,22 @@ radius-bottom				= 0
 module-margin 			= 1
 bottom 							= false
 line-size 					= 0
-background 					= #1c1c1d
-foreground 					= #d8cfbd
+background 					= #050505
+foreground 					= #b59f8b
 
 font-0=cozetteVector:style=Normal:size=13;3
-font-1=Scientifica:style=Bold:size=13;3
-;font-2=Jet Brains Mono:style=Normal:size=18;3
+; font-0=undefined-medium:style=Normal:size=13;3
 
 [bar/whole]
 inherit         = bar/base
-width 					= 20%
-offset-x				= 50%:-256
+width 					= 80%%
+offset-x				= 10%
 padding-left    = 2
 padding-right   = 2
-module-margin 	= 0
-modules-center  = date
-modules-left    = bspwm
-modules-right   = pulseaudio suspend power
+module-margin 	= 1
+modules-center  = bspwm date pulseaudio suspend power
+modules-left    = 
+modules-right   = 
 
 [bar/windows]
 inherit 				= bar/base
@@ -93,8 +87,8 @@ offset-x				= 90%:-150
 [module/power]
 type                    = custom/text
 content                 = ⏻
-content-foreground      = #1c1c1b
-content-background      = #86baba
+content-background      = #050505
+content-foreground      = #86baba
 click-left              = shutdown now
 content-padding         = 1
 
@@ -109,7 +103,7 @@ content-padding         = 1
 [module/suspend]
 type                    = custom/text
 content                 = ⏼
-content-background      = #1c1c1b
+content-background      = #050505
 content-foreground      = #86baba
 content-padding         = 1
 click-left              = echo 'croc' | sudo -u indigo --stdin systemctl suspend
@@ -123,12 +117,12 @@ type 									    	= internal/date
 interval 							  		= 10
 time									    	= "%H:%M"
 date 									    	= "%d %b"
-label 									  	=  %{B#86baba}%{F#1c1c1b}  %{F-}%{B-} %date% [ %time% ]
+label 									  	=    %date% [ %time% ]
 label-padding 							= 1
 format 									  	= <label>
 format-padding							= 0
-;format-foreground 					= #202020
-;format-background 					= #86baba
+format-foreground 					= #b59f8b
+format-background 					= #050505
 
 ;    _ __ ___   ___ _ __ ___   ___  _ __ _   _
 ;   | '_ ` _ \ / _ \ '_ ` _ \ / _ \| '__| | | |
@@ -179,8 +173,8 @@ ramp-coreload-4 						= ▅
 ramp-coreload-5 						= ▆
 ramp-coreload-6 						= ▇
 ramp-coreload-7 						= █
-;format-foreground 					= #202020
-;format-background 					= #ddd
+;format-foreground 					= #050505
+;format-background 					= #86baba
 
 ;    _          _   _
 ;   | |__  __ _| |_| |_ ___ _ _ _  _
@@ -212,7 +206,7 @@ animation-charging-2 				= 
 animation-charging-3 				= 
 animation-charging-4 				= 
 animation-charging-framerate 				= 2000
-;format-discharging-foreground 			= #202020
+;format-discharging-foreground 			= #050505
 ;format-discharging-background 			= #86baba
 
 ;              _
@@ -226,17 +220,16 @@ type 									  	= internal/pulseaudio
 interval 									= 5
 click-right 							= pavucontrol
 use-ui-max 								= false
-format-volume 						= %{B#86baba}%{F#1c1c1b} <ramp-volume> %{F-}%{B-} %{A1:pavucontrol:}<label-volume>%{A}
-;format-margin						= 1
+format-volume 						= <ramp-volume> %{A1:pavucontrol:}<label-volume> %{A} 
 format-padding						= 0
-format-volume-margin 			= 1
-label-muted 							= "婢"
-label-padding 						= 1
-ramp-volume-0 						= "奄"
-ramp-volume-1 						= "奔"
-ramp-volume-2 						= "墳"
-format-volume-background = #1d1d1b
-format-volume-foreground = #86baba
+format-volume-margin 			= 0
+label-padding 						= 0
+label-muted 							= " 婢"
+ramp-volume-0 						= " 奄"
+ramp-volume-1 						= " 奔"
+ramp-volume-2 						= " 墳"
+format-volume-background  = #050505
+format-volume-foreground  = #b59f8b
 
 ;   _                _    _ _       _     _   
 ;  | |__   __ _  ___| | _| (_) __ _| |__ | |_ 
@@ -284,7 +277,7 @@ ramp-signal-3 						= 
 ramp-signal-4 						= 
 ramp-signal-5 						= 
 click-left 								= pulseaudio
-;format-connected-foreground        = #202020
+;format-connected-foreground        = #050505
 ;format-connected-background    		= #86baba
 
 ;   _ __ ___ __
@@ -325,16 +318,19 @@ ws-icon-1                 = II;○
 ws-icon-2                 = III;○
 ws-icon-3                 = IV;○
 ws-icon-default           = ○
-label-empty 						= ○
+label-empty 						  = ○
 label-occupied 						= ●
 label-active							= ●
-;label-separator           = |
-;label-separator-padding   = 1
 label-occupied-padding    = 1
 label-active-padding 			= 1
 label-empty-padding 			= 1
 label-active-foreground 	= #86baba
+label-occupied-foreground = #b59f8b
+label-empty-foreground 	  = #b59f8b
 label-urgent-foreground   = #ad2727
+label-active-background 	= #050505
+label-occupied-background = #050505
+label-empty-background    = #050505
 format 										= <label-state>
 
 
