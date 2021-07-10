@@ -54,35 +54,70 @@ font:
 
 draw_bold_text_with_bright_colors: true
 
+# colors:
+#   # Horizon theme
+#   primary:
+#     background: '#1c1e20'
+#     foreground: '#cbced0'
+
+#   # Colors the cursor will use if `custom_cursor_colors` is true
+#   cursor:
+#     text: '#1c1e20'
+#     cursor: '#cbced0'
+
+#   # Normal colors
+#   normal:
+#     black:   '#1c1e20'
+#     red:     '#d4637d'
+#     green:   '#6dd092'
+#     yellow:  '#dda68b'
+#     blue:    '#51bfd5'
+#     magenta: '#a86cd4'
+#     cyan:    '#61bcbc'
+#     white:   '#cbced0'
+
+#   # Bright colors
+#   bright:
+#     black:   '#6f6f70'
+#     red:     '#d4637d'
+#     green:   '#6dd092'
+#     yellow:  '#dda68b'
+#     blue:    '#51bfd5'
+#     magenta: '#a86cd4'
+#     cyan:    '#61bcbc'
+#     white:   '#e3e6ee'
+
+
 colors:
   primary:
-    background: '0x1c1c1b'
-    foreground: '0xd5c4a1'
+    background: '#050505'
+    foreground: '#aaaaaa'
 
   selection:
-    text: '0x1c1c1b'
+    text: '#1c1c1b'
 
   # Normal colors
   normal:
-    black:   '0x665c54'
-    red:     '0xb59f8b'
-    green:   '0x86baba'
-    yellow:  '0xd8cfbd'
-    blue:    '0x86baba'
-    magenta: '0x7f7f84'
-    cyan:    '0x86baba'
-    white:   '0xdddddd'
+    black:   '#050505'
+    red:     '#b59f8b'
+    green:   '#86baba'
+    yellow:  '#dddddd'
+    blue:    '#dddddd'
+    magenta: '#dddddd'
+    cyan:    '#86baba'
+    white:   '#dddddd'
 
   # Bright colors
   bright:
-    black:   '0x928374'
-    red:     '0xb59f8b'
-    green:   '0x86baba'
-    yellow:  '0xd8cfbd'
-    blue:    '0x86baba'
-    magenta: '0x7f7f84'
-    cyan:    '0x86baba'
-    white:   '0xdddddd'
+    black:   '#050505'
+    red:     '#b59f8b'
+    green:   '#86baba'
+    yellow:  '#dddddd'
+    blue:    '#dddddd'
+    magenta: '#dddddd'
+    cyan:    '#86baba'
+    white:   '#dddddd'
+
 
   # Dim colors
   #
