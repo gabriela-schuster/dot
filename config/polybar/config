@@ -25,17 +25,17 @@
 override-redirect		= true
 border-size 				= 0
 border-color 				= #b59f8b
-height 							= 23
+height 							= 22
 width 							= 100%
-offset-y 						= 5
+offset-y 						= 0
 padding 						= 1
 radius-top					= 0
 radius-bottom				= 0
 module-margin 			= 1
 bottom 							= false
 line-size 					= 0
-background 					= #050505
-foreground 					= #b59f8b
+background 					= #dddddd
+foreground 					= #050505
 
 font-0=cozetteVector:style=Normal:size=13;3
 ; font-0=undefined-medium:style=Normal:size=13;3
@@ -87,8 +87,7 @@ offset-x				= 90%:-150
 [module/power]
 type                    = custom/text
 content                 = ⏻
-content-background      = #050505
-content-foreground      = #86baba
+content-foreground      = #050505
 click-left              = shutdown now
 content-padding         = 1
 
@@ -103,8 +102,7 @@ content-padding         = 1
 [module/suspend]
 type                    = custom/text
 content                 = ⏼
-content-background      = #050505
-content-foreground      = #86baba
+content-foreground      = #050505
 content-padding         = 1
 click-left              = echo 'croc' | sudo -u indigo --stdin systemctl suspend
 
@@ -117,12 +115,11 @@ type 									    	= internal/date
 interval 							  		= 10
 time									    	= "%H:%M"
 date 									    	= "%d %b"
-label 									  	=    %date% [ %time% ]
+label 									  	= %date% [ %time% ]
+;label 									  	=    %date% [ %time% ]
 label-padding 							= 1
 format 									  	= <label>
 format-padding							= 0
-format-foreground 					= #050505
-format-background 					= #dddddd
 
 ;    _ __ ___   ___ _ __ ___   ___  _ __ _   _
 ;   | '_ ` _ \ / _ \ '_ ` _ \ / _ \| '__| | | |
@@ -173,8 +170,6 @@ ramp-coreload-4 						= ▅
 ramp-coreload-5 						= ▆
 ramp-coreload-6 						= ▇
 ramp-coreload-7 						= █
-;format-foreground 					= #050505
-;format-background 					= #86baba
 
 ;    _          _   _
 ;   | |__  __ _| |_| |_ ___ _ _ _  _
@@ -206,8 +201,6 @@ animation-charging-2 				= 
 animation-charging-3 				= 
 animation-charging-4 				= 
 animation-charging-framerate 				= 2000
-;format-discharging-foreground 			= #050505
-;format-discharging-background 			= #86baba
 
 ;              _
 ;    _ __ _  _| |___ ___
@@ -228,9 +221,6 @@ label-muted 							= " 婢"
 ramp-volume-0 						= " 奄"
 ramp-volume-1 						= " 奔"
 ramp-volume-2 						= " 墳"
-format-volume-background  = #050505
-format-volume-foreground  = #b59f8b
-
 ;   _                _    _ _       _     _   
 ;  | |__   __ _  ___| | _| (_) __ _| |__ | |_ 
 ;  | '_ \ / _` |/ __| |/ / | |/ _` | '_ \| __|
@@ -277,8 +267,6 @@ ramp-signal-3 						= 
 ramp-signal-4 						= 
 ramp-signal-5 						= 
 click-left 								= pulseaudio
-;format-connected-foreground        = #050505
-;format-connected-background    		= #86baba
 
 ;   _ __ ___ __
 ;   \ V  V / '  \
@@ -324,13 +312,10 @@ label-active							= ●
 label-occupied-padding    = 1
 label-active-padding 			= 1
 label-empty-padding 			= 1
-label-active-foreground 	= #86baba
+label-active-foreground 	= #050505
 label-occupied-foreground = #b59f8b
 label-empty-foreground 	  = #b59f8b
 label-urgent-foreground   = #ad2727
-label-active-background 	= #050505
-label-occupied-background = #050505
-label-empty-background    = #050505
 format 										= <label-state>
 
 
