@@ -1,0 +1,581 @@
+Jul 07 18:11 : exception: Failed to open '/home/indigo/.config/mpd/state': No such file or directory
+Jul 07 18:11 : exception: Failed to access /home/indigo/music: No such file or directory
+Jul 07 18:31 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 18:31 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 18:31 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 18:31 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 18:31 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 19:19 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 19:19 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Jul 07 19:19 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Jul 07 19:19 : ffmpeg/mp3: Failed to read frame size: Could not seek to 1026.
+Jul 07 19:21 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 19:21 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 19:21 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 19:21 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 19:21 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 19:21 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 19:21 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 19:21 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 19:21 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 19:21 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 19:21 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 19:21 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 19:21 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 19:21 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 19:21 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 19:21 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 19:21 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 19:21 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 19:21 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 19:21 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 19:21 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 19:21 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 19:21 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 19:21 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 19:21 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 19:21 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 19:21 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 19:21 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 19:21 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 19:21 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 19:21 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 19:21 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 19:21 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 19:21 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 19:21 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 19:21 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 19:21 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 19:21 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 19:21 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 19:21 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 19:21 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 19:21 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 19:21 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 19:21 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 19:21 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 19:21 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 19:21 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 19:21 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 19:21 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 19:21 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 19:21 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 19:21 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 19:21 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 19:21 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 19:21 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 19:21 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 19:21 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 19:21 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 19:21 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 19:21 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 19:21 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 19:21 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 19:21 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 19:21 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 19:21 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 19:21 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 19:21 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 19:21 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 19:21 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 19:21 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 19:21 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 19:21 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 19:21 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 19:21 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 19:21 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 19:21 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 19:21 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 19:21 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 19:21 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 19:21 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 07 19:21 : exception: Failed to open /home/indigo/.config/mpd/playlists: No such file or directory
+Jul 11 10:16 : client: [0] malformed command "GET / HTTP/1.1"
+Jul 11 10:16 : client: [1] malformed command "GET /favicon.ico HTTP/1.1"
+Jul 11 10:31 : client: [0] malformed command "GET / HTTP/1.1"
+Jul 11 10:31 : client: [1] malformed command "GET /favicon.ico HTTP/1.1"
+Jul 11 10:31 : client: [2] malformed command "GET / HTTP/1.1"
+Jul 11 10:31 : client: [3] malformed command "GET /favicon.ico HTTP/1.1"
+Jul 11 12:00 : client: [3] malformed command "GET / HTTP/1.1"
+Jul 11 12:00 : client: [4] malformed command "GET /favicon.ico HTTP/1.1"
+Jul 11 13:12 : config: option 'device' on line 40 was not recognized
+Jul 11 13:15 : config: option 'device' on line 37 was not recognized
+Jul 11 13:46 : config: option 'device' on line 37 was not recognized
+Jul 11 13:47 : update: added eletro tuts tuts/Aywy. & EphRem - Adderall-KlL4xXwRF9U.mp3
+Jul 11 13:47 : update: added eletro tuts tuts/DROELOE - Only Be Me (Official Audio)-DkWqeSZYl1c.mp3
+Jul 11 13:47 : update: added eletro tuts tuts/The Grave feat. Gabriella Hook (Original Mix)-nZV4_KkrY-Q.mp3
+Jul 11 13:47 : update: added eletro tuts tuts/Arezra - Goodbye-E6nfpHKLj-8.mp3
+Jul 11 13:47 : update: added eletro tuts tuts/NADERI - HOTBOXINDAWIP-Xe6cjk4Bj1o.mp3
+Jul 11 13:47 : update: added eletro tuts tuts/Painting Greys-dJOydkSzB9k.mp3
+Jul 11 13:47 : update: added eletro tuts tuts/Datsik - In The Dark (Music Video)-MH2DCn1Om1I.mp3
+Jul 11 13:47 : update: added eletro tuts tuts/Pusher - Clear ft. Mothica (Shawn Wasabi Remix)-1b0Peus4HfU.mp3
+Jul 11 13:47 : update: added eletro tuts tuts/Savlonic - Epoch (The Living Tombstone's Remix) - Music Video-K3m3_7RoGZk.mp3
+Jul 11 13:47 : update: added eletro tuts tuts/Stephen - Play Me Like A Violin-2O5euYPzcrY.mp3
+Jul 11 13:47 : update: added eletro tuts tuts/Mike Hawkins - Blackout-6Ci3-GBZVGQ.mp3
+Jul 11 13:47 : update: added eletro tuts tuts/Prismo - Black Hole Sun-dOx2OhBPtQo.mp3
+Jul 11 13:47 : update: added eletro tuts tuts/Purgatory-NFhD5r2Wqx0.mp3
+Jul 11 13:47 : update: added eletro tuts tuts/Apashe - Lord & Master-2CE3yZKO_QA.mp3
+Jul 11 13:47 : update: added eletro tuts tuts/Sullivan King x Kai Wachi x GG MAGREE - Flatline (Lyric Video)-J-LeVx7D7hA.mp3
+Jul 11 13:47 : update: added eletro tuts tuts/Vairo - Blood Feather-Fl-GjkQLtHM.mp3
+Jul 11 13:47 : update: added eletro tuts tuts/Drop It-m8jhGl3J5dY.mp3
+Jul 11 13:47 : update: added eletro tuts tuts/DROELOE - Open Blinds (Official Lyric Video)-i8QhX0GkwBQ.mp3
+Jul 11 13:47 : update: added eletro tuts tuts/Nightmare-Ryoxb6GnRVA.mp3
+Jul 11 13:47 : update: added eletro tuts tuts/DROELOE - Sunburn (Reimagined) [Official Audio]-c2sgCWFZ71w.mp3
+Jul 11 13:47 : update: added eletro tuts tuts/Louis The Child - It's Strange FT. K.Flay (Whethan Remix)-tPL3acDebDM.mp3
+Jul 11 13:47 : update: added eletro tuts tuts/Apashe - Good News (Official Music Video)-Slv9aYoC4FM.mp3
+Jul 11 13:47 : update: added eletro tuts tuts/DROELOE x Fytch - Through The Storm-PQBsiMbNtW0.mp3
+Jul 11 13:47 : update: added eletro tuts tuts/Samurai Bounce-hHhE2Wq9_K0.mp3
+Jul 11 13:47 : update: added eletro tuts tuts/Raven-GwCQtNLEfCI.mp3
+Jul 11 13:47 : update: added eletro tuts tuts/Mufasa-ygfljYn_MqE.mp3
+Jul 11 13:47 : update: added eletro tuts tuts/N3ÜRØ - Jungle terror [Dubstep]-SvVVZyGajo4.mp3
+Jul 11 13:47 : update: added eletro tuts tuts/Martin Garrix - Animals (Official Video)-gCYcHz2k5x0.mp3
+Jul 11 13:47 : update: added eletro tuts tuts/Vanic - Sick of It (ft. Bryce Fox) [Official Lyric Video]-TOxh2GCqX1Q.mp3
+Jul 11 13:47 : update: added eletro tuts tuts/Storm-_lMu-SYZIYE.mp3
+Jul 11 13:47 : update: added eletro tuts tuts/DVBBS & Borgeous - TSUNAMI (Original Mix)-0EWbonj7f18.mp3
+Jul 11 13:47 : update: added eletro tuts tuts/Not Your Dope - 5 A.M-ZuOna_Xtu2A.mp3
+Jul 11 13:47 : update: added eletro tuts tuts/The Spook-5c3AtyQUNAE.mp3
+Jul 11 13:47 : update: added eletro tuts tuts/inverness & Tails - Skeleton (feat. Nevve) (Official Audio)--dl2JmOLwtI.mp3
+Jul 11 13:47 : update: added eletro tuts tuts/Ponette - Meltdown-oCm0RiHrao4.mp3
+Jul 11 13:47 : update: added eletro tuts tuts/[Drumstep] - Pegboard Nerds - Try This [Monstercat Release]-ggqI-HH8yXc.mp3
+Jul 11 13:47 : update: added eletro tuts tuts/DROELOE - Open Blinds [Official Audio]-Y-MNeN5dDtI.mp3
+Jul 11 13:47 : update: added eletro tuts tuts/Over and Out (feat. Charlott Boss)-HMQCSlZGxks.mp3
+Jul 11 13:47 : update: added eletro tuts tuts/Louis The Child - Slow Down Love feat. Chelsea Cutler (Cover Art)-wQWVRfMAEEM.mp3
+Jul 11 13:47 : update: added eletro tuts tuts/Mickey Valen - Game Over (feat. Lenii) (Official Lyric Video)-Nh4_l8zCDHc.mp3
+Jul 11 13:47 : update: added eletro tuts tuts/smle - Overflow (feat. Helen Tess) [Official Lyric Video]-YSD_vTf_fPc.mp3
+Jul 11 13:47 : update: added eletro tuts tuts/Hypnotic (Vanic Remix)-Hz1aBtNPf6s.mp3
+Jul 11 13:47 : update: added eletro tuts tuts/DROELOE - I CAN'T WAIT (Official Lyric Video)-baj01imKCfA.mp3
+Jul 11 13:47 : update: added eletro tuts tuts/Timmy Trumpet & Savage - Freaks (Official Video)-ofmzX1nI7SE.mp3
+Jul 11 13:47 : update: added eletro tuts tuts/Annihilation-t6-FMwZEHq4.mp3
+Jul 11 13:47 : update: added eletro tuts tuts/Mickey Valen & Sophie Rose - I'm Bad-Z7aIzvElbSU.mp3
+Jul 11 13:47 : update: added eletro tuts tuts/I'm A Dragon feat. Sway (Original Mix)-KqRpiratRp0.mp3
+Jul 11 13:47 : update: added eletro tuts tuts/Disclosure - Help Me Lose My Mind (Mazde Remix)-3jTjBt0Enyw.mp3
+Jul 11 13:47 : update: added underall/Stealing Sheep - Shut Eye Lyrics-p7Kx4d1ihhs.mp3
+Jul 11 13:47 : update: added underall/Cosmo Sheldrake - Birthday Suit-6cq0zUXcELM.mp3
+Jul 11 13:47 : update: added underall/A Song Dedicated to the Memory of Stormy the Rabbit-rqIv31kP4wg.mp3
+Jul 11 13:47 : update: added underall/Two Door Cinema Club - Tiptoes-2ChOnBV6Lw4.mp3
+Jul 11 13:47 : update: added underall/Lost In Bonerland-TMJ2b9By0xE.mp3
+Jul 11 13:47 : update: added underall/Electric Guest - American Daydream-yEFAQg3vPr8.mp3
+Jul 11 13:47 : update: added underall/Cavetown - Devil Town (V.3) _ Lyrics-Jiqg8adzAvQ.mp3
+Jul 11 13:47 : update: added underall/Ultimately-15PA1cUB6g8.mp3
+Jul 11 13:47 : update: added underall/Cavetown - This Is Home _ LYRICS-9YgmMJJ34k4.mp3
+Jul 11 13:47 : update: added underall/Aim for the Head-PkKOdE1eaX4.mp3
+Jul 11 13:47 : update: added underall/My Chemical Romance - Teenagers [Official Music Video]-k6EQAOmJrbw.mp3
+Jul 11 13:47 : update: added underall/There Isn't Any God - Rusty Cage Lyrics-xOVk9kXL3B4.mp3
+Jul 11 13:47 : update: added underall/Devil Town-KvaxYUfGHnk.mp3
+Jul 11 13:47 : update: added underall/Coffee-Bxlpqj-q7OM.mp3
+Jul 11 13:47 : update: added underall/Mars Stars (Dogs of Jupiter) (Acoustic)-z-vtrqeNfmo.mp3
+Jul 11 13:47 : update: added underall/SALES - chinese new year-gykWYPrArbY.mp3
+Jul 11 13:47 : update: added underall/Mounika - Cut My Hair (feat. Cavetown)-rqfDjmAkq7U.mp3
+Jul 11 13:47 : update: added underall/Oh Klahoma-6ClTSzOQrkY.mp3
+Jul 11 13:47 : update: added underall/Dope lemon - hey you [lyrics]-Ry9prvoXM8Q.mp3
+Jul 11 13:47 : update: added chill/t-fest x scriptonite - lambada (dabro remix) _ pitched + bass-MGwoweYqTDk.mp3
+Jul 11 13:47 : update: added chill/half•alive - aawake at night [OFFICIAL VIDEO]-HGy9wdgCWEk.mp3
+Jul 11 13:47 : update: added chill/SAINT MOTEL - It's All Happening (Official Audio)-YmZKaKJZGh8.mp3
+Jul 11 13:47 : update: added chill/The Other Side Of Paradise-RMPX_vgqQnM.mp3
+Jul 11 13:47 : update: added chill/Still Sane-ArmhkXCFl9Q.mp3
+Jul 11 13:47 : update: added chill/Nothing But Thieves - Phobia (Visualiser)-vQThlhgiysw.mp3
+Jul 11 13:47 : update: added chill/twenty one pilots - Bandito (Official Audio)-VQHTROo0S8E.mp3
+Jul 11 13:47 : update: added chill/Mama's Gun-4pibPTdLcsc.mp3
+Jul 11 13:47 : update: added chill/Wires-fRoWZPn2EEc.mp3
+Jul 11 13:47 : update: added chill/Special Death-arvAM92A_bc.mp3
+Jul 11 13:47 : update: added chill/Ultimately-15PA1cUB6g8.mp3
+Jul 11 13:47 : update: added chill/Arctic Monkeys - Batphone (Official Audio)-zM1KK2xX4_w.mp3
+Jul 11 13:47 : update: added chill/Cane Shuga-v1sp1g9-9aw.mp3
+Jul 11 13:47 : update: added chill/Sivik - High (lower pitched)-xWzXRtVnmf8.mp3
+Jul 11 13:47 : update: added chill/Two Feet - Nightmares (Official Lyric Video)-KVi8no2aPIg.mp3
+Jul 11 13:47 : update: added chill/Mansionair - Easier-Ja9IUKElT5w.mp3
+Jul 11 13:47 : update: added chill/Caravan Palace - Melancolia (Official audio)-qI7RI3Om_dY.mp3
+Jul 11 13:47 : update: added chill/DROELOE - Open Blinds [Official Audio]-Y-MNeN5dDtI.mp3
+Jul 11 13:47 : update: added chill/Midnight to Monaco - Suicide (Wheathin Remix) [Free]-9G5Eoymgyak.mp3
+Jul 11 13:47 : update: added chill/YAS - empty crown-6im4RmreTZw.mp3
+Jul 11 13:47 : update: added chill/505 - Arctic Monkeys-MrmPDUvKyLs.mp3
+Jul 11 13:47 : update: added chill/Konoba - On Our Knees (feat. R.O)-pvT7mDwZ7Hw.mp3
+Jul 11 13:47 : update: added chill/Her's - Cool With You-L2uT0yivlrw.mp3
+Jul 11 13:47 : update: added chill/Oh Klahoma-6ClTSzOQrkY.mp3
+Jul 11 13:47 : update: added chill/Glass Animals - Waterfalls Coming Out Your Mouth _ dreamland home movies--4TVpAjxqAc.mp3
+Jul 11 13:47 : update: added chill/DROELOE - I CAN'T WAIT (Official Lyric Video)-baj01imKCfA.mp3
+Jul 11 13:47 : update: added chill/SYML - Mr  Sandman (Audio)-DbPsIWto5PY.mp3
+Jul 11 13:47 : update: added chill/Space Ghost Coast To Coast-ejirGSd3Hws.mp3
+Jul 11 13:47 : update: added chill/Disclosure - Help Me Lose My Mind (Mazde Remix)-3jTjBt0Enyw.mp3
+Jul 11 13:47 : update: added chill/Two Feet - Fire In My Head (Official Lyric Video)-LBI9gyzikco.mp3
+Jul 11 13:47 : update: added rock pesado pacarai/Brianstorm-khyduwR1Uyw.mp3
+Jul 11 13:47 : update: added rock pesado pacarai/System Of A Down - Aerials (Official Video)-L-iepu3EtyE.mp3
+Jul 11 13:47 : update: added rock pesado pacarai/Arctic Monkeys - When The Sun Goes Down (Official Video)-EqkBRVukQmE.mp3
+Jul 11 13:47 : update: added rock pesado pacarai/Slaves - The Hunter (Official Video)-VmtU-bLyReU.mp3
+Jul 11 13:47 : update: added rock pesado pacarai/Slipknot - The Devil In I [OFFICIAL VIDEO]-XEEasR7hVhA.mp3
+Jul 11 13:47 : update: added rock pesado pacarai/Get Scared Sarcasm Lyric Video Official-8ahN0f0r9JQ.mp3
+Jul 11 13:47 : update: added rock pesado pacarai/Bring Me The Horizon - 'Can You Feel My Heart'-6AVRCQBc59w.mp3
+Jul 11 13:47 : update: added rock pesado pacarai/As I Am-_Q9Ss5zZU4k.mp3
+Jul 11 13:47 : update: added rock pesado pacarai/Old Yellow Bricks-NgLWF2XJyKA.mp3
+Jul 11 13:47 : update: added rock pesado pacarai/Billy Talent - Fallen Leaves - Official Video-9BXNKyoW_Ow.mp3
+Jul 11 13:47 : update: added rock pesado pacarai/The Used - Gravity's Rainbow [Official Music Video]-JUdvYOfaLAQ.mp3
+Jul 11 13:47 : update: added rock pesado pacarai/Skillet - The Resistance [Official Audio]-vCWmHbpD0fE.mp3
+Jul 11 13:47 : update: added rock pesado pacarai/Arctic Monkeys - Do I Wanna Know (Official Video)-bpOSxM0rNPM.mp3
+Jul 11 13:47 : update: added rock pesado pacarai/Bring Me The Horizon - Happy Song (Official Audio)-GBRAnuT48qo.mp3
+Jul 11 13:47 : update: added rock pesado pacarai/Blood Gets Thin-chaxU5TjHIA.mp3
+Jul 11 13:47 : update: added rock pesado pacarai/Arctic Monkeys - R U Mine-ngzC_8zqInk.mp3
+Jul 11 13:47 : update: added rock pesado pacarai/Black Pistol Fire - Temper Temper (Visualizer)-0z7cL0UA220.mp3
+Jul 11 13:47 : update: added rock pesado pacarai/Bring Me The Horizon - True Friends (Official Lyric Video)-BpmJh2CjSIA.mp3
+Jul 11 13:47 : update: added rock pesado pacarai/Knee Socks-lyO-Sveg6a8.mp3
+Jul 11 13:47 : update: added rock pesado pacarai/Dance Gavin Dance - Variation-XP7XBZoHMk4.mp3
+Jul 11 13:47 : update: added rock pesado pacarai/Reignwolf - Are You Satisfied (Official Audio)-g0Lvm5fyKU0.mp3
+Jul 11 13:47 : update: added rock pesado pacarai/Andy Black - We Don’t Have To Dance (Official)-8fEoWA9Vz3A.mp3
+Jul 11 13:47 : update: added rock pesado pacarai/Three Days Grace - Pain (Official Music Video)-Ud4HuAzHEUc.mp3
+Jul 11 13:47 : update: added rock pesado pacarai/Arctic Monkeys - Arabella (Official Audio)-Jn6-TItCazo.mp3
+Jul 11 13:47 : update: added rock pesado pacarai/BETZEFER - 'The Devil Went Down To The Holy Land' (OFFICIAL VIDEO)-EfskK_MS_14.mp3
+Jul 11 13:47 : update: added rock pesado pacarai/Polyphia _ G.O.A.T. (Official Music Video)-9_gkpYORQLU.mp3
+Jul 11 13:47 : update: added rock pesado pacarai/Foo Fighters - The Sky Is A Neighborhood (Official Music Video)-TRqiFPpw2fY.mp3
+Jul 11 13:47 : update: added rock pesado pacarai/The White Stripes - Seven Nation Army (Official Music Video)-0J2QdDbelmY.mp3
+Jul 11 13:47 : update: added rock pesado pacarai/Last Resort (explicit) - Papa Roach-Hm7vnOC4hoY.mp3
+Jul 11 13:47 : update: added rock pesado pacarai/Panic! At The Disco - Nine In The Afternoon [OFFICIAL VIDEO]-yCto3PCn8wo.mp3
+Jul 11 13:47 : update: added rock pesado pacarai/Go To Hell, For Heaven's Sake-lOVlYqlUqE4.mp3
+Jul 11 13:47 : update: added rock pesado pacarai/Bring Me The Horizon - Parasite Eve (Official Video)-racmy7Y9P4M.mp3
+Jul 11 13:47 : update: added rock pesado pacarai/Black Pistol Fire - Black Halo (Visualizer)-f9L5wbzwLh0.mp3
+Jul 11 13:47 : update: added sad/grandson - Despicable [Official Audio]-8XkxjsiZoeo.mp3
+Jul 11 13:47 : update: added sad/This Is Home-ZM_Gamwxvtc.mp3
+Jul 11 13:47 : update: added sad/Jake Hill & Josh A - Suicidal Thoughts-VFSg01HDqAk.mp3
+Jul 11 13:47 : update: added sad/Sub Urban - KMS [Official Audio]-9MSTMoWBRbs.mp3
+Jul 11 13:47 : update: added sad/Billy Talent - Nothing To Lose - Official Video-IYAWtJXU1To.mp3
+Jul 11 13:47 : update: added sad/twenty one pilots - Goner (Official Audio)-3J5mE-J1WLk.mp3
+Jul 11 13:47 : update: added sad/Glass Animals - Domestic Bliss _ dreamland home movies-ZwIQEnUrXZA.mp3
+Jul 11 13:47 : update: added sad/Two Feet - Lost The Game (Lyric Video)-mRyv_oe9-Ys.mp3
+Jul 11 13:47 : update: added sad/Snøw & Teqkoi - I'm Not Enough And I'm Sorry (Lyrics)-0MEBXOUEImY.mp3
+Jul 11 13:47 : update: added sad/GENTRAMMEL - Out Of My Mind-XuLn-7crils.mp3
+Jul 11 13:47 : update: added sad/MISSIO - Kamikazee (Audio)-Hfv4aarV7oQ.mp3
+Jul 11 13:47 : update: added sad/ℒund - Blkbird [Legendado]-Mo6Cqum0Kzs.mp3
+Jul 11 13:47 : update: added sad/Call Me Karizma - Serotonin-6zKqjZL2-2w.mp3
+Jul 11 13:47 : update: added sad/blackbear - idfc (Lyrics)-v0pjeUTad2I.mp3
+Jul 11 13:47 : update: added sad/Three Days Grace - Pain (Official Music Video)-Ud4HuAzHEUc.mp3
+Jul 11 13:47 : update: added sad/FML-TI2op6qSrYI.mp3
+Jul 11 13:47 : update: added sad/twenty one pilots - Doubt (Official Audio)-MEiVnNNpJLA.mp3
+Jul 11 13:47 : update: added sad/Monster (Under My Bed)-oBfksNo-e5g.mp3
+Jul 11 13:47 : update: added sad/The Happy Fits - Dirty Imbecile (Official Audio)-62zttCJT1Sg.mp3
+Jul 11 13:47 : update: added sad/Midnight to Monaco - Suicide (Wheathin Remix) [Free]-9G5Eoymgyak.mp3
+Jul 11 13:47 : update: added sad/DNMO & Sub Urban - Broken (Official Lyric Video)-KZT-_VW-k38.mp3
+Jul 11 13:47 : update: added sad/PALAYE ROYALE  - Lonely (Official Music Video)-f5Nc4kiBaIs.mp3
+Jul 11 13:47 : update: added sad/twenty one pilots - Migraine [OFFICIAL VIDEO] 1080p-z-wYtUBBTuY.mp3
+Jul 11 13:47 : update: added sad/All Time Low - Monsters ft. blackbear (LYRIC VIDEO)-6aIVwQFSnVc.mp3
+Jul 11 13:47 : update: added sad/Ugly-KE9E_KWZZTA.mp3
+Jul 11 13:47 : update: added sad/Call Me Karizma - Fire Escape (Official Music Video)-hYWaK6zw9Es.mp3
+Jul 11 13:47 : update: added sad/Teen Idle-ifa2g8HPZOY.mp3
+Jul 11 13:47 : update: added sad/Vorsa - Self Destructive (Lyrics)-E40jDncPQe4.mp3
+Jul 11 13:47 : update: added sad/Sub Urban - when the flies fell [Official Audio]-ypj36WNHBMw.mp3
+Jul 11 13:47 : update: added indie/Glass Animals, Denzel Curry - Tokyo Drifting-R_7HqeukRrI.mp3
+Jul 11 13:47 : update: added indie/half•alive - aawake at night [OFFICIAL VIDEO]-HGy9wdgCWEk.mp3
+Jul 11 13:47 : update: added indie/Sub Urban - Cirque [Official Music Video]-6vNh-QW6Hlc.mp3
+Jul 11 13:47 : update: added indie/WATERMELON SUGAR - Harry Styles - DRUM COVER-4Bs352qzYxw.mp3
+Jul 11 13:47 : update: added indie/Caravan Palace - Plume (Official audio)-cq3fwlZdWhw.mp3
+Jul 11 13:47 : update: added indie/Glass Animals - Heat Waves (Official Video)-mRD0-GxqHVo.mp3
+Jul 11 13:47 : update: added indie/half•alive - still feel. [OFFICIAL VIDEO]-KOOhPfMbuIQ.mp3
+Jul 11 13:47 : update: added indie/Cage The Elephant - Trouble (Official Video)-lA-gGl6qihQ.mp3
+Jul 11 13:47 : update: added indie/Oliver Tree - Fuck [Official Music Video]-H8QQHGupPrs.mp3
+Jul 11 13:47 : update: added indie/Feed the Machine-Y4HVJvTGbkc.mp3
+Jul 11 13:47 : update: added indie/MISSIO - Cry Baby feat. Paul Wall (Official Music Video)-qsLppkP93mI.mp3
+Jul 11 13:47 : update: added indie/Joywave - Coming Apart (Visualizer Video)-PiahvL6WNw8.mp3
+Jul 11 13:47 : update: added indie/SAINT MOTEL - It's All Happening (Official Audio)-YmZKaKJZGh8.mp3
+Jul 11 13:47 : update: added indie/Caravan Palace - Supersonics (Out Come The Freaks Edit) (Official Video)-57fY0LeESQY.mp3
+Jul 11 13:47 : update: added indie/Cage The Elephant - Cold Cold Cold-n95eekfFZZg.mp3
+Jul 11 13:47 : update: added indie/twenty one pilots - Message Man (Official Audio)-iE_54CU7Fxk.mp3
+Jul 11 13:47 : update: added indie/Caravan Palace - Leena (Official Audio)-GEENb-BmmJ0.mp3
+Jul 11 13:47 : update: added indie/Cage The Elephant - Ready To Let Go (Official Video)-fM1S9S-Q2sU.mp3
+Jul 11 13:47 : update: added indie/I Love You Like An Alcoholic-98Xju_5mepA.mp3
+Jul 11 13:47 : update: added indie/Weathers - c'est la vie (lyric video)-UnJ2bG5OPRE.mp3
+Jul 11 13:47 : update: added indie/Brick + Mortar - Locked In A Cage-bfrPU0Gk5r0.mp3
+Jul 11 13:47 : update: added indie/Grandson & KennyHoopla - Lost Cause (Official Lyric Video)-dYAu3nV1t7A.mp3
+Jul 11 13:47 : update: added indie/8 Graves x Saint Slumber - Guillotine-kSCCXV9Z7n4.mp3
+Jul 11 13:47 : update: added indie/half•alive - tip toes [AUDIO]-XjJ72vHad1k.mp3
+Jul 11 13:47 : update: added indie/Ren  - Humble (Feat. Eden Nash)-PO9UC2Zt59c.mp3
+Jul 11 13:47 : update: added indie/K.Flay - FML [Official Video]-0kf8ibi15tU.mp3
+Jul 11 13:47 : update: added indie/Rudy Mancuso - Mama (Official Music Video)-OGl5V5ZNya0.mp3
+Jul 11 13:47 : update: added indie/MISSIO - Wolves (Official Video)-3sjJ2FR4bBU.mp3
+Jul 11 13:47 : update: added indie/brother sundance - NIGHTMARES (Official Quarantine Music Video)-Oc8ttK9ZX0A.mp3
+Jul 11 13:47 : update: added indie/Arctic Monkeys - My Propeller (Official Video)-Z5vZovv8cPk.mp3
+Jul 11 13:47 : update: added indie/Hush [ft. Mizz Fish] - Dream SMP-Qflixb8ss3Q.mp3
+Jul 11 13:47 : update: added indie/Unlike Pluto - 8 Legged Dreams-4JHBrLXZBhw.mp3
+Jul 11 13:47 : update: added indie/Absofacto - Dissolve [Official Video]-xe2FPP4lX14.mp3
+Jul 11 13:47 : update: added indie/Royal & the Serpent - Overwhelmed (Official Music Video)-_e7UYTY96Xs.mp3
+Jul 11 13:47 : update: added indie/Confetti - Elephant In The Room-XTEDGzBlvvs.mp3
+Jul 11 13:47 : update: added indie/Airways - Alien-XW5NhJYYKzY.mp3
+Jul 11 13:47 : update: added indie/Younger Hunger - Dead Inside (Official Audio)-WG564GILdCY.mp3
+Jul 11 13:47 : update: added indie/grandson - We Did It!!! [OFFICIAL VISUALIZER]-LNOGN9jXGYA.mp3
+Jul 11 13:47 : update: added indie/twenty one pilots - Doubt (Official Audio)-MEiVnNNpJLA.mp3
+Jul 11 13:47 : update: added indie/Glass Animals - Pork Soda (Official Audio)-78DVtcsT26k.mp3
+Jul 11 13:47 : update: added indie/grandson - Riptide [OFFICIAL VIDEO]-JjmMUy49mV8.mp3
+Jul 11 13:47 : update: added indie/Rival x Cadmium - Willow Tree (feat. Rosendale)  [NCS Release]-kddC4gi72UE.mp3
+Jul 11 13:47 : update: added indie/Robert DeLong ft. K.Flay  - Favorite Color Is Blue (Official Video)-_GGWt7EwzG8.mp3
+Jul 11 13:47 : update: added indie/Bea Miller - feel something (official video)-3eLfRb6_Css.mp3
+Jul 11 13:47 : update: added indie/Angus & Julia Stone - Youngblood (Audio)-bHdPyp8onSI.mp3
+Jul 11 13:47 : update: added indie/grandson - WWIII [Official Audio]-Cytxob-IxYg.mp3
+Jul 11 13:47 : update: added indie/I DONT KNOW HOW BUT THEY FOUND ME - Lights Go Down (Lyric Video)-1GlvjGn131o.mp3
+Jul 11 13:47 : update: added indie/grandson - Identity [OFFICIAL VIDEO]-5q2qRuLGlU8.mp3
+Jul 11 13:47 : update: added indie/Typical Me - Ranboo's Theme [Dream SMP]--KL01aw-OA0.mp3
+Jul 11 13:47 : update: added indie/Concorde - Sons [Audio]-Jzs3pkM5Xx8.mp3
+Jul 11 13:47 : update: added indie/Weathers - Always Tired (Audio stream)-cwjY8Fudokw.mp3
+Jul 11 13:47 : update: added indie/I DONT KNOW HOW BUT THEY FOUND ME - Leave Me Alone (Lyric Video)-85Z3iwpFQeg.mp3
+Jul 11 13:47 : update: added indie/Call Me Karizma - Fire Escape (Official Music Video)-hYWaK6zw9Es.mp3
+Jul 11 13:47 : update: added indie/TONES AND I - UR SO F_KING COOL (OFFICIAL VIDEO)-N6GLTz0_rCA.mp3
+Jul 11 13:47 : update: added indie/The Unlikely Candidates - Novocaine-JGPB_IvmAJI.mp3
+Jul 11 13:47 : update: added indie/Absofacto - Someone Else's Dream [Official Audio]-Y7tMorElVIE.mp3
+Jul 11 13:47 : update: added indie/The Blue Stones - One By One (Audio)-oJS_fT5OHig.mp3
+Jul 11 13:47 : update: added indie/SIAMÉS 'Mr. FEAR' [Official Animated Music Video]-EKLWC93nvAU.mp3
+Jul 11 13:47 : update: added indie/Once Monsters - Chains (Official Lyric Video)-vZy5NUnUq54.mp3
+Jul 11 13:47 : update: updating chill/Arctic Monkeys - Batphone (Official Audio)-zM1KK2xX4_w.mp3
+Jul 11 13:51 : player: played "chill/Arctic Monkeys - Batphone (Official Audio)-zM1KK2xX4_w.mp3"
+Jul 11 14:00 : player: played "chill/Arctic Monkeys - Batphone (Official Audio)-zM1KK2xX4_w.mp3"
+Jul 11 14:04 : player: played "chill/Nothing But Thieves - Phobia (Visualiser)-vQThlhgiysw.mp3"
+Jul 11 14:07 : update: updating underall/A Song Dedicated to the Memory of Stormy the Rabbit-rqIv31kP4wg.mp3
+Jul 11 14:08 : update: updating underall/Cavetown - Devil Town (V.3) _ Lyrics-Jiqg8adzAvQ.mp3
+Jul 11 14:08 : update: updating underall/Cavetown - This Is Home _ LYRICS-9YgmMJJ34k4.mp3
+Jul 11 14:10 : update: updating rock pesado pacarai/Arctic Monkeys - Do I Wanna Know (Official Video)-bpOSxM0rNPM.mp3
+Jul 11 14:10 : update: updating rock pesado pacarai/Arctic Monkeys - R U Mine-ngzC_8zqInk.mp3
+Jul 11 14:11 : update: updating rock pesado pacarai/Arctic Monkeys - When The Sun Goes Down (Official Video)-EqkBRVukQmE.mp3
+Jul 11 14:11 : update: updating rock pesado pacarai/As I Am-_Q9Ss5zZU4k.mp3
+Jul 11 14:12 : update: updating rock pesado pacarai/BETZEFER - 'The Devil Went Down To The Holy Land' (OFFICIAL VIDEO)-EfskK_MS_14.mp3
+Jul 11 14:13 : update: updating rock pesado pacarai/Billy Talent - Fallen Leaves - Official Video-9BXNKyoW_Ow.mp3
+Jul 11 14:13 : update: updating rock pesado pacarai/Black Pistol Fire - Black Halo (Visualizer)-f9L5wbzwLh0.mp3
+Jul 11 14:15 : update: updating rock pesado pacarai/Black Pistol Fire - Temper Temper (Visualizer)-0z7cL0UA220.mp3
+Jul 11 14:15 : update: updating rock pesado pacarai/Blood Gets Thin-chaxU5TjHIA.mp3
+Jul 11 14:15 : update: updating rock pesado pacarai/Brianstorm-khyduwR1Uyw.mp3
+Jul 11 14:16 : update: updating rock pesado pacarai/Bring Me The Horizon - 'Can You Feel My Heart'-6AVRCQBc59w.mp3
+Jul 11 14:16 : update: updating rock pesado pacarai/Bring Me The Horizon - Happy Song (Official Audio)-GBRAnuT48qo.mp3
+Jul 11 14:17 : update: updating rock pesado pacarai/Bring Me The Horizon - Parasite Eve (Official Video)-racmy7Y9P4M.mp3
+Jul 11 14:17 : update: updating rock pesado pacarai/Bring Me The Horizon - True Friends (Official Lyric Video)-BpmJh2CjSIA.mp3
+Jul 11 14:18 : update: updating rock pesado pacarai/Dance Gavin Dance - Variation-XP7XBZoHMk4.mp3
+Jul 11 14:18 : update: updating rock pesado pacarai/Foo Fighters - The Sky Is A Neighborhood (Official Music Video)-TRqiFPpw2fY.mp3
+Jul 11 14:18 : update: updating rock pesado pacarai/Get Scared Sarcasm Lyric Video Official-8ahN0f0r9JQ.mp3
+Jul 11 14:19 : update: updating rock pesado pacarai/Go To Hell, For Heaven's Sake-lOVlYqlUqE4.mp3
+Jul 11 14:19 : update: updating rock pesado pacarai/Knee Socks-lyO-Sveg6a8.mp3
+Jul 11 14:20 : update: updating rock pesado pacarai/Last Resort (explicit) - Papa Roach-Hm7vnOC4hoY.mp3
+Jul 11 14:21 : player: played "rock pesado pacarai/Bring Me The Horizon - Happy Song (Official Audio)-GBRAnuT48qo.mp3"
+Jul 11 14:21 : update: updating rock pesado pacarai/Old Yellow Bricks-NgLWF2XJyKA.mp3
+Jul 11 14:22 : update: updating rock pesado pacarai/Panic! At The Disco - Nine In The Afternoon [OFFICIAL VIDEO]-yCto3PCn8wo.mp3
+Jul 11 14:22 : update: updating rock pesado pacarai/Polyphia _ G.O.A.T. (Official Music Video)-9_gkpYORQLU.mp3
+Jul 11 14:22 : update: updating rock pesado pacarai/Reignwolf - Are You Satisfied (Official Audio)-g0Lvm5fyKU0.mp3
+Jul 11 14:23 : update: updating rock pesado pacarai/Skillet - The Resistance [Official Audio]-vCWmHbpD0fE.mp3
+Jul 11 14:23 : update: updating rock pesado pacarai/Slaves - The Hunter (Official Video)-VmtU-bLyReU.mp3
+Jul 11 14:23 : update: updating rock pesado pacarai/Slipknot - The Devil In I [OFFICIAL VIDEO]-XEEasR7hVhA.mp3
+Jul 11 14:24 : update: updating rock pesado pacarai/System Of A Down - Aerials (Official Video)-L-iepu3EtyE.mp3
+Jul 11 14:24 : update: updating rock pesado pacarai/The Used - Gravity's Rainbow [Official Music Video]-JUdvYOfaLAQ.mp3
+Jul 11 14:24 : update: updating rock pesado pacarai/The White Stripes - Seven Nation Army (Official Music Video)-0J2QdDbelmY.mp3
+Jul 11 14:24 : update: updating rock pesado pacarai/Three Days Grace - Pain (Official Music Video)-Ud4HuAzHEUc.mp3
+Jul 11 14:27 : player: played "rock pesado pacarai/Polyphia _ G.O.A.T. (Official Music Video)-9_gkpYORQLU.mp3"
+Jul 11 14:37 : player: played "rock pesado pacarai/As I Am-_Q9Ss5zZU4k.mp3"
+Jul 11 14:40 : player: played "rock pesado pacarai/Old Yellow Bricks-NgLWF2XJyKA.mp3"
+Jul 11 14:43 : player: played "rock pesado pacarai/Billy Talent - Fallen Leaves - Official Video-9BXNKyoW_Ow.mp3"
+Jul 11 14:47 : update: updating chill/505 - Arctic Monkeys-MrmPDUvKyLs.mp3
+Jul 11 14:48 : update: updating chill/Caravan Palace - Melancolia (Official audio)-qI7RI3Om_dY.mp3
+Jul 11 14:48 : player: played "rock pesado pacarai/Bring Me The Horizon - True Friends (Official Lyric Video)-BpmJh2CjSIA.mp3"
+Jul 11 14:48 : update: updating chill/Disclosure - Help Me Lose My Mind (Mazde Remix)-3jTjBt0Enyw.mp3
+Jul 11 14:49 : update: updating chill/DROELOE - I CAN'T WAIT (Official Lyric Video)-baj01imKCfA.mp3
+Jul 11 14:49 : update: updating chill/DROELOE - Open Blinds [Official Audio]-Y-MNeN5dDtI.mp3
+Jul 11 14:49 : update: updating chill/Glass Animals - Waterfalls Coming Out Your Mouth _ dreamland home movies--4TVpAjxqAc.mp3
+Jul 11 14:51 : update: updating chill/half•alive - aawake at night [OFFICIAL VIDEO]-HGy9wdgCWEk.mp3
+Jul 11 14:51 : update: updating chill/Her's - Cool With You-L2uT0yivlrw.mp3
+Jul 11 14:52 : update: updating chill/Konoba - On Our Knees (feat. R.O)-pvT7mDwZ7Hw.mp3
+Jul 11 14:52 : update: updating chill/Mama's Gun-4pibPTdLcsc.mp3
+Jul 11 14:52 : player: played "chill/Arctic Monkeys - Batphone (Official Audio)-zM1KK2xX4_w.mp3"
+Jul 11 14:52 : update: updating chill/Mansionair - Easier-Ja9IUKElT5w.mp3
+Jul 11 14:54 : player: played "chill/Special Death-arvAM92A_bc.mp3"
+Jul 11 14:54 : update: updating chill/Midnight to Monaco - Suicide (Wheathin Remix) [Free]-9G5Eoymgyak.mp3
+Jul 11 14:54 : update: updating chill/Nothing But Thieves - Phobia (Visualiser)-vQThlhgiysw.mp3
+Jul 11 14:55 : update: updating chill/Oh Klahoma-6ClTSzOQrkY.mp3
+Jul 11 14:55 : update: updating chill/SAINT MOTEL - It's All Happening (Official Audio)-YmZKaKJZGh8.mp3
+Jul 11 14:55 : update: updating chill/Sivik - High (lower pitched)-xWzXRtVnmf8.mp3
+Jul 11 14:56 : update: updating chill/Space Ghost Coast To Coast-ejirGSd3Hws.mp3
+Jul 11 14:56 : update: updating chill/Special Death-arvAM92A_bc.mp3
+Jul 11 14:56 : update: updating chill/Still Sane-ArmhkXCFl9Q.mp3
+Jul 11 14:57 : player: played "chill/t-fest x scriptonite - lambada (dabro remix) _ pitched + bass-MGwoweYqTDk.mp3"
+Jul 11 14:57 : update: updating chill/Ultimately-15PA1cUB6g8.mp3
+Jul 11 14:58 : update: updating chill/SYML - Mr  Sandman (Audio)-DbPsIWto5PY.mp3
+Jul 11 14:58 : update: updating chill/t-fest x scriptonite - lambada (dabro remix) _ pitched + bass-MGwoweYqTDk.mp3
+Jul 11 14:59 : update: updating chill/The Other Side Of Paradise-RMPX_vgqQnM.mp3
+Jul 11 14:59 : update: updating chill/twenty one pilots - Bandito (Official Audio)-VQHTROo0S8E.mp3
+Jul 11 14:59 : update: updating chill/Two Feet - Fire In My Head (Official Lyric Video)-LBI9gyzikco.mp3
+Jul 11 14:59 : update: updating chill/Two Feet - Nightmares (Official Lyric Video)-KVi8no2aPIg.mp3
+Jul 11 15:00 : update: updating chill/Ultimately-15PA1cUB6g8.mp3
+Jul 11 15:01 : update: updating chill/Wires-fRoWZPn2EEc.mp3
+Jul 11 15:01 : update: updating chill/YAS - empty crown-6im4RmreTZw.mp3
+Jul 11 15:06 : player: played "rock pesado pacarai/Polyphia _ G.O.A.T. (Official Music Video)-9_gkpYORQLU.mp3"
+Jul 11 15:06 : update: updating chill/Oh Klahoma-6ClTSzOQrkY.mp3
+Jul 11 15:07 : player: played "chill/Disclosure - Help Me Lose My Mind (Mazde Remix)-3jTjBt0Enyw.mp3"
+Jul 11 15:11 : player: played "chill/Disclosure - Help Me Lose My Mind (Mazde Remix)-3jTjBt0Enyw.mp3"
+Jul 11 15:13 : player: played "indie/Cage The Elephant - Ready To Let Go (Official Video)-fM1S9S-Q2sU.mp3"
+Jul 11 15:14 : player: played "chill/Two Feet - Fire In My Head (Official Lyric Video)-LBI9gyzikco.mp3"
+Jul 11 15:14 : player: played "chill/Disclosure - Help Me Lose My Mind (Mazde Remix)-3jTjBt0Enyw.mp3"
+Jul 11 15:57 : player: played "chill/DROELOE - Open Blinds [Official Audio]-Y-MNeN5dDtI.mp3"
+Jul 11 16:01 : player: played "chill/Disclosure - Help Me Lose My Mind (Mazde Remix)-3jTjBt0Enyw.mp3"
+Jul 11 16:01 : update: updating chill/Glass Animals - Waterfalls Coming Out Your Mouth _ dreamland home movies--4TVpAjxqAc.mp3
+Jul 11 16:04 : player: played "chill/Glass Animals - Waterfalls Coming Out Your Mouth _ dreamland home movies--4TVpAjxqAc.mp3"
+Jul 11 16:07 : player: played "rock pesado pacarai/Billy Talent - Fallen Leaves - Official Video-9BXNKyoW_Ow.mp3"
+Jul 11 16:10 : player: played "chill/Special Death-arvAM92A_bc.mp3"
+Jul 11 16:13 : player: played "underall/A Song Dedicated to the Memory of Stormy the Rabbit-rqIv31kP4wg.mp3"
+Jul 11 16:13 : player: played "rock pesado pacarai/As I Am-_Q9Ss5zZU4k.mp3"
+Jul 12 07:18 : config: option 'device' on line 37 was not recognized
+Jul 12 10:44 : config: option 'device' on line 37 was not recognized
+Jul 12 13:38 : exception: Bad playlist name
+Jul 12 13:39 : exception: Bad playlist name
+Jul 12 13:40 : exception: Bad playlist name
+Jul 12 13:46 : player: played "eletro tuts tuts/I'm A Dragon feat. Sway (Original Mix)-KqRpiratRp0.mp3"
+Jul 12 13:47 : player: played "chill/DROELOE - Open Blinds [Official Audio]-Y-MNeN5dDtI.mp3"
+Jul 12 17:08 : config: option 'device' on line 37 was not recognized
+Jul 12 17:14 : player: played "indie/Caravan Palace - Leena (Official Audio)-GEENb-BmmJ0.mp3"
+Jul 12 17:27 : player: played "rock pesado pacarai/Bring Me The Horizon - Happy Song (Official Audio)-GBRAnuT48qo.mp3"
+Jul 12 17:31 : player: played "chill/DROELOE - Open Blinds [Official Audio]-Y-MNeN5dDtI.mp3"
+Jul 12 17:34 : player: played "chill/Still Sane-ArmhkXCFl9Q.mp3"
+Jul 12 17:35 : player: played "eletro tuts tuts/DROELOE - Open Blinds (Official Lyric Video)-i8QhX0GkwBQ.mp3"
+Jul 12 18:59 : config: option 'device' on line 37 was not recognized
+Jul 12 19:08 : player: played "chill/YAS - empty crown-6im4RmreTZw.mp3"
+Jul 12 19:14 : player: played "chill/Sivik - High (lower pitched)-xWzXRtVnmf8.mp3"
+Jul 12 19:18 : player: played "chill/Caravan Palace - Melancolia (Official audio)-qI7RI3Om_dY.mp3"
+Jul 12 19:20 : player: played "chill/DROELOE - I CAN'T WAIT (Official Lyric Video)-baj01imKCfA.mp3"
+Jul 12 19:23 : player: played "chill/SAINT MOTEL - It's All Happening (Official Audio)-YmZKaKJZGh8.mp3"
+Jul 12 19:26 : player: played "chill/Still Sane-ArmhkXCFl9Q.mp3"
+Jul 12 19:31 : player: played "chill/The Other Side Of Paradise-RMPX_vgqQnM.mp3"
+Jul 12 19:35 : player: played "chill/Caravan Palace - Melancolia (Official audio)-qI7RI3Om_dY.mp3"
+Jul 12 19:41 : player: played "chill/Sivik - High (lower pitched)-xWzXRtVnmf8.mp3"
+Jul 13 08:54 : config: option 'device' on line 37 was not recognized
+Jul 13 09:05 : player: played "chill/Glass Animals - Waterfalls Coming Out Your Mouth _ dreamland home movies--4TVpAjxqAc.mp3"
+Jul 13 09:09 : player: played "chill/Mansionair - Easier-Ja9IUKElT5w.mp3"
+Jul 13 09:13 : player: played "chill/Caravan Palace - Melancolia (Official audio)-qI7RI3Om_dY.mp3"
+Jul 13 09:17 : player: played "chill/Still Sane-ArmhkXCFl9Q.mp3"
+Jul 13 09:20 : player: played "chill/t-fest x scriptonite - lambada (dabro remix) _ pitched + bass-MGwoweYqTDk.mp3"
+Jul 13 09:24 : player: played "chill/Sivik - High (lower pitched)-xWzXRtVnmf8.mp3"
+Jul 13 11:07 : player: played "chill/SYML - Mr  Sandman (Audio)-DbPsIWto5PY.mp3"
+Jul 13 11:14 : player: played "chill/Sivik - High (lower pitched)-xWzXRtVnmf8.mp3"
+Jul 13 11:17 : player: played "chill/Wires-fRoWZPn2EEc.mp3"
+Jul 13 11:23 : player: played "chill/Caravan Palace - Melancolia (Official audio)-qI7RI3Om_dY.mp3"
+Jul 13 11:33 : player: played "chill/The Other Side Of Paradise-RMPX_vgqQnM.mp3"
+Jul 13 11:36 : player: played "chill/half•alive - aawake at night [OFFICIAL VIDEO]-HGy9wdgCWEk.mp3"
+Jul 13 11:42 : player: played "chill/t-fest x scriptonite - lambada (dabro remix) _ pitched + bass-MGwoweYqTDk.mp3"
+Jul 13 11:48 : player: played "chill/Konoba - On Our Knees (feat. R.O)-pvT7mDwZ7Hw.mp3"
+Jul 13 11:53 : player: played "chill/DROELOE - Open Blinds [Official Audio]-Y-MNeN5dDtI.mp3"
+Jul 13 12:08 : player: played "chill/t-fest x scriptonite - lambada (dabro remix) _ pitched + bass-MGwoweYqTDk.mp3"
+Jul 13 12:12 : player: played "chill/Disclosure - Help Me Lose My Mind (Mazde Remix)-3jTjBt0Enyw.mp3"
+Jul 13 12:17 : player: played "chill/Sivik - High (lower pitched)-xWzXRtVnmf8.mp3"
+Jul 13 12:22 : player: played "chill/The Other Side Of Paradise-RMPX_vgqQnM.mp3"
+Jul 13 12:25 : player: played "chill/DROELOE - I CAN'T WAIT (Official Lyric Video)-baj01imKCfA.mp3"
+Jul 13 12:29 : player: played "chill/Nothing But Thieves - Phobia (Visualiser)-vQThlhgiysw.mp3"
+Jul 13 12:31 : player: played "chill/Glass Animals - Waterfalls Coming Out Your Mouth _ dreamland home movies--4TVpAjxqAc.mp3"
+Jul 13 12:35 : player: played "chill/Midnight to Monaco - Suicide (Wheathin Remix) [Free]-9G5Eoymgyak.mp3"
+Jul 13 12:39 : player: played "chill/Wires-fRoWZPn2EEc.mp3"
+Jul 13 12:44 : player: played "chill/twenty one pilots - Bandito (Official Audio)-VQHTROo0S8E.mp3"
+Jul 13 12:47 : player: played "chill/Space Ghost Coast To Coast-ejirGSd3Hws.mp3"
+Jul 13 12:50 : player: played "chill/Cane Shuga-v1sp1g9-9aw.mp3"
+Jul 13 12:54 : player: played "chill/Two Feet - Fire In My Head (Official Lyric Video)-LBI9gyzikco.mp3"
+Jul 13 12:56 : player: played "chill/Special Death-arvAM92A_bc.mp3"
+Jul 13 13:00 : player: played "chill/Arctic Monkeys - Batphone (Official Audio)-zM1KK2xX4_w.mp3"
+Jul 13 16:40 : config: option 'device' on line 37 was not recognized
+Jul 13 16:46 : player: played "chill/Midnight to Monaco - Suicide (Wheathin Remix) [Free]-9G5Eoymgyak.mp3"
+Jul 13 16:49 : player: played "chill/SAINT MOTEL - It's All Happening (Official Audio)-YmZKaKJZGh8.mp3"
+Jul 13 16:54 : player: played "chill/Arctic Monkeys - Batphone (Official Audio)-zM1KK2xX4_w.mp3"
+Jul 13 16:59 : player: played "chill/505 - Arctic Monkeys-MrmPDUvKyLs.mp3"
+Jul 13 17:02 : player: played "chill/Glass Animals - Waterfalls Coming Out Your Mouth _ dreamland home movies--4TVpAjxqAc.mp3"
+Jul 13 17:04 : player: played "chill/DROELOE - I CAN'T WAIT (Official Lyric Video)-baj01imKCfA.mp3"
+Jul 13 17:09 : player: played "chill/Konoba - On Our Knees (feat. R.O)-pvT7mDwZ7Hw.mp3"
+Jul 13 17:10 : player: played "chill/Nothing But Thieves - Phobia (Visualiser)-vQThlhgiysw.mp3"
+Jul 13 17:12 : player: played "rock pesado pacarai/Three Days Grace - Pain (Official Music Video)-Ud4HuAzHEUc.mp3"
+Jul 13 17:18 : player: played "rock pesado pacarai/Bring Me The Horizon - True Friends (Official Lyric Video)-BpmJh2CjSIA.mp3"
+Jul 13 17:21 : player: played "rock pesado pacarai/Panic! At The Disco - Nine In The Afternoon [OFFICIAL VIDEO]-yCto3PCn8wo.mp3"
+Jul 13 17:27 : player: played "rock pesado pacarai/Slipknot - The Devil In I [OFFICIAL VIDEO]-XEEasR7hVhA.mp3"
+Jul 13 17:30 : player: played "rock pesado pacarai/Polyphia _ G.O.A.T. (Official Music Video)-9_gkpYORQLU.mp3"
+Jul 13 17:36 : player: played "rock pesado pacarai/Last Resort (explicit) - Papa Roach-Hm7vnOC4hoY.mp3"
+Jul 13 17:40 : player: played "rock pesado pacarai/Andy Black - We Don’t Have To Dance (Official)-8fEoWA9Vz3A.mp3"
+Jul 13 17:43 : player: played "rock pesado pacarai/Arctic Monkeys - R U Mine-ngzC_8zqInk.mp3"
+Jul 13 17:47 : player: played "rock pesado pacarai/Skillet - The Resistance [Official Audio]-vCWmHbpD0fE.mp3"
+Jul 13 17:52 : player: played "rock pesado pacarai/Bring Me The Horizon - Happy Song (Official Audio)-GBRAnuT48qo.mp3"
+Jul 13 17:56 : player: played "rock pesado pacarai/Skillet - The Resistance [Official Audio]-vCWmHbpD0fE.mp3"
+Jul 13 17:57 : player: played "rock pesado pacarai/Bring Me The Horizon - Parasite Eve (Official Video)-racmy7Y9P4M.mp3"
+Jul 14 09:06 : config: option 'device' on line 37 was not recognized
+Jul 14 14:15 : config: option 'device' on line 37 was not recognized
+Jul 15 08:47 : config: option 'device' on line 37 was not recognized
+Jul 15 13:31 : config: option 'device' on line 37 was not recognized
+Jul 15 16:24 : config: option 'device' on line 37 was not recognized
+Jul 16 08:41 : config: option 'device' on line 37 was not recognized
+Jul 16 15:03 : config: option 'device' on line 37 was not recognized
+Jul 17 08:22 : config: option 'device' on line 37 was not recognized
+Jul 17 08:33 : player: played "rock pesado pacarai/Black Pistol Fire - Black Halo (Visualizer)-f9L5wbzwLh0.mp3"
+Jul 17 08:37 : player: played "chill/Disclosure - Help Me Lose My Mind (Mazde Remix)-3jTjBt0Enyw.mp3"
+Jul 17 08:51 : update: updating eletro tuts tuts/Annihilation-t6-FMwZEHq4.mp3
+Jul 17 08:52 : update: updating eletro tuts tuts/Apashe - Good News (Official Music Video)-Slv9aYoC4FM.mp3
+Jul 17 08:52 : update: updating eletro tuts tuts/Apashe - Lord & Master-2CE3yZKO_QA.mp3
+Jul 17 08:52 : player: played "rock pesado pacarai/Bring Me The Horizon - Parasite Eve (Official Video)-racmy7Y9P4M.mp3"
+Jul 17 08:52 : update: updating eletro tuts tuts/Arezra - Goodbye-E6nfpHKLj-8.mp3
+Jul 17 08:52 : update: updating eletro tuts tuts/Aywy. & EphRem - Adderall-KlL4xXwRF9U.mp3
+Jul 17 08:53 : update: updating eletro tuts tuts/Datsik - In The Dark (Music Video)-MH2DCn1Om1I.mp3
+Jul 17 08:53 : update: updating eletro tuts tuts/Disclosure - Help Me Lose My Mind (Mazde Remix)-3jTjBt0Enyw.mp3
+Jul 17 08:53 : update: updating eletro tuts tuts/DROELOE - I CAN'T WAIT (Official Lyric Video)-baj01imKCfA.mp3
+Jul 17 08:53 : update: updating eletro tuts tuts/DROELOE - I CAN'T WAIT (Official Lyric Video)-baj01imKCfA.mp3
+Jul 17 08:54 : update: updating eletro tuts tuts/DROELOE - Only Be Me (Official Audio)-DkWqeSZYl1c.mp3
+Jul 17 08:55 : player: played "chill/Two Feet - Fire In My Head (Official Lyric Video)-LBI9gyzikco.mp3"
+Jul 17 08:56 : update: updating eletro tuts tuts/DROELOE - Open Blinds (Official Lyric Video)-i8QhX0GkwBQ.mp3
+Jul 17 09:00 : player: played "rock pesado pacarai/BETZEFER - 'The Devil Went Down To The Holy Land' (OFFICIAL VIDEO)-EfskK_MS_14.mp3"
+Jul 17 09:00 : update: removing sad/Vorsa - Self Destructive (Lyrics)-E40jDncPQe4.mp3
+Jul 17 09:00 : update: removing sad/Ugly-KE9E_KWZZTA.mp3
+Jul 17 09:00 : update: removing sad/Two Feet - Lost The Game (Lyric Video)-mRyv_oe9-Ys.mp3
+Jul 17 09:00 : update: removing sad/twenty one pilots - Migraine [OFFICIAL VIDEO] 1080p-z-wYtUBBTuY.mp3
+Jul 17 09:00 : update: removing sad/twenty one pilots - Goner (Official Audio)-3J5mE-J1WLk.mp3
+Jul 17 09:00 : update: removing sad/twenty one pilots - Doubt (Official Audio)-MEiVnNNpJLA.mp3
+Jul 17 09:00 : update: removing sad/Three Days Grace - Pain (Official Music Video)-Ud4HuAzHEUc.mp3
+Jul 17 09:00 : update: removing sad/This Is Home-ZM_Gamwxvtc.mp3
+Jul 17 09:00 : update: removing sad/The Happy Fits - Dirty Imbecile (Official Audio)-62zttCJT1Sg.mp3
+Jul 17 09:00 : update: removing sad/Teen Idle-ifa2g8HPZOY.mp3
+Jul 17 09:00 : update: removing sad/Sub Urban - when the flies fell [Official Audio]-ypj36WNHBMw.mp3
+Jul 17 09:00 : update: removing sad/Sub Urban - KMS [Official Audio]-9MSTMoWBRbs.mp3
+Jul 17 09:00 : update: removing sad/Snøw & Teqkoi - I'm Not Enough And I'm Sorry (Lyrics)-0MEBXOUEImY.mp3
+Jul 17 09:00 : update: removing sad/PALAYE ROYALE  - Lonely (Official Music Video)-f5Nc4kiBaIs.mp3
+Jul 17 09:00 : update: removing sad/Monster (Under My Bed)-oBfksNo-e5g.mp3
+Jul 17 09:00 : update: removing sad/MISSIO - Kamikazee (Audio)-Hfv4aarV7oQ.mp3
+Jul 17 09:00 : update: removing sad/Midnight to Monaco - Suicide (Wheathin Remix) [Free]-9G5Eoymgyak.mp3
+Jul 17 09:00 : update: removing sad/ℒund - Blkbird [Legendado]-Mo6Cqum0Kzs.mp3
+Jul 17 09:00 : update: removing sad/Jake Hill & Josh A - Suicidal Thoughts-VFSg01HDqAk.mp3
+Jul 17 09:00 : update: removing sad/grandson - Despicable [Official Audio]-8XkxjsiZoeo.mp3
+Jul 17 09:00 : update: removing sad/Glass Animals - Domestic Bliss _ dreamland home movies-ZwIQEnUrXZA.mp3
+Jul 17 09:00 : update: removing sad/GENTRAMMEL - Out Of My Mind-XuLn-7crils.mp3
+Jul 17 09:00 : update: removing sad/FML-TI2op6qSrYI.mp3
+Jul 17 09:00 : update: removing sad/DNMO & Sub Urban - Broken (Official Lyric Video)-KZT-_VW-k38.mp3
+Jul 17 09:00 : update: removing sad/Call Me Karizma - Serotonin-6zKqjZL2-2w.mp3
+Jul 17 09:00 : update: removing sad/Call Me Karizma - Fire Escape (Official Music Video)-hYWaK6zw9Es.mp3
+Jul 17 09:00 : update: removing sad/blackbear - idfc (Lyrics)-v0pjeUTad2I.mp3
+Jul 17 09:00 : update: removing sad/Billy Talent - Nothing To Lose - Official Video-IYAWtJXU1To.mp3
+Jul 17 09:00 : update: removing sad/All Time Low - Monsters ft. blackbear (LYRIC VIDEO)-6aIVwQFSnVc.mp3
+Jul 17 09:00 : update: added rock pesado pacarai/Polyphia _ Nasty (feat. Jason Richardson)-i7UkKEEGgAQ.mp3
+Jul 17 09:01 : update: updating rock pesado pacarai/Polyphia _ Nasty (feat. Jason Richardson)-i7UkKEEGgAQ.mp3
+Jul 17 09:02 : player: played "rock pesado pacarai/Andy Black - We Don’t Have To Dance (Official)-8fEoWA9Vz3A.mp3"
+Jul 17 09:04 : update: updating eletro tuts tuts/Vanic - Sick of It (ft. Bryce Fox) [Official Lyric Video]-TOxh2GCqX1Q.mp3
+Jul 17 09:04 : update: updating eletro tuts tuts/Vairo - Blood Feather-Fl-GjkQLtHM.mp3
+Jul 17 09:04 : update: updating eletro tuts tuts/Timmy Trumpet & Savage - Freaks (Official Video)-ofmzX1nI7SE.mp3
+Jul 17 09:05 : update: updating eletro tuts tuts/The Spook-5c3AtyQUNAE.mp3
+Jul 17 09:05 : update: updating eletro tuts tuts/The Grave feat. Gabriella Hook (Original Mix)-nZV4_KkrY-Q.mp3
+Jul 17 09:05 : update: updating eletro tuts tuts/Sullivan King x Kai Wachi x GG MAGREE - Flatline (Lyric Video)-J-LeVx7D7hA.mp3
+Jul 17 09:06 : update: updating eletro tuts tuts/Storm-_lMu-SYZIYE.mp3
+Jul 17 09:06 : update: updating eletro tuts tuts/Stephen - Play Me Like A Violin-2O5euYPzcrY.mp3
+Jul 17 09:06 : update: updating eletro tuts tuts/smle - Overflow (feat. Helen Tess) [Official Lyric Video]-YSD_vTf_fPc.mp3
+Jul 17 09:06 : update: updating eletro tuts tuts/Savlonic - Epoch (The Living Tombstone's Remix) - Music Video-K3m3_7RoGZk.mp3
+Jul 17 09:07 : update: updating eletro tuts tuts/Samurai Bounce-hHhE2Wq9_K0.mp3
+Jul 17 09:07 : player: played "rock pesado pacarai/Andy Black - We Don’t Have To Dance (Official)-8fEoWA9Vz3A.mp3"
+Jul 17 09:07 : update: updating eletro tuts tuts/Painting Greys-dJOydkSzB9k.mp3
+Jul 17 09:09 : update: updating eletro tuts tuts/Raven-GwCQtNLEfCI.mp3
+Jul 17 09:09 : update: updating eletro tuts tuts/Pusher - Clear ft. Mothica (Shawn Wasabi Remix)-1b0Peus4HfU.mp3
+Jul 17 09:10 : update: updating eletro tuts tuts/Purgatory-NFhD5r2Wqx0.mp3
+Jul 17 09:10 : update: updating eletro tuts tuts/Prismo - Black Hole Sun-dOx2OhBPtQo.mp3
+Jul 17 09:10 : update: updating eletro tuts tuts/Ponette - Meltdown-oCm0RiHrao4.mp3
+Jul 17 09:11 : update: updating eletro tuts tuts/Over and Out (feat. Charlott Boss)-HMQCSlZGxks.mp3
+Jul 17 09:11 : update: updating eletro tuts tuts/DROELOE - Open Blinds [Official Audio]-Y-MNeN5dDtI.mp3
+Jul 17 09:12 : update: updating eletro tuts tuts/DROELOE - Sunburn (Reimagined) [Official Audio]-c2sgCWFZ71w.mp3
+Jul 17 09:12 : update: updating eletro tuts tuts/DROELOE x Fytch - Through The Storm-PQBsiMbNtW0.mp3
+Jul 17 09:12 : update: updating eletro tuts tuts/Drop It-m8jhGl3J5dY.mp3
+Jul 17 09:13 : update: updating eletro tuts tuts/Hypnotic (Vanic Remix)-Hz1aBtNPf6s.mp3
+Jul 17 09:13 : update: updating eletro tuts tuts/I'm A Dragon feat. Sway (Original Mix)-KqRpiratRp0.mp3
+Jul 17 09:13 : update: updating eletro tuts tuts/inverness & Tails - Skeleton (feat. Nevve) (Official Audio)--dl2JmOLwtI.mp3
+Jul 17 09:13 : update: updating eletro tuts tuts/Louis The Child - It's Strange FT. K.Flay (Whethan Remix)-tPL3acDebDM.mp3
+Jul 17 09:14 : update: updating eletro tuts tuts/Louis The Child - Slow Down Love feat. Chelsea Cutler (Cover Art)-wQWVRfMAEEM.mp3
+Jul 17 09:14 : update: updating eletro tuts tuts/Mufasa-ygfljYn_MqE.mp3
+Jul 17 09:14 : update: updating eletro tuts tuts/Mike Hawkins - Blackout-6Ci3-GBZVGQ.mp3
+Jul 17 09:14 : update: updating eletro tuts tuts/Mickey Valen & Sophie Rose - I'm Bad-Z7aIzvElbSU.mp3
+Jul 17 09:15 : update: updating eletro tuts tuts/Mickey Valen - Game Over (feat. Lenii) (Official Lyric Video)-Nh4_l8zCDHc.mp3
+Jul 17 09:15 : update: updating eletro tuts tuts/Martin Garrix - Animals (Official Video)-gCYcHz2k5x0.mp3
+Jul 17 09:15 : update: updating eletro tuts tuts/N3ÜRØ - Jungle terror [Dubstep]-SvVVZyGajo4.mp3
+Jul 17 09:15 : update: updating eletro tuts tuts/NADERI - HOTBOXINDAWIP-Xe6cjk4Bj1o.mp3
+Jul 17 09:15 : update: updating eletro tuts tuts/Nightmare-Ryoxb6GnRVA.mp3
+Jul 17 09:16 : update: updating eletro tuts tuts/Not Your Dope - 5 A.M-ZuOna_Xtu2A.mp3
+Jul 17 09:16 : player: played "eletro tuts tuts/Not Your Dope - 5 A.M-ZuOna_Xtu2A.mp3"
