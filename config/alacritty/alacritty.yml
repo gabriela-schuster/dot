@@ -30,19 +30,19 @@ scrolling:
 
 font:
   normal:
-    family: Jet Brains Mono
-    style: Bold
+    family: Space Mono
+    style: Medium
 
   bold:
-    family: Jet Brains Mono
+    family: Space Mono
     style: Bold
 
   italic:
-    family: Jet Brains Mono
+    family: Space Mono
     style: Italic
 
   bold_italic:
-    family: Jet Brains Mono
+    family: Space Mono
     style: Bold Italic
 
   # Point size
@@ -153,4 +153,3 @@ key_bindings:
   - { key: PageDown,  mods: Shift,   action: ScrollPageDown, mode: ~Alt       }
   - { key: Home,      mods: Shift,   action: ScrollToTop,    mode: ~Alt       }
   - { key: End,       mods: Shift,   action: ScrollToBottom, mode: ~Alt       }
-
