@@ -16,8 +16,8 @@ configuration {
 
 * {
     foreground:  #1d1;
-    backlight:   #ccffeedd;
-    background-color:  #050505;
+    backlight:   #131216;
+    background-color:  #131216;
     highlight:     underline bold #eceff4;
     transparent: rgba(46,52,64,0);
 }
@@ -29,7 +29,7 @@ window {
     border:  0px;
     border-radius: 0px;
 
-    background-color: #050505;
+    background-color: #131216;
     spacing: 0;
     children:  [mainbox];
     orientation: horizontal;
@@ -43,19 +43,19 @@ mainbox {
 message {
     color: #1d1d1c;
     padding: 5;
-    border-color: #86baba;
+    border-color: #87a4a0;
     border:  0px 2px 2px 2px;
-    background-color: #86baba;
+    background-color: #87a4a0;
 }
 
 inputbar {    /* type bar */
-    color: #b59f8b;
+    color: #d7cdba;
     padding: 11px;
-    background-color: #050505;
+    background-color: #131216;
 
     border: 1px;
     border-radius: 0px;
-    border-color: #86baba;
+    border-color: #87a4a0;
 }
 
 entry, prompt, case-indicator {
@@ -70,9 +70,9 @@ prompt {
 listview {    /* program box */
     padding: 20px;
     border-radius: 0px;
-    border-color: #86baba;
+    border-color: #87a4a0;
     border: 0px 1px 1px 1px;
-    background-color: #050505;
+    background-color: #131216;
     dynamic: false;
 }
 
@@ -82,11 +82,11 @@ element {
     border-radius: 0px;
     background-color: transparent;
     color: #f00;
-    text-color: #b59f8b;
+    text-color: #d7cdba;
 }
 element selected.normal {   /* selected program */
-	background-color: #86baba;
-	text-color: #050505;
+	background-color: #87a4a0;
+	text-color: #131216;
 }
 
 button {
