@@ -1,19 +1,36 @@
-;==========================================================
-;
-;                    ████              █████
-;                   ░░███            ░░███
-; ████████   ██████  ░███  █████ ████ ░███████   ██████   ████████
-;░░███░░███ ███░░███ ░███ ░░███ ░███  ░███░░███ ░░░░░███ ░░███░░███
-; ░███ ░███░███ ░███ ░███  ░███ ░███  ░███ ░███  ███████  ░███ ░░░
-; ░███ ░███░███ ░███ ░███  ░███ ░███  ░███ ░███ ███░░███  ░███
-; ░███████ ░░██████  █████ ░░███████  ████████ ░░████████ █████
-; ░███░░░   ░░░░░░  ░░░░░   ░░░░░███  ░░░░░░░░   ░░░░░░░░ ░░░░░
-; ░███                       ███ ░███
-; █████                     ░░██████
-;░░░░░                       ░░░░░░
-;
-;
-;==========================================================
+;=============================================================;
+;                                                             ;
+;   ██████╗   ██████╗  ██╗    ██╗  ██╗██████╗     █████╗ ██████╗    ;
+;   ██╔══██╗██╔═══██╗██║    ╚██╗██╔╝██╔══██╗ ██╔══██╗██╔══██╗   ;
+;   ██████╔╝██║     ██║██║     ╚████╔╝ ██████╔╝███████║██████╔╝   ;
+;   ██╔═══╝ ██║     ██║██║       ╚██╔╝   ██╔══██╗██╔══██║██╔══██╗   ;
+;   ██║       ╚██████╔╝ ███████╗██║    ██████╔╝ ██║   ██║██║   ██║   ;
+;   ╚═╝         ╚═════╝  ╚══════╝╚═╝    ╚═════╝  ╚═╝   ╚═╝╚═╝   ╚═╝   ;
+;                                                             ;
+;=============================================================;
+;------------------------------------------------;
+;                                                ;
+;                     COLOR                      ;
+;                                                ;
+;------------------------------------------------;
+
+[color]
+# true bg #2b2833
+background 				= #131216
+background-alt 			= #21232c
+
+foreground 				= #d7cdba
+foreground-alt 			= #2b2833
+
+red 					= #f8524f
+green			 		= #87a4a0
+yellow 					= #ffd089
+blue 					= #843e42
+magenta 				= #f8524f
+cyan 					= #87a4a0
+white 					= #e2e7f4
+gray 					= #C2B9AA
+black 					= #15131A
 
 ;  _
 ; | |__   __ _ _ __ ___
@@ -23,73 +40,115 @@
 
 [bar/base]
 override-redirect		= true
-border-size 				= 0
-border-color 				= #b59f8b
-height 							= 22
-width 							= 100%
-offset-y 						= 0
-padding 						= 1
-radius-top					= 0
-radius-bottom				= 0
-module-margin 			= 1
-bottom 							= false
-line-size 					= 0
-background 					= #dddddd
-foreground 					= #050505
+width 					= 100%
+height 					= 17
+offset-y 				= 0
+padding 				= 1
+radius-top				= 0
+radius-bottom			= 0
+module-margin 			= 0
+border-size 			= 3
+border-color 			= ${color.background}
+bottom 					= false
+background 				= ${color.background}
+foreground 				= ${color.foreground}
 
-font-0=Space Mono:style=Normal:size=13;3
-font-1=cozetteVector:style=Normal:size=13;3
+font-0=Space Mono:style=Normal:size=11;3
+font-1=cozetteVector:style=Normal:size=13;2
 
 [bar/whole]
-inherit         = bar/base
-width 					= 80%%
-offset-x				= 10%
-padding-left    = 2
-padding-right   = 2
-module-margin 	= 1
-modules-center  = bspwm date pulseaudio suspend power
-modules-left    =
-modules-right   =
+inherit         		= bar/base
+width 					= 100%
+offset-x				= 0%
+padding-left    		= 5
+padding-right   		= 5
+module-margin 			= 0
+modules-left    		= left-bga bspwm right-bga
+modules-center  		= left-glyph date right-glyph
+modules-right   		= left-bga memory cpu right-bga sep left-glyph pulseaudio right-glyph sep suspend power
 
 [bar/windows]
 inherit 				= bar/base
-modules-center	= bspwm
+modules-center			= bspwm
 width 					= 8%
 offset-x				= 150
 
 [bar/date]
 inherit 				= bar/base
-modules-center	= date
+modules-center			= left-bga date right-bga
 width 					= 8%
 offset-x				= 50%:-95
 
 [bar/tray]
 inherit 				= bar/base
-modules-center	= pulseaudio power suspend
+modules-center			= pulseaudio power suspend
 width 					= 8%
 offset-x				= 90%:-150
 
-;                              █████             ████
-;                             ░░███            ░░███
-; █████████████    ██████   ███████  █████ ████ ░███   ██████    █████
-;░░███░░███░░███  ███░░███ ███░░███ ░░███ ░███  ░███  ███░░███ ███░░
-; ░███ ░███ ░███ ░███ ░███░███ ░███  ░███ ░███  ░███ ░███████ ░░█████
-; ░███ ░███ ░███ ░███ ░███░███ ░███  ░███ ░███  ░███ ░███░░░   ░░░░███
-; █████░███ █████░░██████ ░░████████░░████████ █████░░██████  ██████
+;                                          █████                    ████
+;                                          ░░███                  ░░███
+;  █████████████    ██████   ███████  █████ ████  ░███   ██████    █████
+;░░███░░███░░███  ███░░███ ███░░███ ░░███ ░███ ░███  ███░░███ ███░░
+;  ░███ ░███ ░███ ░███ ░███░███ ░███  ░███ ░███  ░███ ░███████ ░░█████
+;  ░███ ░███ ░███ ░███ ░███░███ ░███  ░███ ░███  ░███ ░███░░░   ░░░░███
+; █████░███ █████░░██████░░████████░░████████ █████░░██████  ██████
 ;░░░░░ ░░░ ░░░░░  ░░░░░░   ░░░░░░░░   ░░░░░░░░ ░░░░░  ░░░░░░  ░░░░░░
 
-;        _           _      _
-;       | |         | |    | |
-;    ___| |__  _   _| |_ __| | _____      ___ __
-;   / __| '_ \| | | | __/ _` |/ _ \ \ /\ / / '_ \
+;-----------------------------------------------;
+;                                               ;
+;             		SEPARATORS  	            ;
+;                                               ;
+;-----------------------------------------------;
+
+[module/left-glyph]
+type 					= custom/text
+content 				= ""
+content-background		= ${color.background}
+content-foreground		= ${color.foreground}
+;content-font 			= 1
+
+[module/right-glyph]
+type 					= custom/text
+content 				= ""
+content-background		= ${color.background}
+content-foreground		= ${color.foreground}
+;content-font 			= 1
+
+[module/left-bga]
+inherit 				= module/left-glyph
+content-foreground 		= ${color.background-alt}
+;content-font 			= 1
+
+[module/right-bga]
+inherit 				= module/right-glyph
+content-foreground 		= ${color.background-alt}
+;content-font 			= 1
+
+[module/sep]
+type 					= custom/text
+content 				= "  "
+
+[module/sep-bga]
+type 					= custom/text
+content 				= "  "
+content-foreground 		= ${color.background-alt}
+
+
+
+;        _           _      _                     
+;       | |         | |    | |                    
+;    ___| |__  _   _| |_ __| | _____      ___ __  
+;   / __| '_ \| | | | __/ _` |/ _ \ \ /\ / / '_ \ 
 ;   \__ \ | | | |_| | || (_| | (_) \ V  V /| | | |
 ;   |___/_| |_|\__,_|\__\__,_|\___/ \_/\_/ |_| |_|
 [module/power]
-type                    = custom/text
-content                 = ⏻
-content-foreground      = #050505
-click-left              = shutdown now
-content-padding         = 1
+type                    				= custom/text
+;content                 				= %{F#87a4a0}⏻%{F-}
+content                 				= ⏻
+;content-background 					= ${color.foreground}
+content-foreground 						= ${color.red}
+click-left              				= shutdown now
+content-padding        					= 1
 
 ;                                       _
 ;                                      | |
@@ -100,25 +159,30 @@ content-padding         = 1
 ;                 | |
 ;                 |_|
 [module/suspend]
-type                    = custom/text
-content                 = ⏼
-content-foreground      = #050505
-content-padding         = 1
-click-left              = echo 'croc' | sudo -u indigo --stdin systemctl suspend
+type                    				= custom/text
+;content                 				= %{F#87a4a0}⏼%{F-}
+content                 				= ⏼
+;content-background 					= ${color.foreground}
+content-foreground 						= ${color.yellow}
+content-padding         				= 1
+click-left              				= echo 'croc' | sudo -u indigo --stdin systemctl suspend
+
 
 ;       _      _
 ;    __| |__ _| |_ ___
 ;   / _` / _` |  _/ -_)
 ;   \__,_\__,_|\__\___|
 [module/date]
-type 									    	= internal/date
-interval 							  		= 10
-time									    	= "%H:%M"
-date 									    	= "%d %b"
-label 									  	= %date% [ %time% ]
-;label 									  	=    %date% [ %time% ]
+type 									= internal/date
+interval 							  	= 10
+time									= "%H:%M"
+date 									= "%d %b"
+;label 									= %date% [ %{F#87a4a0}%time%%{F-} ]
+label 									= %date% [ %time% ]
+format-background 						= ${color.foreground}
+format-foreground 						= ${color.background}
 label-padding 							= 1
-format 									  	= <label>
+format 									= <label>
 format-padding							= 0
 
 ;    _ __ ___   ___ _ __ ___   ___  _ __ _   _
@@ -129,13 +193,14 @@ format-padding							= 0
 ;                                        |___/
 
 [module/memory]
-type 										    = internal/memory
-interval 								  	= 3
-label 									  	= %{F#86baba}✹%{F-} %gb_used%
-label-padding 					  	= 1
-format 									  	= <label><ramp-used>
-;format-margin					  	= 1
-format-padding					  	= 0
+type 									= internal/memory
+interval 								= 3
+label 									= %{F#87a4a0}✹%{F-} %gb_used%
+label-padding 					  		= 1
+format 									= <label><ramp-used>
+format-background 						= ${color.background-alt}
+;format-margin					  		= 1
+format-padding					  		= 0
 ramp-used-0 						  	= ▁
 ramp-used-1 						  	= ▂
 ramp-used-2 						  	= ▃
@@ -154,14 +219,15 @@ ramp-used-7 						  	= █
 ;    	|_|
 
 [module/cpu]
-type 										    = internal/cpu
-interval 							  		= 0.5
-label 								  		= %{F#86baba}%{F-} %percentage%%
+type 									= internal/cpu
+interval 							  	= 0.5
+label 								  	= %{F#87a4a0}%{F-} %percentage%%
 label-padding 							= 1
-format 								  		= <label><ramp-coreload>
+format 								  	= <label><ramp-coreload>
+format-background 						= ${color.background-alt}
 ;format-margin							= 1
 format-padding							= 0
-ramp-coreload-spacing 			= 0
+ramp-coreload-spacing 					= 0
 ramp-coreload-0 						= ▁
 ramp-coreload-1 						= ▂
 ramp-coreload-2 						= ▃
@@ -171,36 +237,6 @@ ramp-coreload-5 						= ▆
 ramp-coreload-6 						= ▇
 ramp-coreload-7 						= █
 
-;    _          _   _
-;   | |__  __ _| |_| |_ ___ _ _ _  _
-;   | '_ \/ _` |  _|  _/ -_) '_| || |
-;   |_.__/\__,_|\__|\__\___|_|  \_, |
-;                               |__/
-[module/battery]
-type                        = internal/battery
-adapter                     = ADP1
-battery                     = BAT0
-label-discharging 					= %percentage%%
-label-charging 							= %percentage%%
-label-discharging-padding 	= 0
-label-charging-padding			= 0
-format-charging 						= %{F#86baba}<animation-charging>%{F-} <label-charging>
-format-discharging 					= %{F#86baba}<ramp-capacity>%{F-} <label-discharging>
-;format-margin							= 1
-format-charging-padding			= 1
-format-discharging-padding	= 1
-full-at       							= 98
-ramp-capacity-0 						= ""
-ramp-capacity-1 						= ""
-ramp-capacity-2 						= ""
-ramp-capacity-3 						= ""
-ramp-capacity-4 						= ""
-animation-charging-0 				= 
-animation-charging-1 				= 
-animation-charging-2 				= 
-animation-charging-3 				= 
-animation-charging-4 				= 
-animation-charging-framerate 				= 2000
 
 ;              _
 ;    _ __ _  _| |___ ___
@@ -209,39 +245,18 @@ animation-charging-framerate 				= 2000
 ;   |_|
 ;
 [module/pulseaudio]
-type 									  	= internal/pulseaudio
-interval 									= 5
+type 									= internal/pulseaudio
+interval 								= 5
 click-right 							= pavucontrol
 use-ui-max 								= false
-format-volume 						= <ramp-volume> %{A1:pavucontrol:}<label-volume> %{A}
-format-padding						= 0
-format-volume-margin 			= 0
-label-padding 						= 0
+format-volume 							= %{R}<ramp-volume> %{A1:pavucontrol:}<label-volume> %{A}
+format-padding							= 0
+format-volume-margin 					= 0
+label-padding 							= 0
 label-muted 							= " 婢"
-ramp-volume-0 						= " 奄"
-ramp-volume-1 						= " 奔"
-ramp-volume-2 						= " 墳"
-;   _                _    _ _       _     _
-;  | |__   __ _  ___| | _| (_) __ _| |__ | |_
-;  | '_ \ / _` |/ __| |/ / | |/ _` | '_ \| __|
-;  | |_) | (_| | (__|   <| | | (_| | | | | |_
-;  |_.__/ \__,_|\___|_|\_\_|_|\__, |_| |_|\__|
-;                             |___/
-[module/backlight]
-type                      = internal/backlight
-card                      = intel_backlight
-use-actual-brightness     = true
-format                    = %{F#86baba}%{F-}<ramp>
-ramp-0                    = ▂
-ramp-1                    = ▄
-ramp-2                    = ▆
-ramp-3                    = █
-ramp-4                    = 🌑
-label                     = %percentage%%
-bar-width                 = 10
-bar-indicator             = |
-bar-fill                  = ─
-bar-empty                 = ─
+ramp-volume-0 							= " 奄"
+ramp-volume-1 							= " 奔"
+ramp-volume-2 							= " 墳"
 
 ;           _
 ;   __ __ _| |__ _ _ _
@@ -249,23 +264,23 @@ bar-empty                 = ─
 ;    \_/\_/|_\__,_|_||_|
 ;
 [module/network]
-type 										= internal/network
-interval 									= 3.0
-interface									= enp5s0
-label-padding 						= 1
-label-connected 					= %essid%
-label-disconnected 				= 睊
-format-packetloss 				= <label-packetloss>
-format-connected 					= %{F#86baba}<ramp-signal>%{F-} %{A1:nm-connection-editor:}<label-connected>%{A}
-format-disconnected 			= %{A1:nm-connection-editor:}<label-disconnected>%{A}
-;format-margin						= 1
-format-padding						= 0
-ramp-signal-0 						= 
-ramp-signal-1 						= 
-ramp-signal-2 						= 
-ramp-signal-3 						= 
-ramp-signal-4 						= 
-ramp-signal-5 						= 
+type 									= internal/network
+interval 								= 3.0
+interface								= enp5s0
+label-padding 							= 1
+label-connected 						= %essid%
+label-disconnected 						= 睊
+format-packetloss 						= <label-packetloss>
+format-connected 						= %{F#87a4a0}<ramp-signal>%{F-} %{A1:nm-connection-editor:}<label-connected>%{A}
+format-disconnected 					= %{A1:nm-connection-editor:}<label-disconnected>%{A}
+;format-margin							= 1
+format-padding							= 0
+ramp-signal-0 							= 
+ramp-signal-1 							= 
+ramp-signal-2 							= 
+ramp-signal-3 							= 
+ramp-signal-4 							= 
+ramp-signal-5 							= 
 click-left 								= pulseaudio
 
 ;   _ __ ___ __
@@ -274,21 +289,21 @@ click-left 								= pulseaudio
 ;
 [module/ewmh]
 type = internal/xworkspaces
-pin-workspaces 						= false
+pin-workspaces 							= false
 enable-click 							= false
-icon-0 										= ▁;○
-icon-1 										= ▂;○
-icon-2 										= ▃;○
-icon-3 										= ▄;○
+icon-0 									= ▁;○
+icon-1 									= ▂;○
+icon-2 									= ▃;○
+icon-3 									= ▄;○
 label-empty 							= ○
-label-occupied 						= ●
+label-occupied 							= ●
 label-active							= ●
-label-active-foreground 	= #86baba
-label-active-padding 			= 2
-label-occupied-padding    = 2
-label-empty-padding 			= 2
-label-urgent-padding 			= 2
-format 										= <label-state>
+label-active-foreground 				= #87a4a0
+label-active-padding 					= 2
+label-occupied-padding    				= 2
+label-empty-padding 					= 2
+label-urgent-padding 					= 2
+format 									= <label-state>
 
 ;    _
 ;   | |
@@ -300,23 +315,26 @@ format 										= <label-state>
 ;             |_|
 [module/bspwm]
 type = internal/bspwm
-pin-workspaces            = true
-ws-icon-0                 = I;○
-ws-icon-1                 = II;○
-ws-icon-2                 = III;○
-ws-icon-3                 = IV;○
-ws-icon-default           = U+20DD
-label-empty 						  = ○
-label-occupied 						= ●
+pin-workspaces            				= true
+ws-icon-0                 				= I;○
+ws-icon-1                 				= II;○
+ws-icon-2                 				= III;○
+ws-icon-3                 				= IV;○
+ws-icon-default           				= U+20DD
+label-empty 						  	= ○
+label-occupied 							= ●
 label-active							= ●
-label-occupied-padding    = 1
-label-active-padding 			= 1
-label-empty-padding 			= 1
-label-active-foreground 	= #050505
-label-occupied-foreground = #b59f8b
-label-empty-foreground 	  = #b59f8b
-label-urgent-foreground   = #ad2727
-format 										= <label-state>
+label-occupied-padding    				= 1
+label-active-padding 					= 1
+label-empty-padding 					= 1
+label-active-foreground 				= ${color.cyan}
+label-occupied-foreground 				= ${color.red}
+label-empty-foreground 	  				= ${color.yellow}
+label-urgent-foreground   				= ${color.red}
+label-active-background					= ${color.background-alt}
+label-occupied-background				= ${color.background-alt}
+label-empty-background					= ${color.background-alt}
+format 									= <label-state>
 
 
 [global/wm]
