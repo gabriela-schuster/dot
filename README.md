@@ -1,6 +1,6 @@
 # dotfiles
 
-![photo of a dark desktop](https://github.com/gabriela-tomazzi/dot/blob/main/1.png)
+![photo of a dark desktop](https://github.com/gabriela-tomazzi/dot/blob/main/warm.png)
 
 ## dependencies:
 
