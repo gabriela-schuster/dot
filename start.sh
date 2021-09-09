@@ -10,6 +10,8 @@ reset="\e[0m"
 
 echo "Making executables..."
 
+# oh-my-zsh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 # BSPWM
 chmod +x config/bspwm
 # POLYBAR
