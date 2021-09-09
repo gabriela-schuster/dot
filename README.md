@@ -14,10 +14,11 @@
 * picom
 * nvim
 * cozette-ttf
+* zsh
 
 ### Arch:
 ```
-yay -S bspwm sxhdk alacritty starsip polybar conky rofi picom cozette-ttf
+yay -S bspwm sxhdk alacritty starsip polybar conky rofi picom cozette-ttf zsh
 ```
 ***
 ## install: 
