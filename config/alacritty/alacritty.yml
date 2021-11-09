@@ -6,7 +6,7 @@ window:
   #  lines: 0
 
   padding:
-    x: 50
+    x: 30
     y: 6
 
   title: Alacritty
@@ -106,7 +106,7 @@ colors:
 
   # Bright colors
   bright:
-    black:   '#2b2833'
+    black:   '#403c4e'
     red:     '#f8524f'
     green:   '#87a4a0'
     yellow:  '#ffd089'
@@ -116,53 +116,7 @@ colors:
     white:   '#e0d8c9'
 
 
-# colors:
-#   primary:
-#     background: '#1b1b1b'
-#     foreground: '#bebebe'
-
-#   selection:
-#     text: '#1b1b1b'
-
-#   # Normal colors
-#   normal:
-#     black:   '#1b1b1b'
-#     red:     '#487480'
-#     green:   '#8b8f7e'
-#     yellow:  '#696261'
-#     blue:    '#907466'
-#     magenta: '#aa8f7c'
-#     cyan:    '#72a6ab'
-#     white:   '#bebebe'
-
-#   # Bright colors
-#   bright:
-#     black:   '#4d4b4f'
-#     red:     '#487480'
-#     green:   '#8b8f7e'
-#     yellow:  '#696261'
-#     blue:    '#907466'
-#     magenta: '#aa8f7c'
-#     cyan:    '#72a6ab'
-#     white:   '#bebebe'
-
-
-
-  # Dim colors
-  #
-  # If the dim colors are not set, they will be calculated automatically based
-  # on the `normal` colors.
-  #dim:
-  #  black:   '0x000000'
-  #  red:     '0x8c3336'
-  #  green:   '0x7a8530'
-  #  yellow:  '0x97822e'
-  #  blue:    '0x506d8f'
-  #  magenta: '0x80638e'
-  #  cyan:    '0x497e7a'
-  #  white:   '0x9a9a9a'
-
-background_opacity: 0.9
+background_opacity: 1
 key_bindings:
     # (Windows, Linux, and BSD only)
   - { key: V,        mods: Control|Shift, action: Paste            }
