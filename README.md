@@ -18,7 +18,7 @@
 
 ### Arch:
 ```
-yay -S bspwm sxhdk alacritty starsip polybar conky rofi picom cozette-ttf zsh
+yay -S bspwm sxhkd alacritty starsip polybar conky rofi picom cozette-ttf zsh
 ```
 ***
 ## install: 
