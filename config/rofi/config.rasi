@@ -1,3 +1,114 @@
 configuration {
-	theme: "~/.config/rofi/themes/center.rasi";
+	font: "Victor Mono Bold 13";
+	line-margin: 10;
+	lines: 10;
+	columns: 2;
+
+    display-ssh:    "";
+    display-run:    "";
+    display-drun:   "ᐅ";
+    display-window: "";
+    display-combi:  "";
+    show-icons:     false;
+	modi: 			"drun";
+}
+
+listview {
+	lines: 6;
+	columns: 2;
+}
+
+* {
+    foreground:  #e1dae9;
+    backlight:   #1d1;
+    background-color:  #070c1a;
+    highlight:     underline bold #e1dae9;
+    transparent: rgba(46,52,64,0);
+}
+
+window {
+	width: 30%;
+    location: center;
+    anchor:   center;
+    padding: 20px;
+    border:  0px;
+    border-radius: 0px;
+
+    background-color: #070c1a;
+    spacing: 0;
+    children:  [mainbox];
+    orientation: horizontal;
+}
+
+mainbox {
+    spacing: 0;
+    children: [ inputbar, message, listview ];
+}
+
+message {
+    color: #e1dae9;
+    padding: 5;
+    border-color: #cc9966;
+    border:  0px 2px 2px 2px;
+    background-color: #cc9966;
+}
+
+inputbar {    /* type bar */
+    color: #e1dae9;
+    padding: 11px;
+    background-color: #070c1a;
+
+    border: 1px;
+    border-radius: 0px;
+    border-color: #cc9966;
+}
+
+entry, prompt, case-indicator {
+    text-font: inherit;
+    text-color:inherit;
+}
+
+prompt {
+    margin: 0px 0.3em 0em 0em ;
+}
+
+listview {    /* program box */
+    padding: 20px;
+    border-radius: 0px;
+    border-color: #cc9966;
+    border: 0px 1px 1px 1px;
+    background-color: #070c1a;
+    dynamic: false;
+}
+
+element {
+    padding: 7px;
+    vertical-align: 0.5;
+    border-radius: 0px;
+    background-color: transparent;
+    color: #f00;
+    text-color: #1d1;
+}
+element selected.normal {   /* selected program */
+	background-color: #cc9966;
+	text-color: #070c1a;
+}
+element-text, element-icon {
+    background-color: inherit;
+    text-color:       inherit;
+}
+
+button {
+    padding: 6px;
+    color: #1d1;
+    horizontal-align: 0.5;
+
+    border: 2px 0px 2px 2px;
+    border-radius: 4px 0px 0px 4px;
+    border-color: #f00;
+}
+
+button selected normal {
+    border: 2px 0px 2px 2px;
+    border-color: #1d1;
 }
