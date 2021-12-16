@@ -21,12 +21,10 @@ window:
   #gtk_theme_variant: None
 
 scrolling:
-  # Maximum number of lines in the scrollback buffer.
-  # Specifying '0' will disable scrolling.
   history: 5000
   auto_scroll: true
 
-#tabspaces: 8
+tabspaces: 4
 
 font:
   normal:
@@ -54,66 +52,153 @@ font:
 
 draw_bold_text_with_bright_colors: true
 
+schemes:
+  rosepine: &rosepine
+    primary:
+      background: "#191724"
+      foreground: "#e0def4"
+    cursor:
+      text: "#191724"
+      cursor: "#796268"
+    vi_mode_cursor:
+      text: "#191724"
+      cursor: "#796268"
+    line_indicator:
+      foreground: None
+      background: None
+    selection:
+      background: "#2A2738"
+    normal:
+      black:    "#6e6a86"
+      red:      "#eb6f92"
+      green:    "#9ccfd8"
+      yellow:   "#f6c177"
+      blue:     "#31748f"
+      magenta:  "#c4a7e7"
+      cyan:     "#ebbcba"
+      white:    "#e0def4"
+    bright:
+      black:    "#6e6a86"
+      red:      "#eb6f92"
+      green:    "#9ccfd8"
+      yellow:   "#f6c177"
+      blue:     "#31748f"
+      magenta:  "#c4a7e7"
+      cyan:     "#ebbcba"
+      white:    "#e0def4"
 
-# colors:
-#   primary:
-#     background: '#282828'
-#     foreground: '#ebdbb2'
+  passion: &passion
+    primary:
+      background: '#110813'
+      foreground: '#dec7fa'
+      
+    selection: 
+      background: '#dec7fa'
+      text: '#110813'
 
-#   selection:
-#     text: '#282828'
+    normal:
+      black:   '#6e0727'
+      red:     '#f30149'
+      green:   '#87a4a0'
+      yellow:  '#f6c177'
+      blue:    '#034c7d'
+      magenta: '#C03048'
+      cyan:    '#C00048'
+      white:   '#e0def4'
 
-#   # Normal colors
-#   normal:
-#     black:   '#3c3836'
-#     red:     '#cc241d'
-#     green:   '#7f991a'
-#     yellow:  '#d79921'
-#     blue:    '#458588'
-#     magenta: '#b16286'
-#     cyan:    '#689d6a'
-#     white:   '#a89984'
+    bright:
+      black:   '#6e0727'
+      red:     '#f30149'
+      green:   '#87a4a0'
+      yellow:  '#f6c177'
+      blue:    '#034c7d'
+      magenta: '#C03048'
+      cyan:    '#C00048'
+      white:   '#e0def4'
 
-#   # Bright colors
-#   bright:
-#     black:   '#7c6f64'
-#     red:     '#fb4934'
-#     green:   '#95bb26'
-#     yellow:  '#fabd2f'
-#     blue:    '#83a598'
-#     magenta: '#d3869b'
-#     cyan:    '#8ec07c'
-#     white:   '#ebdbb2'
+  blue_passion: &blue_passion
+    primary:
+      background: '#070c1a'
+      foreground: '#e1dae9'
+      
+    selection: 
+      background: '#191b3f'
+      text: '#070c1a'
 
-colors:
-  primary:
-    background: '#131216'
-    foreground: '#d7cdba'
+    normal:
+      black:   '#070c1a'
+      red:     '#913a52'
+      green:   '#cc9966'
+      yellow:  '#e2b570'
+      blue:    '#5791b1'
+      magenta: '#9f3c91'
+      cyan:    '#452060'
+      white:   '#d0e2e8'
 
-  selection:
-    text: '#131216'
+    bright:
+      black:   '#291546'
+      red:     '#913a52'
+      green:   '#cc9966'
+      yellow:  '#e2b570'
+      blue:    '#5791b1'
+      magenta: '#9f3c91'
+      cyan:    '#452060'
+      white:   '#d0e2e8'
 
-  # Normal colors
-  normal:
-    black:   '#21232c'
-    red:     '#f8524f'
-    green:   '#87a4a0'
-    yellow:  '#ffd089'
-    blue:    '#843e42'
-    magenta: '#f8524f'
-    cyan:    '#87a4a0'
-    white:   '#e0d8c9'
+  gruvbox: &gruvbox
+    primary:
+      background: '#282828'
+      foreground: '#ebdbb2'
 
-  # Bright colors
-  bright:
-    black:   '#403c4e'
-    red:     '#f8524f'
-    green:   '#87a4a0'
-    yellow:  '#ffd089'
-    blue:    '#843e42'
-    magenta: '#f8524f'
-    cyan:    '#87a4a0'
-    white:   '#e0d8c9'
+    selection:
+      text: '#282828'
+
+    normal:
+      black:   '#3c3836'
+      red:     '#fb4934'
+      green:   '#7f991a'
+      yellow:  '#d79921'
+      blue:    '#458588'
+      magenta: '#b16286'
+      cyan:    '#689d6a'
+      white:   '#a89984'
+
+    bright:
+      black:   '#7c6f64'
+      red:     '#fb4934'
+      green:   '#95bb26'
+      yellow:  '#fabd2f'
+      blue:    '#83a598'
+      magenta: '#d3869b'
+      cyan:    '#8ec07c'
+      white:   '#ebdbb2'
+
+  spaceman: &spaceman
+    primary:
+      background: '#131216'
+      foreground: '#d7cdba'
+    selection:
+      text: '#131216'
+    normal:
+      black:   '#21232c'
+      red:     '#f8524f'
+      green:   '#87a4a0'
+      yellow:  '#ffd089'
+      blue:    '#843e42'
+      magenta: '#f8524f'
+      cyan:    '#87a4a0'
+      white:   '#e0d8c9'
+    bright:
+      black:   '#403c4e'
+      red:     '#f8524f'
+      green:   '#87a4a0'
+      yellow:  '#ffd089'
+      blue:    '#843e42'
+      magenta: '#f8524f'
+      cyan:    '#87a4a0'
+      white:   '#e0d8c9'
+        
+colors: *blue_passion
 
 
 background_opacity: 1
