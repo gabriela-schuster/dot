@@ -1,12 +1,11 @@
 ;=============================================================;
 ;                                                             ;
-;   ██████╗   ██████╗  ██╗    ██╗  ██╗██████╗     █████╗ ██████╗    ;
-;   ██╔══██╗██╔═══██╗██║    ╚██╗██╔╝██╔══██╗ ██╔══██╗██╔══██╗   ;
-;   ██████╔╝██║     ██║██║     ╚████╔╝ ██████╔╝███████║██████╔╝   ;
-;   ██╔═══╝ ██║     ██║██║       ╚██╔╝   ██╔══██╗██╔══██║██╔══██╗   ;
-;   ██║       ╚██████╔╝ ███████╗██║    ██████╔╝ ██║   ██║██║   ██║   ;
-;   ╚═╝         ╚═════╝  ╚══════╝╚═╝    ╚═════╝  ╚═╝   ╚═╝╚═╝   ╚═╝   ;
-;                                                             ;
+;██████╗  ██████╗ ██╗  ██╗   ██╗██████╗  █████╗ ██████╗       ;
+;██╔══██╗██╔═══██╗██║  ╚██╗ ██╔╝██╔══██╗██╔══██╗██╔══██╗      ;
+;██████╔╝██║   ██║██║   ╚████╔╝ ██████╔╝███████║██████╔╝      ;
+;██╔═══╝ ██║   ██║██║    ╚██╔╝  ██╔══██╗██╔══██║██╔══██╗      ;
+;██║     ╚██████╔╝███████╗██║   ██████╔╝██║  ██║██║  ██║      ;
+;╚═╝      ╚═════╝ ╚══════╝╚═╝   ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝      ;
 ;=============================================================;
 ;------------------------------------------------;
 ;                                                ;
@@ -15,19 +14,19 @@
 ;------------------------------------------------;
 
 [color]
-background 				= #070c1a
-background-alt 			= #191b3f
+background 				= #0a0a0b
+background-alt 			= #191b25
 
-foreground 				= #e1dae9
-foreground-alt 			= #291546
+foreground 				= #dddddd
+foreground-alt 			= #191b25
 
-red     				= #913a52
-green   				= #cc9966
-yellow  				= #e2b570
-blue    				= #5791b1
-magenta 				= #9f3c91
-cyan    				= #452060
-white   				= #d0e2e8
+red 					= #b59f8b
+green 					= #5cbfdb
+yellow 					= #d8cfbd
+blue 					= #7f7f84
+magenta 				= #7f7f84
+cyan 					= #7f7f84
+white 					= #e0d8c9
 
 ;  _
 ; | |__   __ _ _ __ ___
@@ -73,7 +72,7 @@ offset-x				= 150
 
 [bar/date]
 inherit 				= bar/base
-modules-center			= date
+modules-center	= date
 width 					= 7%
 offset-x				= 50%:-90
 
@@ -141,7 +140,7 @@ content-foreground 		= ${color.background-alt}
 ;   |___/_| |_|\__,_|\__\__,_|\___/ \_/\_/ |_| |_|
 [module/power]
 type                    				= custom/text
-;content                 				= %{F#cc9966}⏻%{F-}
+;content                 				= %{F#b59f8b}⏻%{F-}
 content                 				= ⏻
 ;content-background 					= ${color.foreground}
 content-foreground 						= ${color.red}
@@ -158,7 +157,7 @@ content-padding        					= 1
 ;                 |_|
 [module/suspend]
 type                    				= custom/text
-;content                 				= %{F#cc9966}⏼%{F-}
+;content                 				= %{F#b59f8b}⏼%{F-}
 content                 				= ⏼
 ;content-background 					= ${color.foreground}
 content-foreground 						= ${color.yellow}
@@ -175,7 +174,7 @@ type 									= internal/date
 interval 							  	= 10
 time									= "%H:%M"
 date 									= "%d %b"
-;label 									= %date% [ %{F#cc9966}%time%%{F-} ]
+label 									= %date% [ %{F#b59f8b}%time%%{F-} ]
 format-background 						= ${color.background}
 format-foreground 						= ${color.bforeground}
 label-padding 							= 1
@@ -191,7 +190,7 @@ format-padding							= 0
 [module/memory]
 type 									= internal/memory
 interval 								= 3
-label 									= %{F#cc9966}✹%{F-} %gb_used%
+label 									= %{F#b59f8b}✹%{F-} %gb_used%
 label-padding 					  		= 1
 ; format 									= <label><ramp-used>
 format 									= <label>
@@ -217,7 +216,7 @@ ramp-used-7 						  	= █
 
 [module/cpu]
 type 									= internal/cpu
-label 								  	= %{F#cc9966}%{F-} %percentage%%
+label 								  	= %{F#b59f8b}%{F-} %percentage%%
 label-padding 							= 1
 ; format 								  	= <label><ramp-coreload>
 format 								  	= <label>
@@ -253,7 +252,7 @@ ramp-2 									= 
 label 									= %temperature-c%
 label-warn 								= %temperature-c%
 label-warn-foreground 					= ${color.red}
-format									= %{F#cc9966}<ramp>%{F-} <label>
+format									= %{F#b59f8b}<ramp>%{F-} <label>
 format-warn 							= <ramp> <label-warn>
 format-background 						= ${color.background}
 
@@ -268,7 +267,7 @@ type 									= internal/pulseaudio
 interval 								= 5
 click-right 							= pavucontrol
 use-ui-max 								= false
-format-volume 							= %{F#452060}<ramp-volume>%{F-} %{A1:pavucontrol:}<label-volume> %{A}
+format-volume 							= %{F#5cbfdb}<ramp-volume>%{F-} %{A1:pavucontrol:}<label-volume> %{A}
 format-padding							= 0
 format-volume-margin 					= 0
 label-padding 							= 0
@@ -291,7 +290,7 @@ label-padding 							= 1
 label-connected 						= %downspeed:9%
 label-disconnected 						= 睊
 format-packetloss 						= <label-packetloss>
-format-connected 						= %{F#cc9966}<ramp-signal>%{F-} %{A1:nm-connection-editor:}<label-connected>%{A}
+format-connected 						= %{F#b59f8b}<ramp-signal>%{F-} %{A1:nm-connection-editor:}<label-connected>%{A}
 format-disconnected 					= %{A1:nm-connection-editor:}<label-disconnected>%{A}
 ;format-margin							= 1
 format-padding							= 0
@@ -317,7 +316,7 @@ icon-3 									= ▄;○
 label-empty 							= ○
 label-occupied 							= ●
 label-active							= ●
-label-active-foreground 				= #cc9966
+label-active-foreground 				= #b59f8b
 label-active-padding 					= 2
 label-occupied-padding    				= 2
 label-empty-padding 					= 2
@@ -346,7 +345,7 @@ label-active							= ●
 label-occupied-padding    				= 1
 label-active-padding 					= 1
 label-empty-padding 					= 1
-label-active-foreground 				= ${color.yellow}
+label-active-foreground 				= ${color.green}
 label-occupied-foreground 				= ${color.white}
 label-empty-foreground 	  				= ${color.white}
 label-urgent-foreground   				= ${color.red}
