@@ -13,6 +13,7 @@
 * rofi
 * picom
 * nvim
+* dunst
 * cozette-ttf
 * zsh
 
