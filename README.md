@@ -4,24 +4,25 @@
 
 ## dependencies:
 
+##### for xorg:
 * bspwm
 * sxhkd
-* alacritty
-* starship
 * polybar
+* alacritty
+* dunst
+#### for wayland:
+* sway
+* waybar
+* alacritty
+#### other
+* starship
 * conky
 * rofi
 * picom
 * nvim
-* dunst
 * cozette-ttf
 * zsh
 
-### Arch:
-```
-yay -S bspwm sxhkd alacritty starsip polybar conky rofi picom cozette-ttf zsh
-```
-***
 ## install: 
 make start.sh executable with
 ```
