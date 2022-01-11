@@ -33,4 +33,4 @@ and run with
 ```
 ***
 
-#### NOTE: qtile and kitty are opcional, unless you want to set them up, you can delete these folders.
+#### IMPORTANT: this is a set of both xorg (bspwm + sxhkd + polybar) and wayland (sway + waybar) desktops, you can remove the folders of the wm you don't want, or any other folder in config if you don't want that application
