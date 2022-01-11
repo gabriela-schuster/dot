@@ -1,0 +1,147 @@
+
+* {
+	border: none;
+	font-family: Space Mono, monospace;
+	font-size: 13px;
+}
+  
+window#waybar {
+	background-color: #0e0d11;
+	/* background-color: rgba(0, 0, 0, 0); */
+	color: #d7cdba;
+	transition-property: background-color;
+	transition-duration: .5s;
+}
+
+window#waybar.hidden {
+	opacity: 0.2;
+}
+
+#workspaces,
+#clock,
+#idle_inhibitor,
+#backlight,
+#battery,
+#network,
+#tray,
+#temperature,
+#cpu,
+#memory,
+#pulseaudio {
+	background-color: #33303f;
+	padding: 0 10px;
+	margin: 0px 4px 0px 4px;
+	border: 3px solid rgba(0, 0, 0, 0);
+	border-radius: 5px;
+	background-clip: padding-box;
+}
+
+#temperature {
+	background-color: #908F70;
+	color: #0f0e13;
+}
+#temperature.critical {
+	background-color: #5c4a5f;
+	color: #0f0e13;
+}
+
+#cpu,
+#memory {
+	background-color: #EDAB4D;
+	color: #0f0e13;
+}
+
+#pulseaudio {
+	background-color: #EDAB4D;
+	color: #0f0e13;
+}
+
+#pulseaudio.muted {
+	background-color: #5c4a5f;
+	color: #0f0e13;
+}
+
+#clock {
+	background-color: #5c4a5f;
+	color: #0f0e13;
+}
+
+#network {
+	background-color: #908F70;
+	color: #0f0e13;
+}
+
+#network.disconnected {
+	background-color: #5c4a5f;
+	color: #0f0e13;
+}
+
+#workspaces button {
+	padding: 0 5px;
+	min-width: 20px;
+	color: #5c4a5f;
+}
+
+/* #workspaces button:hover {
+	background-color: rgba(0, 0, 0, 0.2)
+} */
+
+#workspaces button.focused {
+	color: #bc413b;
+}
+
+#workspaces button.urgent {
+	color: #d4cbc2;
+}
+
+#custom-media {
+	background-color: #908F70;
+	color: #0f0e13;
+}
+
+#custom-fans {
+	color: #908F70;
+}
+
+#idle_inhibitor {
+	color: #d7cdba;
+}
+
+#idle_inhibitor.activated {
+	background-color: #d7cdba;
+	color: #0f0e13;
+}
+
+#language {
+	color: #908F70;
+}
+
+#backlight {
+	color: #908F70;
+}
+
+#battery {
+	color: #908F70;
+}
+  
+#battery.charging, #battery.plugged {
+	background-color: #908F70;
+	color: #0f0e13;
+}
+
+@keyframes blink {
+	to {
+		  background-color: #0f0e13;
+		  color: #5c4a5f;
+	}
+}
+
+#battery.critical:not(.charging) {
+	background-color: #5c4a5f;
+	color: #0f0e13;
+	animation-name: blink;
+	animation-duration: 0.5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}

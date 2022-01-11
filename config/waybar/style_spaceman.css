@@ -1,0 +1,151 @@
+
+* {
+	border: none;
+	font-family: Space Mono, monospace;
+	font-size: 13px;
+}
+  
+window#waybar {
+	background-color: #131216;
+	/* background-color: rgba(0, 0, 0, 0); */
+	/* border-bottom: 3px solid #131216; */
+	color: #d7cdba;
+	transition-property: background-color;
+	transition-duration: .5s;
+}
+
+window#waybar.hidden {
+	opacity: 0.2;
+}
+
+#workspaces,
+#mode,
+#cpu,
+#memory,
+#temperature,
+#custom-media,
+#custom-fans,
+#clock,
+#idle_inhibitor,
+#language,
+#pulseaudio,
+#backlight,
+#battery,
+#network,
+#tray {
+	background-color: #21232c;
+	padding: 0 10px;
+	margin: 0px 4px 0px 4px;
+	border: 3px solid rgba(0, 0, 0, 0);
+	border-radius: 5px;
+	background-clip: padding-box;
+}
+
+#workspaces button {
+	padding: 0 5px;
+	min-width: 20px;
+	color: #131216;
+}
+
+/* #workspaces button:hover {
+	background-color: rgba(0, 0, 0, 0.2)
+} */
+
+#workspaces button.focused {
+	color: #ffd089;
+}
+
+#workspaces button.urgent {
+	color: #f8524f;
+}
+
+#cpu {
+	color: #ffd089;
+}
+
+#memory {
+	color: #ffd089;
+}
+
+#temperature {
+	color: #843e42;
+}
+
+#temperature.critical {
+	background-color: #f8524f;
+	color: #131216;
+}
+
+#custom-media {
+	background-color: #843e42;
+	color: #131216;
+}
+
+#custom-fans {
+	color: #87a4a0;
+}
+
+#clock {
+	color: #f8524f;
+}
+
+#idle_inhibitor {
+	color: #d7cdba;
+}
+
+#idle_inhibitor.activated {
+	background-color: #d7cdba;
+	color: #131216;
+}
+
+#language {
+	color: #843e42;
+}
+
+#pulseaudio {
+	color: #ffd089;
+}
+
+#pulseaudio.muted {
+	background-color: #f8524f;
+	color: #131216;
+}
+
+#backlight {
+	color: #87a4a0;
+}
+
+#battery {
+	color: #87a4a0;
+}
+  
+#battery.charging, #battery.plugged {
+	background-color: #87a4a0;
+	color: #131216;
+}
+
+@keyframes blink {
+	to {
+		  background-color: #131216;
+		  color: #f8524f;
+	}
+}
+
+#battery.critical:not(.charging) {
+	background-color: #f8524f;
+	color: #131216;
+	animation-name: blink;
+	animation-duration: 0.5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+  
+#network {
+	color: #843e42
+}
+
+#network.disconnected {
+	background-color: #f8524f;
+	color: #131216;
+}
