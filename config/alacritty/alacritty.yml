@@ -87,38 +87,42 @@ schemes:
       cyan:     "#ebbcba"
       white:    "#e0def4"
 
-  passion: &passion
+  catppuccin: &catppuccin
     primary:
-      background: '#110813'
-      foreground: '#dec7fa'
-      
-    selection: 
-      background: '#dec7fa'
-      text: '#110813'
+      background: '#1b1923'
+      foreground: '#D9E0EE'
+
+    cursor:
+      text: '#1E1D2F'
+      cursor: '#F5E0DC'
 
     normal:
-      black:   '#6e0727'
-      red:     '#f30149'
-      green:   '#87a4a0'
-      yellow:  '#f6c177'
-      blue:    '#034c7d'
-      magenta: '#C03048'
-      cyan:    '#C00048'
-      white:   '#c6d6f2'
+      black:   '#6E6C7E'
+      red:     '#F28FAD'
+      green:   '#ABE9B3'
+      yellow:  '#FAE3B0'
+      blue:    '#96CDFB'
+      magenta: '#F5C2E7'
+      cyan:    '#89DCEB'
+      white:   '#D9E0EE'
 
     bright:
-      black:   '#6e0727'
-      red:     '#f30149'
-      green:   '#87a4a0'
-      yellow:  '#f6c177'
-      blue:    '#034c7d'
-      magenta: '#C03048'
-      cyan:    '#C00048'
-      white:   '#e0def4'
+      black:   '#988BA2'
+      red:     '#F28FAD'
+      green:   '#ABE9B3'
+      yellow:  '#FAE3B0'
+      blue:    '#96CDFB'
+      magenta: '#F5C2E7'
+      cyan:    '#89DCEB'
+      white:   '#D9E0EE'
+
+  indexed_colors:
+    - { index: 16, color: '#F8BD96' }
+    - { index: 17, color: '#F5E0DC' }
 
   blue_passion: &blue_passion
     primary:
-      background: '#0a0a0b'
+      background: '#09090a'
       foreground: '#dddddd'
       
     selection: 
@@ -170,9 +174,33 @@ schemes:
       magenta: '#f8524f'
       cyan:    '#87a4a0'
       white:   '#e0d8c9'
-        
-colors: *blue_passion
 
+  base: &base
+    primary:
+      background: '#0e0d11'
+      foreground: '#d7cdba'
+    selection:
+      text: '#131216'
+    normal:
+      black:   '#33303f'
+      red:     '#bc413b'
+      green:   '#908F70'
+      yellow:  '#EDAB4D'
+      blue:    '#5c4a5f'
+      magenta: '#bc413b'
+      cyan:    '#908F70'  # #376886 #6bb3a0
+      white:   '#d3c4a2'
+    bright:
+      black:   '#33303f'
+      red:     '#bc413b'
+      green:   '#908F70'
+      yellow:  '#EDAB4D'
+      blue:    '#5c4a5f'
+      magenta: '#bc413b'
+      cyan:    '#908F70'
+      white:   '#d3c4a2'
+        
+colors: *catppuccin
 
 background_opacity: 1
 key_bindings:
