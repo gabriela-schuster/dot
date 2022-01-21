@@ -3,6 +3,14 @@
 #
 # OBS: realoading wont starts these things again
 exec waybar
+set $gnome-schema org.gnome.desktop.interface
+
+exec_always {
+    gsettings set $gnome-schema gtk-theme 'catppuccin-gtk'
+    # gsettings set $gnome-schema icon-theme 'Your icon theme'
+    # gsettings set $gnome-schema cursor-theme 'Your cursor Theme'
+    # gsettings set $gnome-schema font-name 'Your font name'
+}
 
 ### Variables
 #
@@ -22,10 +30,10 @@ set $menu rofi -show drun -disable-history -show-icons -icon-theme 'Tela black'
 # Colors
 #
 # Defining colors         border     bg         text       indicator  child_border
-client.focused        	 	#EDAB4D    #EDAB4D    #d9e0ea    #EDAB4D    #EDAB4D
-client.unfocused        	#33303f    #0e0d11    #d9e0ea	 #0e0d11    #0e0d11
-client.focused_inactive 	#33303f    #0e0d11    #d9e0ea    #0e0d11    #0e0d11
-client.urgent	          	#5c4a5f    #0e0d11    #d9e0ea    #5c4a5f    #5c4a5f
+client.focused        	 	#F5E0DC    #F5E0DC    #1E1D2F    #F5E0DC    #F5E0DC
+client.unfocused        	#6E6C7E    #1E1D2F    #F5E0DC	 #1E1D2F    #1E1D2F
+client.focused_inactive 	#6E6C7E    #1E1D2F    #F5E0DC    #1E1D2F    #1E1D2F
+client.urgent	          	#FAE3B0    #1E1D2F    #F5E0DC    #FAE3B0    #FAE3B0
 
 # Window Appearance
 default_border pixel 1
@@ -82,7 +90,7 @@ output * bg /home/indigo/Pictures/wall.png fill
     bindsym $mod+c kill
 
     # Start your launcher
-    bindsym $mod+d exec $menu
+    bindsym $mod+space exec $menu
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
@@ -156,7 +164,7 @@ output * bg /home/indigo/Pictures/wall.png fill
     bindsym $mod+f floating toggle
 
     # Swap focus between the tiling area and the floating area
-    bindsym $mod+space focus mode_toggle
+    # bindsym $mod+space focus mode_toggle
 
     # Move focus to the parent container
     bindsym $mod+a focus parent
