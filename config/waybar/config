@@ -1,5 +1,5 @@
 {
-    "height": 16,
+    "height": 10,
     "modules-left": ["sway/workspaces"],
     "modules-center": ["clock"],
     "modules-right": ["temperature", "memory", "cpu", "pulseaudio", "network"],
@@ -9,10 +9,10 @@
         "all-outputs": true,
         "format": "{icon}",
         "format-icons": {
-            "1": " ",
-            "2": " ",
-            "3": " ",
-            "4": " ",
+            "1": "I ",	// 
+            "2": "II ",
+            "3": "III ",
+            "4": "IV ",
             "urgent": "○ ",
             "focused": "○ ",
             "default": "○ "
@@ -23,7 +23,7 @@
     },
     "clock": {
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-		"format": " {:%b %d [ %R ]}",
+		"format": " {:%d %b [ %R ]}",
 		"format-alt": "{:%A, %B %d, %Y}  "
     },
     "cpu": {
@@ -52,7 +52,7 @@
         "format": "{icon} {volume}% {format_source}",
         "format-bluetooth": "{icon} {volume}% {format_source}",
         "format-bluetooth-muted": "   {volume}% {format_source}",
-        "format-muted": "  {format_source}",
+        "format-muted": " {format_source}",
         "format-source": " ",
         "format-source-muted": " ",
         "format-icons": {
