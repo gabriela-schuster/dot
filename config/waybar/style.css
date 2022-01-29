@@ -1,142 +1,216 @@
+env:
+  TERM: xterm-256color
 
-* {
-	border: none;
-	font-family: undefined medium, monospace;
-	font-family: Space Mono, monospace;
-	font-size: 11px;
-}
-  
-window#waybar {
-	background-color: #1b1923;
-	/* background-color: rgba(0, 0, 0, 0); */
-	color: #cccccc;
-	transition-property: background-color;
-	transition-duration: .5s;
-	padding: 0;
-	margin: 0;
-}
+window:
+  #  columns: 0
+  #  lines: 0
 
-window#waybar.hidden {
-	opacity: 0.2;
-}
+  padding:
+    x: 30
+    y: 6
 
-#workspaces,
-#clock,
-#idle_inhibitor,
-#backlight,
-#battery,
-#network,
-#tray,
-#temperature,
-#cpu,
-#memory,
-#pulseaudio {
-	background-color: #1b1923;
-	padding: 0 10px;
-	margin: 0px 4px 0px 4px;
-	border: 3px solid rgba(0, 0, 0, 0);
-	border-radius: 0px;
-	background-clip: padding-box;
-}
+  title: Alacritty
 
-#workspaces {
-	background-color: #1b1923;
-}
-#workspaces button {
-	padding: 0 5px;
-	min-width: 20px;
-	color: #6E6C7E;
-}
-#workspaces button.focused {
-	color: #96CDFB;
-}
-#workspaces button.urgent {
-	color: #F28FAD;
-}
-/* #workspaces button:hover {
-	background-color: rgba(0, 0, 0, 0.2)
-} */
+  # Window class (Linux/BSD only):
+  class:
+    # Application instance name
+    instance: alacritty
+    # General application class
+    general: alacritty
 
-#temperature {
-	color: #ABE9B3;
-	background-color: #1b1923;
-}
-#temperature.critical {
-	color: #F28FAD;
-	background-color: #1b1923;
-}
+  #gtk_theme_variant: None
 
-#cpu,
-#memory {
-	color: #F5C2E7;
-	background-color: #1b1923;
-}
+scrolling:
+  history: 5000
+  auto_scroll: true
 
-#pulseaudio {
-	color: #F5C2E7;
-	background-color: #1b1923;
-}
+tabspaces: 4
 
-#pulseaudio.muted {
-	color: #96CDFB;
-	background-color: #1b1923;
-}
+font:
+  normal:
+    family: Space Mono
+    style: Medium
 
-#clock {
-	color: #96CDFB;
-	background-color: #1b1923;
-}
+  bold:
+    family: Space Mono
+    style: Bold
 
-#network {
-	color: #ABE9B3;
-	background-color: #1b1923;
-}
+  italic:
+    family: Space Mono
+    style: Italic
 
-#network.disconnected {
-	color: #96CDFB;
-	background-color: #1b1923;
-}
+  bold_italic:
+    family: Space Mono
+    style: Bold Italic
 
+  # Point size
+  size: 13
 
-#idle_inhibitor {
-	color: #d7cdba;
-}
+  offset:
+    x: 0
+    y: 1
 
-#idle_inhibitor.activated {
-	color: #d7cdba;
-	background-color: #1b1923;
-}
+draw_bold_text_with_bright_colors: true
 
-#language {
-	background-color: #ABE9B3;
-}
+schemes:
+  catppuccin: &catppuccin
+    primary:
+      background: '#1b1923'
+      foreground: '#D9E0EE'
 
-#backlight {
-	background-color: #ABE9B3;
-}
+    cursor:
+      text: '#1E1D2F'
+      cursor: '#F5E0DC'
 
-#battery {
-	background-color: #ABE9B3;
-}
-  
-#battery.charging, #battery.plugged {
-	color: #ABE9B3;
-	background-color: #1b1923;
-}
+    normal:
+      black:   '#6E6C7E'
+      red:     '#F28FAD'
+      green:   '#ABE9B3'
+      yellow:  '#FAE3B0'
+      blue:    '#96CDFB'
+      magenta: '#F5C2E7'
+      cyan:    '#89DCEB'
+      white:   '#D9E0EE'
 
-@keyframes blink {
-	to {
-		  color: #1b1923;
-		  background-color: #96CDFB;
-	}
-}
+    bright:
+      black:   '#988BA2'
+      red:     '#F28FAD'
+      green:   '#ABE9B3'
+      yellow:  '#FAE3B0'
+      blue:    '#96CDFB'
+      magenta: '#F5C2E7'
+      cyan:    '#89DCEB'
+      white:   '#D9E0EE'
 
-#battery.critical:not(.charging) {
-	color: #96CDFB;
-	background-color: #1b1923;
-	animation-name: blink;
-	animation-duration: 0.5s;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
-	animation-direction: alternate;
-}
+  indexed_colors:
+    - { index: 16, color: '#F8BD96' }
+    - { index: 17, color: '#F5E0DC' }
+
+  blue_passion: &blue_passion
+    primary:
+      background: '#09090a'
+      foreground: '#dddddd'
+      
+    selection: 
+      background: '#546e7a'
+      text: '#0a0a0b'
+
+    normal:
+      black:   '#18191C'
+      red:     '#b59f8b'
+      green:   '#5cbfdb'
+      yellow:  '#d8cfbd'
+      blue:    '#7f7f84'
+      magenta: '#7f7f84'
+      cyan:    '#7f7f84'
+      white:   '#c6d6f2'
+
+    bright:
+      black:   '#191b25'
+      red:     '#b59f8b'
+      green:   '#5cbfdb'
+      yellow:  '#d8cfbd'
+      blue:    '#7f7f84'
+      magenta: '#7f7f84'
+      cyan:    '#7f7f84'
+      white:   '#c6d6f2'
+
+  base: &base
+    primary:
+      background: '#0e0d11'
+      foreground: '#d7cdba'
+    selection:
+      text: '#131216'
+    normal:
+      black:   '#33303f'
+      red:     '#bc413b'
+      green:   '#908F70'
+      yellow:  '#EDAB4D'
+      blue:    '#5c4a5f'
+      magenta: '#bc413b'
+      cyan:    '#87a4a0'  # #376886 #6bb3a0
+      white:   '#d3c4a2'
+    bright:
+      black:   '#33303f'
+      red:     '#bc413b'
+      green:   '#908F70'
+      yellow:  '#EDAB4D'
+      blue:    '#5c4a5f'
+      magenta: '#bc413b'
+      cyan:    '#87a4a0'
+      white:   '#d3c4a2'
+
+  spaceman: &spaceman
+    primary:
+      # background: '#131216'
+      background: '#0f0e11'
+      foreground: '#d7cdba'
+    selection:
+      text: '#131216'
+    normal:
+      black:   '#21232c'
+      red:     '#f8524f'
+      green:   '#87a4a0'
+      yellow:  '#ffd089'
+      blue:    '#843e42'
+      magenta: '#f8524f'
+      cyan:    '#87a4a0'
+      white:   '#e0d8c9'
+    bright:
+      black:   '#403c4e'
+      red:     '#f8524f'
+      green:   '#87a4a0'
+      yellow:  '#ffd089'
+      blue:    '#843e42'
+      magenta: '#f8524f'
+      cyan:    '#87a4a0'
+      white:   '#e0d8c9'
+
+  hard: &hard
+    primary:
+      background: '#0a0a0a'
+      foreground: '#d7cdba'
+    selection:
+      text: '#262626'
+      background: "#0a0a0a"
+    normal:
+      black:   '#262626'
+      red:     '#b22e5f'
+      green:   '#43999d'
+      yellow:  '#ffd089'
+      blue:    '#7a67c6'
+      magenta: '#b22e5f'
+      cyan:    '#43999d'
+      white:   '#e0d8c9'
+    bright:
+      black:   '#403c4e'
+      red:     '#b22e5f'
+      green:   '#43999d'
+      yellow:  '#ffd089'
+      blue:    '#7a67c6'
+      magenta: '#b22e5f'
+      cyan:    '#43999d'
+      white:   '#e0d8c9'
+        
+colors: *hard
+
+window.opacity: 1
+key_bindings:
+    # (Windows, Linux, and BSD only)
+  - { key: V,        mods: Control|Shift, action: Paste            }
+  - { key: C,        mods: Control|Shift, action: Copy             }
+  - { key: Insert,   mods: Shift,         action: PasteSelection   }
+  - { key: Key0,     mods: Control,       action: ResetFontSize    }
+  - { key: Equals,   mods: Control,       action: IncreaseFontSize }
+  - { key: Plus,     mods: Control,       action: IncreaseFontSize }
+  - { key: Minus,    mods: Control,       action: DecreaseFontSize }
+  - { key: Minus,    mods: Control,       action: DecreaseFontSize }
+
+  - { key: Paste,                    action: Paste                            }
+  - { key: Copy,                     action: Copy                             }
+  - { key: L,         mods: Control, action: ClearLogNotice                   }
+  - { key: L,         mods: Control, chars: "\x0c"                            }
+  - { key: PageUp,    mods: Shift,   action: ScrollPageUp,   mode: ~Alt       }
+  - { key: PageDown,  mods: Shift,   action: ScrollPageDown, mode: ~Alt       }
+  - { key: Home,      mods: Shift,   action: ScrollToTop,    mode: ~Alt       }
+  - { key: End,       mods: Shift,   action: ScrollToBottom, mode: ~Alt       }
