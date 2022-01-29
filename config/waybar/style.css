@@ -1,216 +1,150 @@
-env:
-  TERM: xterm-256color
 
-window:
-  #  columns: 0
-  #  lines: 0
+* {
+	border: none;
+	font-family: Cozette Vector, Space Mono, monospace;
+	font-size: 13px;
+}
+  
+window#waybar {
+	background-color: #0a0a0a;
+	border-bottom: 3px solid #0a0a0a;
+	color: #d7cdba;
+	transition-property: background-color;
+	transition-duration: .5s;
+}
 
-  padding:
-    x: 30
-    y: 6
+window#waybar.hidden {
+	opacity: 0.2;
+}
 
-  title: Alacritty
+#workspaces,
+#mode,
+#cpu,
+#memory,
+#temperature,
+#custom-media,
+#custom-fans,
+#clock,
+#idle_inhibitor,
+#language,
+#pulseaudio,
+#backlight,
+#battery,
+#network,
+#tray {
+	/* background-color: #21232c; */
+	padding: 0 10px;
+	/* margin: 0px 4px 0px 4px; */
+	border: 3px solid rgba(0, 0, 0, 0);
+	border-radius: 5px;
+	background-clip: padding-box;
+}
 
-  # Window class (Linux/BSD only):
-  class:
-    # Application instance name
-    instance: alacritty
-    # General application class
-    general: alacritty
+#workspaces button {
+	padding: 0 5px;
+	min-width: 20px;
+	color: #262626;
+}
 
-  #gtk_theme_variant: None
+/* #workspaces button:hover {
+	background-color: rgba(0, 0, 0, 0.2)
+} */
 
-scrolling:
-  history: 5000
-  auto_scroll: true
+#workspaces button.focused {
+	color: #b22e5f;
+}
 
-tabspaces: 4
+#workspaces button.urgent {
+	color: #b22e5f;
+}
 
-font:
-  normal:
-    family: Space Mono
-    style: Medium
+#cpu {
+	color: #ffd089;
+}
 
-  bold:
-    family: Space Mono
-    style: Bold
+#memory {
+	color: #ffd089;
+}
 
-  italic:
-    family: Space Mono
-    style: Italic
+#temperature {
+	color: #7a67c6;
+}
 
-  bold_italic:
-    family: Space Mono
-    style: Bold Italic
+#temperature.critical {
+	background-color: #b22e5f;
+	color: #0a0a0a;
+}
 
-  # Point size
-  size: 13
+#custom-media {
+	background-color: #7a67c6;
+	color: #0a0a0a;
+}
 
-  offset:
-    x: 0
-    y: 1
+#custom-fans {
+	color: #43999d;
+}
 
-draw_bold_text_with_bright_colors: true
+#clock {
+	color: #43999d;
+}
 
-schemes:
-  catppuccin: &catppuccin
-    primary:
-      background: '#1b1923'
-      foreground: '#D9E0EE'
+#idle_inhibitor {
+	color: #d7cdba;
+}
 
-    cursor:
-      text: '#1E1D2F'
-      cursor: '#F5E0DC'
+#idle_inhibitor.activated {
+	background-color: #d7cdba;
+	color: #0a0a0a;
+}
 
-    normal:
-      black:   '#6E6C7E'
-      red:     '#F28FAD'
-      green:   '#ABE9B3'
-      yellow:  '#FAE3B0'
-      blue:    '#96CDFB'
-      magenta: '#F5C2E7'
-      cyan:    '#89DCEB'
-      white:   '#D9E0EE'
+#language {
+	color: #7a67c6;
+}
 
-    bright:
-      black:   '#988BA2'
-      red:     '#F28FAD'
-      green:   '#ABE9B3'
-      yellow:  '#FAE3B0'
-      blue:    '#96CDFB'
-      magenta: '#F5C2E7'
-      cyan:    '#89DCEB'
-      white:   '#D9E0EE'
+#pulseaudio {
+	color: #ffd089;
+}
 
-  indexed_colors:
-    - { index: 16, color: '#F8BD96' }
-    - { index: 17, color: '#F5E0DC' }
+#pulseaudio.muted {
+	background-color: #b22e5f;
+	color: #0a0a0a;
+}
 
-  blue_passion: &blue_passion
-    primary:
-      background: '#09090a'
-      foreground: '#dddddd'
-      
-    selection: 
-      background: '#546e7a'
-      text: '#0a0a0b'
+#backlight {
+	color: #43999d;
+}
 
-    normal:
-      black:   '#18191C'
-      red:     '#b59f8b'
-      green:   '#5cbfdb'
-      yellow:  '#d8cfbd'
-      blue:    '#7f7f84'
-      magenta: '#7f7f84'
-      cyan:    '#7f7f84'
-      white:   '#c6d6f2'
+#battery {
+	color: #43999d;
+}
+  
+#battery.charging, #battery.plugged {
+	background-color: #43999d;
+	color: #0a0a0a;
+}
 
-    bright:
-      black:   '#191b25'
-      red:     '#b59f8b'
-      green:   '#5cbfdb'
-      yellow:  '#d8cfbd'
-      blue:    '#7f7f84'
-      magenta: '#7f7f84'
-      cyan:    '#7f7f84'
-      white:   '#c6d6f2'
+@keyframes blink {
+	to {
+		  background-color: #0a0a0a;
+		  color: #b22e5f;
+	}
+}
 
-  base: &base
-    primary:
-      background: '#0e0d11'
-      foreground: '#d7cdba'
-    selection:
-      text: '#131216'
-    normal:
-      black:   '#33303f'
-      red:     '#bc413b'
-      green:   '#908F70'
-      yellow:  '#EDAB4D'
-      blue:    '#5c4a5f'
-      magenta: '#bc413b'
-      cyan:    '#87a4a0'  # #376886 #6bb3a0
-      white:   '#d3c4a2'
-    bright:
-      black:   '#33303f'
-      red:     '#bc413b'
-      green:   '#908F70'
-      yellow:  '#EDAB4D'
-      blue:    '#5c4a5f'
-      magenta: '#bc413b'
-      cyan:    '#87a4a0'
-      white:   '#d3c4a2'
+#battery.critical:not(.charging) {
+	background-color: #b22e5f;
+	color: #0a0a0a;
+	animation-name: blink;
+	animation-duration: 0.5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+  
+#network {
+	color: #7a67c6
+}
 
-  spaceman: &spaceman
-    primary:
-      # background: '#131216'
-      background: '#0f0e11'
-      foreground: '#d7cdba'
-    selection:
-      text: '#131216'
-    normal:
-      black:   '#21232c'
-      red:     '#f8524f'
-      green:   '#87a4a0'
-      yellow:  '#ffd089'
-      blue:    '#843e42'
-      magenta: '#f8524f'
-      cyan:    '#87a4a0'
-      white:   '#e0d8c9'
-    bright:
-      black:   '#403c4e'
-      red:     '#f8524f'
-      green:   '#87a4a0'
-      yellow:  '#ffd089'
-      blue:    '#843e42'
-      magenta: '#f8524f'
-      cyan:    '#87a4a0'
-      white:   '#e0d8c9'
-
-  hard: &hard
-    primary:
-      background: '#0a0a0a'
-      foreground: '#d7cdba'
-    selection:
-      text: '#262626'
-      background: "#0a0a0a"
-    normal:
-      black:   '#262626'
-      red:     '#b22e5f'
-      green:   '#43999d'
-      yellow:  '#ffd089'
-      blue:    '#7a67c6'
-      magenta: '#b22e5f'
-      cyan:    '#43999d'
-      white:   '#e0d8c9'
-    bright:
-      black:   '#403c4e'
-      red:     '#b22e5f'
-      green:   '#43999d'
-      yellow:  '#ffd089'
-      blue:    '#7a67c6'
-      magenta: '#b22e5f'
-      cyan:    '#43999d'
-      white:   '#e0d8c9'
-        
-colors: *hard
-
-window.opacity: 1
-key_bindings:
-    # (Windows, Linux, and BSD only)
-  - { key: V,        mods: Control|Shift, action: Paste            }
-  - { key: C,        mods: Control|Shift, action: Copy             }
-  - { key: Insert,   mods: Shift,         action: PasteSelection   }
-  - { key: Key0,     mods: Control,       action: ResetFontSize    }
-  - { key: Equals,   mods: Control,       action: IncreaseFontSize }
-  - { key: Plus,     mods: Control,       action: IncreaseFontSize }
-  - { key: Minus,    mods: Control,       action: DecreaseFontSize }
-  - { key: Minus,    mods: Control,       action: DecreaseFontSize }
-
-  - { key: Paste,                    action: Paste                            }
-  - { key: Copy,                     action: Copy                             }
-  - { key: L,         mods: Control, action: ClearLogNotice                   }
-  - { key: L,         mods: Control, chars: "\x0c"                            }
-  - { key: PageUp,    mods: Shift,   action: ScrollPageUp,   mode: ~Alt       }
-  - { key: PageDown,  mods: Shift,   action: ScrollPageDown, mode: ~Alt       }
-  - { key: Home,      mods: Shift,   action: ScrollToTop,    mode: ~Alt       }
-  - { key: End,       mods: Shift,   action: ScrollToBottom, mode: ~Alt       }
+#network.disconnected {
+	background-color: #b22e5f;
+	color: #0a0a0a;
+}
