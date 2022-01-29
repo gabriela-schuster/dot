@@ -53,40 +53,6 @@ font:
 draw_bold_text_with_bright_colors: true
 
 schemes:
-  rosepine: &rosepine
-    primary:
-      background: "#191724"
-      foreground: "#e0def4"
-    cursor:
-      text: "#191724"
-      cursor: "#796268"
-    vi_mode_cursor:
-      text: "#191724"
-      cursor: "#796268"
-    line_indicator:
-      foreground: None
-      background: None
-    selection:
-      background: "#2A2738"
-    normal:
-      black:    "#6e6a86"
-      red:      "#eb6f92"
-      green:    "#9ccfd8"
-      yellow:   "#f6c177"
-      blue:     "#31748f"
-      magenta:  "#c4a7e7"
-      cyan:     "#ebbcba"
-      white:    "#e0def4"
-    bright:
-      black:    "#6e6a86"
-      red:      "#eb6f92"
-      green:    "#9ccfd8"
-      yellow:   "#f6c177"
-      blue:     "#31748f"
-      magenta:  "#c4a7e7"
-      cyan:     "#ebbcba"
-      white:    "#e0def4"
-
   catppuccin: &catppuccin
     primary:
       background: '#1b1923'
@@ -149,6 +115,31 @@ schemes:
       cyan:    '#7f7f84'
       white:   '#c6d6f2'
 
+  base: &base
+    primary:
+      background: '#0e0d11'
+      foreground: '#d7cdba'
+    selection:
+      text: '#131216'
+    normal:
+      black:   '#33303f'
+      red:     '#bc413b'
+      green:   '#908F70'
+      yellow:  '#EDAB4D'
+      blue:    '#5c4a5f'
+      magenta: '#bc413b'
+      cyan:    '#87a4a0'  # #376886 #6bb3a0
+      white:   '#d3c4a2'
+    bright:
+      black:   '#33303f'
+      red:     '#bc413b'
+      green:   '#908F70'
+      yellow:  '#EDAB4D'
+      blue:    '#5c4a5f'
+      magenta: '#bc413b'
+      cyan:    '#87a4a0'
+      white:   '#d3c4a2'
+
   spaceman: &spaceman
     primary:
       # background: '#131216'
@@ -175,34 +166,35 @@ schemes:
       cyan:    '#87a4a0'
       white:   '#e0d8c9'
 
-  base: &base
+  hard: &hard
     primary:
-      background: '#0e0d11'
+      background: '#0a0a0a'
       foreground: '#d7cdba'
     selection:
-      text: '#131216'
+      text: '#262626'
+      background: "#0a0a0a"
     normal:
-      black:   '#33303f'
-      red:     '#bc413b'
-      green:   '#908F70'
-      yellow:  '#EDAB4D'
-      blue:    '#5c4a5f'
-      magenta: '#bc413b'
-      cyan:    '#908F70'  # #376886 #6bb3a0
-      white:   '#d3c4a2'
+      black:   '#262626'
+      red:     '#b22e5f'
+      green:   '#43999d'
+      yellow:  '#ffd089'
+      blue:    '#7a67c6'
+      magenta: '#b22e5f'
+      cyan:    '#43999d'
+      white:   '#e0d8c9'
     bright:
-      black:   '#33303f'
-      red:     '#bc413b'
-      green:   '#908F70'
-      yellow:  '#EDAB4D'
-      blue:    '#5c4a5f'
-      magenta: '#bc413b'
-      cyan:    '#908F70'
-      white:   '#d3c4a2'
+      black:   '#403c4e'
+      red:     '#b22e5f'
+      green:   '#43999d'
+      yellow:  '#ffd089'
+      blue:    '#7a67c6'
+      magenta: '#b22e5f'
+      cyan:    '#43999d'
+      white:   '#e0d8c9'
         
-colors: *catppuccin
+colors: *hard
 
-background_opacity: 1
+window.opacity: 1
 key_bindings:
     # (Windows, Linux, and BSD only)
   - { key: V,        mods: Control|Shift, action: Paste            }
