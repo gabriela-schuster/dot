@@ -19,6 +19,7 @@ chmod +x config/polybar/launch.sh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 # EMACS
 mv emacs .emacs & mv .emacs ~
+mv .emacd.d .emacs.d & mv .emacs.d 
 # ZSH
 mv zshrc .zshrc & mv .zshrc ~
 echo -e "${GREEN}Downloading zsh dependencies${reset}"
