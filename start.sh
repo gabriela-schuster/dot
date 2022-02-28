@@ -10,12 +10,15 @@ reset="\e[0m"
 
 echo "Making executables..."
 
-# oh-my-zsh
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 # BSPWM
 chmod +x config/bspwm
 # POLYBAR
 chmod +x config/polybar/launch.sh 
+
+# oh-my-zsh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+# EMACS
+mv emacs .emacs & mv .emacs ~
 # ZSH
 mv zshrc .zshrc & mv .zshrc ~
 echo -e "${GREEN}Downloading zsh dependencies${reset}"
@@ -24,10 +27,7 @@ git clone https://github.com/marlonrichert/zsh-autocomplete ~/.zsh/zsh-autocompl
 git clone https://github.com/zsh-users/zsh-syntax-highlighting ~/.zsh/zsh-syntax-highlighting
 # CONKY
 chmod +c config/conkyx-start.sh
-# NVIM
-sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
-       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
-echo -e "${GREEN}vi-plug is managing nvim plugins, run :PlugInstall on vim/nvim to install them${reset}"
+
 
 echo -e "${CYAN}DONE${reset}"
 
