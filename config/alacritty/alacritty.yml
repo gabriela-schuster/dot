@@ -108,30 +108,57 @@ schemes:
       cyan:    '#87a4a0'
       white:   '#e0d8c9'
 
+  like: &like
+    primary:
+      background: '#110d10'
+      foreground: '#e9ebbe'
+    selection:
+      text: '#36112a'
+      background: "#110d10"
+    normal:
+      black:   '#36112a'
+      red:     '#90354c'
+      green:   '#3c5269'
+      yellow:  '#e5c55e'
+      blue:    '#4d2e52'
+      magenta: '#d46d51'
+      cyan:    '#87a18c'
+      white:   '#e9ebbe'
+    bright:
+      black:   '#36112a'
+      red:     '#90354c'
+      green:   '#3c5269'
+      yellow:  '#e5c55e'
+      blue:    '#4d2e52'
+      magenta: '#d46d51'
+      cyan:    '#87a18c'
+      white:   '#e9ebbe'
+      
   hard: &warm
     primary:
       background: '#110d10'
       foreground: '#e1b473'
+      # #1d161b #171216
     selection:
       text: '#241c22'
       background: "#110d10"
     normal:
-      black:   '#241c22'
+      black:   '#1d161b'
       red:     '#b24b50'
       green:   '#6b7d7a'
       yellow:  '#df8038'
       blue:    '#4f4965'
       magenta: '#c3523f'
-      cyan:    '#5f2f45'
+      cyan:    '#6f3a53'
       white:   '#ffe0b2'
     bright:
-      black:   '#241c22'
+      black:   '#443c42'
       red:     '#b24b50'
       green:   '#6b7d7a'
       yellow:  '#df8038'
       blue:    '#4f4965'
       magenta: '#c3523f'
-      cyan:    '#5f2f45'
+      cyan:    '#6f3a53'
       white:   '#ffe0b2'
       
         
