@@ -19,10 +19,9 @@ listview {
 }
 
 * {
-    foreground:  #F5E0DC;
-    backlight:   #1d1;
-    background-color:  #1E1D2F;
-    highlight:     underline bold #F5E0DC;
+    foreground: #e1b473;
+    background-color:  #110d10;
+	bold: #6f3a53;
     transparent: rgba(46,52,64,0);
 }
 
@@ -34,7 +33,7 @@ window {
     border:  0px;
     border-radius: 0px;
 
-    background-color: #1E1D2F;
+    background-color: @background-color;
     spacing: 0;
     children:  [mainbox];
     orientation: horizontal;
@@ -46,21 +45,28 @@ mainbox {
 }
 
 message {
-    color: #F5E0DC;
+    color: @foreground;
     padding: 5;
-    border-color: #F28FAD;
+    border-color: @bold;
     border:  0px 2px 2px 2px;
-    background-color: #F28FAD;
+    background-color: @bold;
+}
+
+scrollbar {
+    width: 4px;
+    border: 0;
+    handle-width:8px;
+    padding: 0;
 }
 
 inputbar {    /* type bar */
-    color: #F5E0DC;
+    color: @foreground;
     padding: 11px;
-    background-color: #1E1D2F;
+    background-color: @background-color;
 
     border: 1px;
     border-radius: 0px;
-    border-color: #F28FAD;
+    border-color: @bold;
 }
 
 entry, prompt, case-indicator {
@@ -75,27 +81,24 @@ prompt {
 listview {    /* program box */
     padding: 20px;
     border-radius: 0px;
-    border-color: #F28FAD;
+    border-color: @bold;
     border: 0px 1px 1px 1px;
-    background-color: #1E1D2F;
+    background-color: @background-color;
     dynamic: false;
 }
-
 element {
-    background-color: #1E1D2F;
+    background-color: @background-color;
     padding: 7px;
     vertical-align: 0.5;
     border-radius: 0px;
-    color: #f00;
-    text-color: #1d1;
+	background-color: @background-color;
+}
+element normal normal, element alternate normal, element selected.normal {
+	background-color: @background-color;
 }
 element selected.normal {   /* selected program */
-	background-color: #F28FAD;
-	text-color: #1E1D2F;
-}
-element-text, element-icon {
-    background-color: inherit;
-    text-color: #1E1D2F;
+    /* background-color: @bold; */
+	text-color: @bold;
 }
 
 button {
@@ -112,3 +115,5 @@ button selected normal {
     border: 2px 0px 2px 2px;
     border-color: #1d1;
 }
+
+
