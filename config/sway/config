@@ -16,10 +16,10 @@ exec_always {
 #
 set $mod Mod4
 # Home row direction keys, like vim
-set $left h
-set $down j
-set $up k
-set $right l
+set $left a
+set $down s
+set $up w
+set $right d
 set $term alacritty
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
@@ -30,10 +30,10 @@ set $menu rofi -show drun -disable-history -show-icons -icon-theme 'Tela black'
 # Colors
 #
 # Defining colors         border     bg         text       indicator  child_border
-client.focused        	 	#F5E0DC    #F5E0DC    #1E1D2F    #F5E0DC    #F5E0DC
-client.unfocused        	#6E6C7E    #1E1D2F    #F5E0DC	 #1E1D2F    #1E1D2F
-client.focused_inactive 	#6E6C7E    #1E1D2F    #F5E0DC    #1E1D2F    #1E1D2F
-client.urgent	          	#FAE3B0    #1E1D2F    #F5E0DC    #FAE3B0    #FAE3B0
+client.focused        	 	#df8038    #df8038    #110d10    #df8038    #df8038
+client.unfocused        	#241c22    #110d10    #df8038	 #110d10    #110d10
+client.focused_inactive 	#241c22    #110d10    #df8038    #110d10    #110d10
+client.urgent	          	#FAE3B0    #110d10    #df8038    #FAE3B0    #FAE3B0
 
 # Window Appearance
 default_border pixel 1
@@ -78,7 +78,7 @@ output * bg /home/indigo/Pictures/wall.png fill
 #
 # Basics:
 #
-	bindsym $mod+b exec firefox-nightly
+	bindsym $mod+b exec firefox
 	bindsym $mod+p exec pcmanfm
 	bindsym $mod+z exec grim -g "$(slurp)"
     bindsym $mod+Return exec $term
@@ -153,8 +153,8 @@ output * bg /home/indigo/Pictures/wall.png fill
     bindsym $mod+v splitv
 
     # Switch the current container between different layout styles
-    bindsym $mod+s layout stacking
-    bindsym $mod+w layout tabbed
+    # bindsym $mod+s layout stacking
+    bindsym $mod+t layout tabbed
     bindsym $mod+e layout toggle split
 
     # Make the current focus fullscreen
@@ -167,7 +167,7 @@ output * bg /home/indigo/Pictures/wall.png fill
     # bindsym $mod+space focus mode_toggle
 
     # Move focus to the parent container
-    bindsym $mod+a focus parent
+    # bindsym $mod+a focus parent
 #
 # Scratchpad:
 #
@@ -175,11 +175,11 @@ output * bg /home/indigo/Pictures/wall.png fill
     # You can send windows there and get them back later.
 
     # Move the currently focused window to the scratchpad
-    bindsym $mod+Shift+minus move scratchpad
+    # bindsym $mod+Shift+minus move scratchpad
 
     # Show the next scratchpad window or hide the focused scratchpad window.
     # If there are multiple scratchpad windows, this command cycles through them.
-    bindsym $mod+minus scratchpad show
+    # bindsym $mod+minus scratchpad show
 #
 # Resizing containers:
 #
