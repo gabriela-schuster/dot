@@ -25,12 +25,24 @@
     (setq python-indent 4)
     (setq tab-width 4)))
 
-(set-window-margins (selected-window) 1 1)
+
+(setq header-line-format " ")
+(set-frame-parameter nil 'internal-border-width 20)
+(set-window-margins (selected-window) 3 1)
 (setq header-line t)
 (setq header-line-format " ")
 (setq-default line-spacing 0.1)
 ;; (customize-set-variable 'fill-column 80)
 ;; (global-display-fill-column-indicator-mode)
+
+;; --------------- org things
+(setq org-hidden-keywords '(title))
+(setq org-superstar-cycle-headline-bullets nil)
+(setq org-superstar-headline-bullets-list
+      '("◉" "○" "▷" "◈"))
+;(add-to-list 'org-babel-load-languages '(js . t))
+(org-babel-do-load-languages 'org-babel-load-languages org-babel-load-languages)
+(add-to-list 'org-babel-tangle-lang-exts '("js" . "js"))
 
 ;; --------------------------------- modeline
 (setq-default mode-line-format
@@ -153,8 +165,17 @@
   ;; )
 
 (use-package org)
-(require 'org-bullets)
-(add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
+    (setq org-startup-indented t
+          org-pretty-entities t
+          org-hide-emphasis-markers t
+          org-startup-with-inline-images t
+          org-image-actual-width '(300))
+(use-package org-superstar
+  :config
+  (setq org-superstar-special-todo-items t)
+  (add-hook 'org-mode-hook (lambda ()
+                             (org-superstar-mode 1))))
+(require 'ob-js)
 
 (use-package python)
 ;;(use-package flycheck-rust)
@@ -233,7 +254,7 @@
  ;; If there is more than one, they won't work right.
  '(indent-tabs-mode t)
  '(package-selected-packages
-   '(racer rustic jedi flycheck use-package neotree clues-theme auto-complete all-the-icons ace-window))
+   '(org-superstar racer rustic jedi flycheck use-package neotree clues-theme auto-complete all-the-icons ace-window))
  '(python-indent-def-block-scale 4)
  '(python-indent-guess-indent-offset nil)
  '(python-indent-offset 4))
