@@ -108,31 +108,59 @@ schemes:
       cyan:    '#87a4a0'
       white:   '#e0d8c9'
 
-  like: &like
+  gruv: &gruv
     primary:
-      background: '#110d10'
-      foreground: '#e9ebbe'
+      background: '#1D2021'
+      foreground: '#EBDBB2'
     selection:
-      text: '#36112a'
-      background: "#110d10"
+      text: '#282828'
+      background: "#D65D0E"
     normal:
-      black:   '#36112a'
-      red:     '#90354c'
-      green:   '#3c5269'
-      yellow:  '#e5c55e'
-      blue:    '#4d2e52'
-      magenta: '#d46d51'
-      cyan:    '#87a18c'
-      white:   '#e9ebbe'
+      black:   '#504945'
+      red:     '#FB4934'
+      green:   '#98971A'
+      yellow:  '#D79921'
+      blue:    '#458588'
+      magenta: '#B16286'
+      cyan:    '#689D6A'
+      white:   '#EBDBB2'
     bright:
-      black:   '#36112a'
-      red:     '#90354c'
-      green:   '#3c5269'
-      yellow:  '#e5c55e'
-      blue:    '#4d2e52'
-      magenta: '#d46d51'
-      cyan:    '#87a18c'
-      white:   '#e9ebbe'
+      black:   '#504945'
+      red:     '#FB4934'
+      green:   '#98971A'
+      yellow:  '#D79921'
+      blue:    '#458588'
+      magenta: '#B16286'
+      cyan:    '#689D6A'
+      white:   '#EBDBB2'
+
+  test: &blackberry
+    primary:
+      background: '#130F13'
+      # #171217 #1d161d #231a23 #251d25 #2e242e #362b36
+      foreground: '#F6CE8A'
+      # #cbaa72
+    selection:
+      text: '#002E51'
+      background: "#F6CE8A"
+    normal:
+      black:   '#402A47'
+      red:     '#8a1939' # #ac2048
+      green:   '#8F934E'
+      yellow:  '#d59410'
+      blue:    '#573960' # #654370
+      magenta: '#a56243'
+      cyan:    '#395560'
+      white:   '#efd8a1'
+    bright:
+      black:   '#402A47'
+      red:     '#8a1939'
+      green:   '#8F934E'
+      yellow:  '#d59410'
+      blue:    '#573960'
+      magenta: '#a56243'
+      cyan:    '#395560'
+      white:   '#efd8a1'
       
   hard: &warm
     primary:
@@ -162,7 +190,7 @@ schemes:
       white:   '#ffe0b2'
       
         
-colors: *warm
+colors: *blackberry
 
 window.opacity: 1
 key_bindings:
