@@ -20,10 +20,10 @@ background-alt 			= #201524
 foreground 				= #F6CE8A
 foreground-alt 			= #201524
 
-red 					= #FB4934
+red 					= #6E264A
 green 					= #F7BB2F
 yellow 					= #F7BB2F
-blue 					= #7f7f84
+blue 					= #395560
 magenta 				= #7f7f84
 cyan 					= #7f7f84
 white 					= #F6CE8A
@@ -49,7 +49,7 @@ bottom 					= false
 background 				= ${color.background}
 foreground 				= ${color.foreground}
 
-font-0=Space Mono:style=Normal:size=10;3
+font-0=Space Mono:style=Normal:size=9;3
 font-1=cozetteVector:style=Normal:size=11;2
 
 [bar/whole]
@@ -62,7 +62,7 @@ module-margin 			= 0
 modules-left    		= left-bga bspwm right-bga
 modules-center  		= left-glyph date right-glyph
 ; modules-right   		= network sep left-bga memory right-bga sep left-bga temperature cpu right-bga sep left-glyph pulseaudio right-glyph sep suspend power
-modules-right   		= wired-network sep temperature sep left-bga memory right-bga sep left-bga cpu right-bga sep left-glyph pulseaudio right-glyph sep suspend power
+modules-right   		= wired-network sep temperature sep left-bga memory right-bga sep left-bga cpu right-bga sep left-glyph pulseaudio right-glyph sep
 
 [bar/windows]
 inherit 				= bar/base
@@ -140,7 +140,7 @@ content-foreground 		= ${color.background-alt}
 ;   |___/_| |_|\__,_|\__\__,_|\___/ \_/\_/ |_| |_|
 [module/power]
 type                    				= custom/text
-;content                 				= %{F#8a1939}⏻%{F-}
+;content                 				= %{F#6E264A}⏻%{F-}
 content                 				= ⏻
 ;content-background 					= ${color.foreground}
 content-foreground 						= ${color.red}
@@ -157,7 +157,7 @@ content-padding        					= 1
 ;                 |_|
 [module/suspend]
 type                    				= custom/text
-;content                 				= %{F#8a1939}⏼%{F-}
+;content                 				= %{F#6E264A}⏼%{F-}
 content                 				= ⏼
 ;content-background 					= ${color.foreground}
 content-foreground 						= ${color.yellow}
@@ -190,7 +190,7 @@ format-padding							= 0
 [module/memory]
 type 									= internal/memory
 interval 								= 3
-label 									= %{F#8a1939}✹%{F-} %gb_used%
+label 									= %{F#6E264A}✹%{F-} %gb_used%
 label-padding 					  		= 1
 ; format 									= <label><ramp-used>
 format 									= <label>
@@ -216,7 +216,7 @@ ramp-used-7 						  	= █
 
 [module/cpu]
 type 									= internal/cpu
-label 								  	= %{F#8a1939}%{F-} %percentage%%
+label 								  	= %{F#6E264A}%{F-} %percentage%%
 label-padding 							= 1
 ; format 								  	= <label><ramp-coreload>
 format 								  	= <label>
@@ -252,7 +252,7 @@ ramp-2 									= 
 label 									= %temperature-c%
 label-warn 								= %temperature-c%
 label-warn-foreground 					= ${color.red}
-format									= %{F#8a1939}<ramp>%{F-} <label>
+format									= %{F#6E264A}<ramp>%{F-} <label>
 format-warn 							= <ramp> <label-warn>
 format-background 						= ${color.background}
 
@@ -291,10 +291,10 @@ interval 								= 3.0
 interface-type 							= wired
 interface								= enp5s0
 label-padding 							= 2
-label-connected 						= %{F#8a1939}⏶%{F-}%upspeed:9% %{F#8a1939}⏷%{F-}%downspeed:9%
+label-connected 						= %{F#6E264A}⏶%{F-}%upspeed:9% %{F#6E264A}⏷%{F-}%downspeed:9%
 label-disconnected 						= 睊
 format-packetloss 						= <label-packetloss>
-; format-connected 						= %{F#8a1939}<ramp-signal>%{F-} %{A1:nm-connection-editor:}<label-connected>%{A}
+; format-connected 						= %{F#6E264A}<ramp-signal>%{F-} %{A1:nm-connection-editor:}<label-connected>%{A}
 format-connected 						= %{A1:nm-connection-editor:}<label-connected>%{A}
 format-disconnected 					= %{A1:nm-connection-editor:}<label-disconnected>%{A}
 ;format-margin							= 1
@@ -331,7 +331,7 @@ label-empty-padding 					= 1
 label-active-foreground 				= ${color.green}
 label-occupied-foreground 				= ${color.white}
 label-empty-foreground 	  				= ${color.white}
-label-urgent-foreground   				= ${color.red}
+label-urgent-foreground   				= ${color.blue}
 label-active-background					= ${color.background-alt}
 label-occupied-background				= ${color.background-alt}
 label-empty-background					= ${color.background-alt}
