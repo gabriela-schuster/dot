@@ -44,7 +44,7 @@ font:
     style: Bold Italic
 
   # Point size
-  size: 12
+  size: 11
 
   offset:
     x: 0
@@ -138,23 +138,22 @@ schemes:
     primary:
       background: '#130F13'
       # #171217 #1d161d #231a23 #251d25 #2e242e #362b36
-      foreground: '#F6CE8A'
-      # #cbaa72
+      foreground: '#cbaa72'
     selection:
-      text: '#002E51'
+      text: '#0d3345' # #221f38
       background: "#F6CE8A"
     normal:
       black:   '#402A47'
-      red:     '#8a1939' # #ac2048
+      red:     '#6E264A' # #ac2048 #660033
       green:   '#8F934E'
       yellow:  '#d59410'
-      blue:    '#573960' # #654370
+      blue:    '#654370'
       magenta: '#a56243'
-      cyan:    '#395560'
+      cyan:    '#395560' # #03899E
       white:   '#efd8a1'
     bright:
-      black:   '#402A47'
-      red:     '#8a1939'
+      black:   '#2E2848'
+      red:     '#6B1A42'
       green:   '#8F934E'
       yellow:  '#d59410'
       blue:    '#573960'
@@ -164,12 +163,12 @@ schemes:
       
   hard: &warm
     primary:
-      background: '#110d10'
+      background: '#130F13'
       foreground: '#e1b473'
-      # #1d161b #171216
+      # #1d161b #251d25
     selection:
       text: '#241c22'
-      background: "#110d10"
+      background: "#130F13"
     normal:
       black:   '#1d161b'
       red:     '#b24b50'
