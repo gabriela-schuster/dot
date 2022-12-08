@@ -1,6 +1,6 @@
 # dotfiles
 
-![photo of a dark desktop](https://github.com/gabriela-schuster/dot/blob/main/spaceman.png)
+![photo of a dark desktop](https://github.com/gabriela-schuster/dot/blob/main/desktop.png)
 
 ## dependencies:
 
