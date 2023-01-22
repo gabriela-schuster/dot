@@ -1,25 +1,35 @@
 #!/usr/bin/env bash
 
 # Change this depending on your battery in /sys/class/power_supply/
-battery="BAT1";
+battery="BAT1"
+battery2="BAT0"
 wifi="yes"
 
 has_battery() {
 	if [ -d /sys/class/power_supply/$battery ]; then
-		return 0;
+		return 0
 	fi
-	return 1;
+	return 1
+}
+
+has_second_battery() {
+	if [ -d /sys/class/power_supply/$battery2 ]; then
+		return 0
+	fi
+
+	return 1
 }
 
 has_wifi() {
 	if [ "$wifi" ]; then
-		return 0;
+		return 0
 	fi
-	return 1;
+	return 1
 }
 
 get_charging_status() {
 	# ⭠ ⭡ ⭢ ⭣ ⭤ ⭥ ⭦ ⭧ ⭨ ⭩
+	battery=$1;
 	status="$(cat /sys/class/power_supply/$battery/status)"
 	if [ "$status" = "Discharging" ]; then
 		echo "⇃"
@@ -31,6 +41,7 @@ get_charging_status() {
 }
 
 get_charge() {
+	battery=$1
 	cat "/sys/class/power_supply/$battery/capacity"
 }
 
@@ -46,7 +57,7 @@ get_wifi_status() {
 }
 
 get_mem() {
-	free -h | grep Mem: | cut -d ' ' -f 19
+	echo " $(free -h | grep Mem: | cut -d ' ' -f 19)"
 }
 
 get_temp() {
@@ -66,26 +77,28 @@ get_user_sys_cpu() {
 }
 
 get_datetime() {
-	date +"[ %H:%M ] %d/%m"
+	echo " $(date +'[ %H:%M ] %d/%m')"
 }
 
 get_status() {
-	battery_status="";
-	wifi_status="";
+	battery_status=""
+	wifi_status=""
 
-	if $(has_battery); then
-		battery_status="$(get_charging_status) $(get_charge) |";
+	if $(has_second_battery); then
+		battery_status="$(get_charging_status $battery)$(get_charge $battery)% $(get_charging_status $battery2)$(get_charge $battery2)% |"
+	elif $(has_battery); then
+		battery_status="$(get_charging_status $battery) $(get_charge $battery)% |"
 	fi
 
 	if $(has_wifi); then
 		wifi_status="$(get_wifi_status) |"
 	fi
 
-	echo " ${battery_status} $(get_temp) | $(get_user_sys_cpu) | $(get_mem) | ${wifi_status} $(get_datetime) ";
+	echo " ${battery_status} $(get_temp) | $(get_user_sys_cpu) | $(get_mem) | ${wifi_status} $(get_datetime) "
 }
 
 while true
 do
-	xsetroot -name "$(get_status)";
+	xsetroot -name "$(get_status)"
 	sleep 30s;
 done
