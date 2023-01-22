@@ -1,22 +1,23 @@
 /* See LICENSE file for copyright and license details. */
+#include <X11/XF86keysym.h>
 
 /* appearance */
 static const unsigned int borderpx  = 1;        /* border pixel of windows */
-static const unsigned int gappx     = 6;        /* gaps between windows */
-static const unsigned int snap      = 15;       /* snap pixel */
+static const unsigned int gappx     = 5;        /* gaps between windows */
+static const unsigned int snap      = 1;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "Space Mono:size=10" };
 static const char dmenufont[]       = "Space Mono:size=10";
-static const char col_gray1[] 		= "#171a1b";
-static const char col_gray2[] 		= "#282828";
-static const char col_gray3[] 		= "#EBDBB2";
-static const char col_gray4[] 		= "#EBDBB2";
-static const char bold[] 			= "#689D6A";
-static const char col_cyan[]        = "#689D6A";
+static const char col_gray1[]		= "#171a1b";
+static const char col_gray2[]		= "#282828";
+static const char col_gray3[]		= "#EBDBB2";
+static const char col_gray4[]		= "#EBDBB2";
+static const char bold[]			= "#d65d0e";
+static const char col_cyan[]        = "#d65d0e";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
-	[SchemeNorm] = { col_gray3, col_gray1, col_gray3 },
+	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
 	[SchemeSel]  = { col_gray4, col_cyan,  bold  },
 };
 
@@ -29,14 +30,14 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
-	/* j{ "Gimp",     NULL,       NULL,       0,            1,           -1 }, */
-	{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
+	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
+	/* { "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },*/
 };
 
 /* layout(s) */
 static const float mfact     = 0.55; /* factor of master area size [0.05..0.95] */
 static const int nmaster     = 1;    /* number of clients in master area */
-static const int resizehints = 1;    /* 1 means respect size hints in tiled resizals */
+static const int resizehints = 0;    /* 1 means respect size hints in tiled resizals */
 static const int lockfullscreen = 1; /* 1 will force focus on the fullscreen window */
 
 static const Layout layouts[] = {
@@ -65,41 +66,65 @@ static const char *termcmd[]  = { "alacritty", NULL };
 #include "movestack.c"
 static Key keys[] = {
 	/* modifier                     key        function        argument */
-	{ MODKEY,                       XK_space,  spawn,      	   {.v = dmenucmd } },
-	{ MODKEY,             			XK_Return, spawn,          {.v = termcmd } },
-	{ MODKEY|ShiftMask,             XK_b,      togglebar,      {0} },
-	{ MODKEY,                       XK_n,      focusstack,     {.i = +1 } },
-	{ MODKEY,                       XK_p,      focusstack,     {.i = -1 } },
+
+	// programs
+	{ MODKEY, XK_space, spawn, {.v = dmenucmd } },
+	{ MODKEY, XK_Return, spawn, {.v = termcmd } },
+
+	// volume
+	{ 0, XF86XK_AudioLowerVolume, spawn, SHCMD("pactl set-sink-volume 0 -5%") },
+	{ 0, XF86XK_AudioRaiseVolume, spawn, SHCMD("pactl set-sink-volume 0 +5%") },
+
+	// brightness
+    {0, XF86XK_MonBrightnessUp, spawn, SHCMD("brightnessctl set +10%")},
+    {0, XF86XK_MonBrightnessDown, spawn, SHCMD("brightnessctl set 10%-")},
+
+	// focus
+	{ MODKEY, XK_n, focusstack, {.i = +1 } },
+	{ MODKEY, XK_p, focusstack, {.i = -1 } },
+	{ MODKEY, XK_comma, focusmon, {.i = -1 } },
+	{ MODKEY, XK_period, focusmon, {.i = +1 } },
+	{ MODKEY|ShiftMask, XK_comma, tagmon, {.i = -1 } },
+	{ MODKEY|ShiftMask, XK_period, tagmon, {.i = +1 } },
+	
+	// resize
+	{ MODKEY, XK_b, setmfact, {.f = -0.05} },
+	{ MODKEY, XK_f, setmfact, {.f = +0.05} },
+
+	// move
+	{ MODKEY|ShiftMask, XK_n, movestack, {.i = +1 } },
+	{ MODKEY|ShiftMask, XK_p, movestack, {.i = -1 } },
+	{ MODKEY, XK_z, zoom, {0} },
+
+	//  kill
+	{ MODKEY,						XK_c,      killclient,     {0} },
+
+	// layout
+	{ MODKEY, XK_u, setlayout, {.v = &layouts[0]} },
+	{ MODKEY, XK_i, setlayout, {.v = &layouts[1]} },
+	{ MODKEY, XK_o, setlayout, {.v = &layouts[2]} },
+	{ MODKEY, XK_l, setlayout, {0} },
+	{ MODKEY|ShiftMask, XK_f, togglefloating, {0} },
+	{ MODKEY, XK_0, view, {.ui = ~0 } },
+
+	// utils
+	{ MODKEY|ShiftMask, XK_b, togglebar, {0} },
 	// { MODKEY,                       XK_i,      incnmaster,     {.i = +1 } },
 	// { MODKEY,                       XK_d,      incnmaster,     {.i = -1 } },
-	{ MODKEY,                       XK_b,      setmfact,       {.f = -0.05} },
-	{ MODKEY,                       XK_f,      setmfact,       {.f = +0.05} },
-	{ MODKEY|ShiftMask,             XK_n,      movestack,      {.i = +1 } },
-	{ MODKEY|ShiftMask,             XK_p,      movestack,      {.i = -1 } },
-	{ MODKEY,                       XK_z, 	   zoom,           {0} },
-	{ MODKEY,                       XK_Tab,    view,           {0} },
-	{ MODKEY,            			XK_c,      killclient,     {0} },
-	{ MODKEY,                       XK_u,      setlayout,      {.v = &layouts[0]} },
-	{ MODKEY,                       XK_i,      setlayout,      {.v = &layouts[1]} },
-	{ MODKEY,                       XK_o,      setlayout,      {.v = &layouts[2]} },
-	{ MODKEY,                       XK_l, 	   setlayout,      {0} },
-	{ MODKEY|ShiftMask,             XK_f,	   togglefloating, 	{0} },
-	{ MODKEY,                       XK_0,      view,           {.ui = ~0 } },
-	{ MODKEY|ShiftMask,             XK_0,      tag,            {.ui = ~0 } },
-	{ MODKEY,                       XK_comma,  focusmon,       {.i = -1 } },
-	{ MODKEY,                       XK_period, focusmon,       {.i = +1 } },
-	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
-	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
-	TAGKEYS(                        XK_1,                      0)
-	TAGKEYS(                        XK_2,                      1)
-	TAGKEYS(                        XK_3,                      2)
-	TAGKEYS(                        XK_4,                      3)
-	TAGKEYS(                        XK_5,                      4)
-	TAGKEYS(                        XK_6,                      5)
-	TAGKEYS(                        XK_7,                      6)
-	TAGKEYS(                        XK_8,                      7)
-	TAGKEYS(                        XK_9,                      8)
-	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
+
+	// tags
+	// { MODKEY,                       XK_Tab,    view,           {0} },
+	{ MODKEY|ShiftMask, XK_0, tag, {.ui = ~0 } },
+	TAGKEYS( XK_1, 0 )
+	TAGKEYS( XK_2, 1 )
+	TAGKEYS( XK_3, 2 )
+	TAGKEYS( XK_4, 3 )
+	TAGKEYS( XK_5, 4 )
+	TAGKEYS( XK_6, 5 )
+	TAGKEYS( XK_7, 6 )
+	TAGKEYS( XK_8, 7 )
+	TAGKEYS( XK_9, 8 )
+	{ MODKEY|ShiftMask, XK_q, quit, {0} },
 };
 
 /* button definitions */
@@ -118,4 +143,3 @@ static Button buttons[] = {
 	{ ClkTagBar,            MODKEY,         Button1,        tag,            {0} },
 	{ ClkTagBar,            MODKEY,         Button3,        toggletag,      {0} },
 };
-
