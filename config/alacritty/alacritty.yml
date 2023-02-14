@@ -28,7 +28,7 @@ tabspaces: 4
 
 font:
   normal:
-    family: Space Mono
+    family: Jet Brains Mono
     style: Medium
 
   bold:
@@ -44,7 +44,7 @@ font:
     style: Bold Italic
 
   # Point size
-  size: 11
+  size: 10
 
   offset:
     x: 0
@@ -57,8 +57,8 @@ schemes:
     primary:
       background: '#09090a'
       foreground: '#dddddd'
-      
-    selection: 
+
+    selection:
       background: '#546e7a'
       text: '#0a0a0b'
 
@@ -144,7 +144,7 @@ schemes:
       background: "#F6CE8A"
     normal:
       black:   '#402A47'
-      red:     '#6E264A' # #ac2048 #660033
+      red:     '#7a2a52' # #ac2048 #660033
       green:   '#8F934E'
       yellow:  '#d59410'
       blue:    '#654370'
@@ -152,7 +152,7 @@ schemes:
       cyan:    '#395560' # #03899E
       white:   '#efd8a1'
     bright:
-      black:   '#2E2848'
+      black:   '#47213a'
       red:     '#6B1A42'
       green:   '#8F934E'
       yellow:  '#d59410'
@@ -160,42 +160,42 @@ schemes:
       magenta: '#a56243'
       cyan:    '#395560'
       white:   '#efd8a1'
-      
-  hard: &warm
+
+  void: &void
     primary:
       background: '#130F13'
-      foreground: '#e1b473'
+      foreground: '#f1dac4'
       # #1d161b #251d25
     selection:
-      text: '#241c22'
-      background: "#130F13"
+      text: '#efd8a1'
+      background: "#330928"
     normal:
-      black:   '#1d161b'
-      red:     '#b24b50'
-      green:   '#6b7d7a'
-      yellow:  '#df8038'
-      blue:    '#4f4965'
-      magenta: '#c3523f'
-      cyan:    '#6f3a53'
+      black:   '#561736'
+      red:     '#801c3c'
+      green:   '#474973'
+      yellow:  '#ed8c1d'
+      blue:    '#5c2545'
+      magenta: '#c07b66'
+      cyan:    '#5c2545'
       white:   '#ffe0b2'
     bright:
-      black:   '#443c42'
-      red:     '#b24b50'
-      green:   '#6b7d7a'
-      yellow:  '#df8038'
-      blue:    '#4f4965'
-      magenta: '#c3523f'
-      cyan:    '#6f3a53'
+      black:   '#561736'
+      red:     '#801c3c'
+      green:   '#474973'
+      yellow:  '#ed8c1d'
+      blue:    '#5c2545'
+      magenta: '#c07b66'
+      cyan:    '#5c2545'
       white:   '#ffe0b2'
-      
-        
+
+
 colors: *blackberry
 
 window.opacity: 1
 key_bindings:
     # (Windows, Linux, and BSD only)
-  - { key: V,        mods: Control|Shift, action: Paste            }
-  - { key: C,        mods: Control|Shift, action: Copy             }
+  - { key: Y,        mods: Control,       action: Paste            }
+  - { key: W,        mods: Alt,       action: Copy             }
   - { key: Insert,   mods: Shift,         action: PasteSelection   }
   - { key: Key0,     mods: Control,       action: ResetFontSize    }
   - { key: Equals,   mods: Control,       action: IncreaseFontSize }
