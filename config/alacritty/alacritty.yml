@@ -134,60 +134,87 @@ schemes:
       cyan:    '#689D6A'
       white:   '#EBDBB2'
 
+  miramare: &miramare
+    primary:
+      background: '#2A2426'
+      foreground: '#e6d6ac'
+      # #1d161b #251d25
+    selection:
+      text: '#2A2426'
+      background: "#e6d6ac"
+    normal:
+      black:   '#444444'
+      red:     '#e68183'
+      green:   '#87af87'
+      yellow:  '#d9bb80'
+      blue:    '#89beba'
+      magenta: '#d3a0bc'
+      cyan:    '#87c095'
+      white:   '#d8caac'
+    bright:
+      black:   '#444444'
+      red:     '#e68183'
+      green:   '#87af87'
+      yellow:  '#d9bb80'
+      blue:    '#89beba'
+      magenta: '#d3a0bc'
+      cyan:    '#87c095'
+      white:   '#d8caac'
+
+
   test: &blackberry
     primary:
       background: '#130F13'
       # #171217 #1d161d #231a23 #251d25 #2e242e #362b36
       foreground: '#cbaa72'
     selection:
-      text: '#0d3345' # #221f38
-      background: "#F6CE8A"
+      text: '#25546A' # #0d3345 #221f38
+      background: "#251d25"
     normal:
-      black:   '#402A47'
-      red:     '#7a2a52' # #ac2048 #660033
+      black:   '#402A47' # #47213a
+      red:     '#903161' # #ac2048 #660033 #7a2a52 #892f5c
       green:   '#8F934E'
       yellow:  '#d59410'
-      blue:    '#654370'
+      blue:    '#784488'
       magenta: '#a56243'
-      cyan:    '#395560' # #03899E
+      cyan:    '#456C7B' # #03899E
       white:   '#efd8a1'
     bright:
-      black:   '#47213a'
-      red:     '#6B1A42'
+      black:   '#402A47'
+      red:     '#903161'
       green:   '#8F934E'
       yellow:  '#d59410'
-      blue:    '#573960'
+      blue:    '#784488'
       magenta: '#a56243'
-      cyan:    '#395560'
+      cyan:    '#456C7B'
       white:   '#efd8a1'
 
   void: &void
     primary:
-      background: '#130F13'
-      foreground: '#f1dac4'
-      # #1d161b #251d25
+      background: '#0d0d0d'
+      foreground: '#efd8a1'
+      # #1c1714 #251d25
     selection:
-      text: '#efd8a1'
-      background: "#330928"
+      text: '#0d0d0d'
+      background: "#efd8a1"
     normal:
-      black:   '#561736'
-      red:     '#801c3c'
-      green:   '#474973'
-      yellow:  '#ed8c1d'
-      blue:    '#5c2545'
-      magenta: '#c07b66'
-      cyan:    '#5c2545'
+      black:   '#402A47'
+      red:     '#892f5c'
+      green:   '#4c7b42'
+      yellow:  '#a68242'
+      blue:    '#62386f' # #42a2a6
+      magenta: '#892f5c'
+      cyan:    '#593b79'
       white:   '#ffe0b2'
     bright:
-      black:   '#561736'
-      red:     '#801c3c'
-      green:   '#474973'
-      yellow:  '#ed8c1d'
-      blue:    '#5c2545'
-      magenta: '#c07b66'
-      cyan:    '#5c2545'
+      black:   '#402A47'
+      red:     '#892f5c'
+      green:   '#4c7b42'
+      yellow:  '#a68242'
+      blue:    '#593b79' # #42a2a6
+      magenta: '#892f5c'
+      cyan:    '#593b79'
       white:   '#ffe0b2'
-
 
 colors: *blackberry
 
@@ -195,7 +222,7 @@ window.opacity: 1
 key_bindings:
     # (Windows, Linux, and BSD only)
   - { key: Y,        mods: Control,       action: Paste            }
-  - { key: W,        mods: Alt,       action: Copy             }
+  - { key: W,        mods: Alt,           action: Copy             }
   - { key: Insert,   mods: Shift,         action: PasteSelection   }
   - { key: Key0,     mods: Control,       action: ResetFontSize    }
   - { key: Equals,   mods: Control,       action: IncreaseFontSize }
