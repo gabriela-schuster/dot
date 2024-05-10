@@ -48,16 +48,18 @@ get_charge() {
 get_wifi_status() {
 	# 直睊 
 	status="$(nmcli -o g | sed -n '2p' | cut -d ' ' -f 1)"
+	name="$(nmcli -t -f active,ssid dev wifi | egrep '^yes' | cut -d\' -f2 | cut -d ':' -f 2)"
 
 	if [ "$status" = "connected" ];then
-	   echo ""
+	   echo " $name"
 	else
 		echo "睊"
 	fi
 }
 
 get_mem() {
-	echo " $(free -h | grep Mem: | cut -d ' ' -f 19)"
+	# echo " $(free -h | grep Mem: | cut -d ' ' -f 20)"
+	echo " $(free -h | awk '/^Mem:/ {print $3}')"
 }
 
 get_temp() {
@@ -100,5 +102,5 @@ get_status() {
 while true
 do
 	xsetroot -name "$(get_status)"
-	sleep 30s;
+	sleep 2s;
 done
