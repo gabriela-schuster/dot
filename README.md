@@ -1,6 +1,7 @@
 # dotfiles
 
-![photo of a dark desktop](https://github.com/gabriela-schuster/dot/blob/main/desktop.png)
+![image](https://github.com/user-attachments/assets/5e0d549b-85c3-4b2b-ad54-b7776f372994)
+
 
 ## dependencies:
 
