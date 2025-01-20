@@ -1,6 +1,7 @@
 source ~/.asdf/asdf.fish
 
 fish_add_path ~/.config/scripts
+set -x XDG_DATA_DIRS "/usr/share"
 
 if status is-interactive
     # Commands to run in interactive sessions can go here
@@ -46,6 +47,8 @@ alias free='free -m'                      # show sizes in MB
 
 # set fish_greeting
 function fish_greeting
+	# curl "wttr.in/City?T0Q" --silent --max-time 3
+	# curl "wttr.in/Encantado?format=3" --silent --max-time 3
     set_color blue
     echo "   ,_"
 	set_color yellow
