@@ -5,24 +5,23 @@
 
 ## dependencies:
 
-##### for xorg:
-* bspwm
-* sxhkd
-* polybar
-* alacritty
-* dunst
 #### for wayland:
-* sway
+* hyprland
+* hyprpaper
 * waybar
+* xdg-desktop-portal-hyprland
+* xdg-desktop-portal-gtk
 * alacritty
-#### other
-* starship
-* conky
-* rofi
-* picom
+* mako
 * nvim
-* cozette-ttf
-* zsh
+* wofi
+  
+#### utilities
+* fish
+* bat (better cat)
+* eza (better ls)
+* cliphist
+* wl-clip-persist
 
 ## install: 
 make start.sh executable with
