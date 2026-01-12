@@ -1,6 +1,7 @@
-source ~/.asdf/asdf.fish
+# source ~/.asdf/asdf.fish
 
 fish_add_path ~/.config/scripts
+fish_add_path /home/zuzulhka/.asdf/installs/golang/1.24.0/bin
 set -x XDG_DATA_DIRS "/usr/share"
 
 if status is-interactive
@@ -41,14 +42,20 @@ alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 
+# Better alternatives
+alias cat='bat'
+alias ls='eza -1 --icons=auto'
+alias l='eza -lh --icons=auto'
+abbr -a la 'ls -a'
+
 # adding flags
 alias df='df -h'                          # human-readable sizes
 alias free='free -m'                      # show sizes in MB
 
 # set fish_greeting
 function fish_greeting
-	# curl "wttr.in/City?T0Q" --silent --max-time 3
-	# curl "wttr.in/Encantado?format=3" --silent --max-time 3
+	# curl "wttr.in/Encantado?m0Q" --silent --max-time 10
+	# curl "wttr.in/Encantado?m&format=%l:+%t+%c+%p+%h+%w" --silent --max-time 3
     set_color blue
     echo "   ,_"
 	set_color yellow
@@ -61,5 +68,9 @@ function fish_greeting
     set_color blue
     echo "'' |\\"
     set_color normal
+    echo ""
+    set_color yellow
+	echo "remember: Ctrl + r"
+	set_color normal
     echo ""
 end
