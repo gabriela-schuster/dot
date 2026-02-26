@@ -1,7 +1,6 @@
 # dotfiles
 
-![image](https://github.com/user-attachments/assets/5e0d549b-85c3-4b2b-ad54-b7776f372994)
-
+<img width="2560" height="1440" alt="image" src="https://github.com/user-attachments/assets/1eb7cd46-f5a4-4c55-b31a-c31d50f4e7b0" />
 
 ## dependencies:
 
@@ -10,7 +9,6 @@
 * hyprpaper
 * waybar
 * xdg-desktop-portal-hyprland
-* xdg-desktop-portal-gtk
 * alacritty
 * mako
 * nvim
