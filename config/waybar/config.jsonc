@@ -12,17 +12,18 @@
   // Choose the order of the modules
 
   "modules-left": [ 
-    "group/hollow-left-1",
-    "group/hollow-left-2",
-    "group/hollow-left-3"
+    "group/sys",
+    "group/kb-layout-changer",
+    "group/sys-workspaces",
+    "group/network-speed"
   ],
   "modules-center": [
     "group/hollow-center-1"
   ],
   "modules-right": [
-    "group/hollow-right-1",
-    "group/hollow-right-5",
-    "group/hollow-right-3"
+    "group/window",
+    "group/system-statuses",
+    "group/user"
   ],
   "group/hollow-center-1": {
     "orientation": "horizontal",
@@ -37,35 +38,36 @@
     ],
   },
 
-  "group/hollow-left-1": {
+  "group/sys": {
     "orientation": "horizontal",
     "modules": [
-      "custom/weather",
+      // "custom/weather",
       "cpu",
       "temperature",
-      "memory"
+      "memory",
+      "custom/gpu-temp"
     ],
   },
-  "group/hollow-right-1": {
+  "group/window": {
     "orientation": "horizontal",
     "modules": [
       "hyprland/window"
     ],
   },
-  "group/hollow-left-2": {
+  "group/sys-workspaces": {
     "orientation": "horizontal",
     "modules": [
       "hyprland/workspaces",
     ],
   },
-  "group/hollow-right-3": {
+  "group/user": {
     "orientation": "horizontal",
     "modules": [
       "custom/user",
       "tray",
     ],
   },
-  "group/hollow-left-3": {
+  "group/network-speed": {
     "orientation": "horizontal",
     "modules": [
       "network#speed",
@@ -80,14 +82,22 @@
       "custom/next",
     ],
   },
-  "group/hollow-right-5": {
+  "group/system-statuses": {
     "orientation": "horizontal",
     "modules": [
       "backlight",
       "wireplumber",
-      "network",
+      // "network",
+      "network#wifi",
+      "network#ethernet",
       // "idle_inhibitor",
       "custom/power",
+    ],
+  },
+  "group/kb-layout-changer": {
+    "orientation": "horizontal",
+    "modules": [
+      "custom/keyboard-layout",
     ],
   },
   // Modules configuration
@@ -95,21 +105,21 @@
     "on-click": "activate",
     "activate-only": false,
     "all-outputs": true,
-    "format": "{name}",
+    "format": "{icon}",
     "format-icons": {
-      "1": "*",  
-      "2": "*",   
-      "3": "*",     
-      "4": "*",    
-      "5": "*",   
-      "6": "*",     
-      "7": "*",    
-      "8": "*",     
-      "9": "*",    
-      "10": "*",
-       "urgent": "*",
-       "active": "*",
-       "default": "*",
+      "1": "◉",  
+      "2": "◉",   
+      "3": "◉",     
+      "4": "◉",    
+      "5": "◉",   
+      "6": "◉",     
+      "7": "◉",    
+      "8": "◉",     
+      "9": "◉",    
+      "10": "◉",
+       "urgent": "◉",
+       "active": "●",
+       "default": "○",
     },
     // "persistent_workspaces": {
     //   "[]": 3
@@ -118,7 +128,7 @@
 
   "hyprland/window": {
     "format": " 󰶞 {}",
-    "max-length": 32,
+    "max-length": 24,
     "separate-outputs": false,
   },
 
@@ -129,9 +139,21 @@
   },
 
   "clock": {
-    "format": " {:%H:%M}",
-    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-    "format-alt": "{:%Y-%m-%d}",
+    "format": " {:%H:%M %a %d/%m/%Y}",
+    "tooltip-format": "<tt><big>{calendar}</big></tt>",
+    "calendar": {
+      "mode": "month",
+      "mode-mon-col": 3,
+      "on-scroll": 1,
+      "on-click-right": "mode",
+      "format": {
+        "months":     "<span color='#ebdbb2'><b>{}</b></span>",
+        "days":       "<span color='#ebdbb2'><b>{}</b></span>",
+        "weeks":      "<span color='#ebdbb2'><b>W{}</b></span>",
+        "weekdays":   "<span color='#fabd2f'><b>{}</b></span>",
+        "today":      "<span color='#fe8019'><b><u>{}</u></b></span>"
+      }
+    }
   },
 
   "custom/target": {
@@ -155,9 +177,18 @@
     // "on-click": "kitty -e zsh -c 'btop; exec zsh'",
   },
 
+  "custom/gpu-temp": {
+    "format": "G {}",
+    "exec": "sensors | awk '/junction:/ {print $2}' | tr -d '+'",
+    "interval": 2,
+    "tooltip": false
+  },
+
   "cpu": {
     "interval": 2,
     "format": " {usage:>2}%",
+    "tooltip": true,
+    "tooltip-format": "CPU: {usage}%"
     // "on-click": "kitty -e zsh -c 'btop; exec zsh'",
   },
 
@@ -178,6 +209,7 @@
     "format-alt": "{percent:>2}%",
     "format-icons": [ "", "", "", "", "", "", "", "", ""],
   },
+  
 
   "bluetooth": {
     "format": "{icon}",
@@ -202,8 +234,8 @@
     "format-linked": "󰌙 {ifname} (Sin IP)", 
     "format-disconnected": "󰖪", 
     "format-alt": "󰛳 {ifname}", 
-    "tooltip-format-wifi": " {bandwidthDownBytes}  {bandwidthUpBytes}", 
-    "tooltip-format-ethernet": "󰌗 {ifname} | IP: {ipaddr}/{cidr} | GW: {gwaddr}", 
+    "tooltip-format-wifi": "{essid}\n{ipaddr}",
+    "tooltip-format-ethernet": "Ethernet\n{ipaddr}",
     "tooltip-format-disconnected": "󰖪 No internet connection", 
     "tooltip-format-linked": "󰌙 {ifname}: Not ip",
     "max-length": 30, 
@@ -212,6 +244,36 @@
         "ethernet": ["󰌗"], 
         "disconnected": ["󰖪"] 
     },
+  },
+
+  "network#wifi": {
+    "interface": "wlp9s0",
+    "format-wifi": "{icon} {essid}",
+    "format-disconnected": "󰖪",
+    "tooltip-format-wifi": "󰤨 {essid}\nIP: {ipaddr}",
+    "format-icons": [
+        "󰤯",
+        "󰤟",
+        "󰤢",
+        "󰤥",
+        "󰤨"
+    ]
+  },
+
+  "network#ethernet": {
+    "interface": "enp8s0",
+
+    "format-ethernet": "󰌗 {ipaddr}",
+    "format-disconnected": "",
+
+    "tooltip-format-ethernet": "󰌗 Ethernet\nIP: {ipaddr}"
+  },
+
+  "custom/keyboard-layout": {
+    "exec": "~/.config/waybar/scripts/kb-layout.sh",
+    "interval": 1,
+    "format": " {}",
+    "on-click": "~/.config/waybar/scripts/kb-layout.sh toggle"
   },
 
   "custom/user": {
@@ -224,8 +286,9 @@
   },
 
   "custom/weather": {
-    "format": "󰖨 {}",
+    "format": "{}",
     "exec": "curl -s 'https://wttr.in/?format=1'",
+    // "exec": "curl -s 'https://wttr.in/Curitiba?m&format=%c+%t'",
     "interval": 1800,
     "tooltip": false
   },
