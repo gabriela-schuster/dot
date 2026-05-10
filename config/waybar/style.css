@@ -2,9 +2,10 @@
 
 * {
     min-height: 0;
-    font-family: "JetBrainsMono Nerd Font", Roboto, Helvetica, Arial, sans-serif;
+    font-family: "JetBrainsMono Nerd Font Mono", Roboto, Helvetica, Arial, sans-serif;
     font-size: 14px;
 }
+
 /* Waybar */
 #waybar {
     background-color: transparent;
@@ -19,7 +20,6 @@
 
 #waybar .module:hover {
     color: @subtext1;
-
 }
 
 #window#waybar {
@@ -42,13 +42,13 @@
     padding-left: 3px;
     padding-right: 3px;
     margin-right: 0px;
-    color: @text;
+    color: @overlay2;
     animation: ws_normal 20s ease-in-out 1;
 }
 
 #workspaces button.active {
-    background: @sapphire;
-    color: @crust;
+    background: @yellow;
+    color: @mantle;
     border-radius:  10.5pt;
     margin-left: 0px;
     padding-left: 8px;
@@ -59,12 +59,18 @@
 }
 
 #workspaces button:hover {
-    background: @mantle;
+    background: @peach;
     color: @text;
     animation: ws_hover 20s ease-in-out 1;
     transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
 }
 
+#window,
+#system-statuses,
+#user,
+#sys,
+#kb-layout,
+#kb-layout-changer,
 #hollow-right-5,
 #hollow-center-1,
 #hollow-left-1,
@@ -80,11 +86,16 @@
   border: 1px solid #665c54;
 }
 
+
 /* Workspaces: */
-#hollow-left-2 {
+#sys-workspaces {
   background: @base;
   border-radius: 10.5pt;
   border: 1px solid #665c54;
 
 }
-
+/* 
+#clock {
+    font-size: 15px;
+    font-weight: bold;
+} */
