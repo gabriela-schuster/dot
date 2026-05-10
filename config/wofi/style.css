@@ -1,40 +1,41 @@
-/* Gruvbox Dark Palette */
+/* Gruvbox Modern */
 
 * {
-    font-family: "JetBrainsMono Nerd Font", sefif;
-    font-size: 14px;
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 15px;
 }
 
 window {
     margin: 0px;
-    border: 1px solid #d79921;
-    background-color: #282828; /* bg0 */
+    border: 1px solid rgba(215, 153, 33, 0.6);
+    border-radius: 16px;
+    background-color: rgba(40, 40, 40, 0.82);
 }
 
 #outer-box {
-    margin: 10px;
-    border: none;
-    background-color: #282828;
+    margin: 16px;
+    padding: 4px;
+    background-color: transparent;
 }
 
 #input {
-    margin: 5px;
-    padding: 8px;
-    border: 2px solid #504945;
-    color: #ebdbb2; /* fg */
-    background-color: #3c3836; /* bg1 */
+    margin-bottom: 14px;
+    padding: 6px;
+
+    border: none;
+    border-radius: 12px;
+
+    background-color: rgba(40, 40, 40, 0.82);
+    color: #ebdbb2;
 }
 
 #input:focus {
-    border: none;
     outline: none;
     box-shadow: none;
 }
 
 #inner-box {
-    margin: 5px;
-    border: none;
-    background-color: #282828;
+    background-color: transparent;
 }
 
 #scroll {
@@ -42,22 +43,32 @@ window {
     border: none;
 }
 
-#text {
-    margin: 5px;
-    border: none;
-    color: #ebdbb2;
-}
-
 #entry {
-    padding: 5px;
-    border-radius: 4px;
+    padding: 6px;
+    margin: 4px 0px;
+
+    border-radius: 12px;
+    background-color: transparent;
 }
 
 #entry:selected {
-    background-color: #458588; /* blue */
-    color: #fbf1c7; /* fg bright */
+    background-color: #b8860b;
 }
 
 #entry:hover {
-    background-color: #504945;
+    background-color: rgba(80, 73, 69, 0.7);
 }
+
+#text {
+    margin-left: 10px;
+    color: #ebdbb2;
+}
+
+#text:selected {
+    color: #1d2021;
+}
+
+#img {
+    margin-right: 10px;
+}
+
